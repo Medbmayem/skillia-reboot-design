@@ -1,15 +1,22 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (location.pathname === '/') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+  };
+
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -24,7 +31,7 @@ const Footer = () => {
                 className="h-10" 
               />
             </div>
-            <p className="text-skillia-blue mb-6">
+            <p className="text-black mb-6">
               <span className="text-[#403AF2] font-medium">Smart</span> Tech. <span className="text-[#403AF2] font-medium">Real</span> Impact.
             </p>
             <div className="flex space-x-4">
@@ -54,30 +61,57 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Liens Rapides</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Accueil</Link></li>
+              <li>
+                <Link 
+                  to="/" 
+                  className="text-black opacity-80 hover:opacity-100 transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  Accueil
+                </Link>
+              </li>
               <li>
                 <Link 
                   to="/#services" 
-                  className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors"
+                  className="text-black opacity-80 hover:opacity-100 transition-colors"
                   onClick={(e) => {
-                    if (window.location.pathname === '/') {
+                    if (location.pathname === '/') {
                       e.preventDefault();
                       scrollToSection('services');
+                    } else {
+                      handleLinkClick();
                     }
                   }}
                 >
                   Services
                 </Link>
               </li>
-              <li><Link to="/#about" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">À propos</Link></li>
+              <li>
+                <Link 
+                  to="/#about" 
+                  className="text-black opacity-80 hover:opacity-100 transition-colors"
+                  onClick={(e) => {
+                    if (location.pathname === '/') {
+                      e.preventDefault();
+                      scrollToSection('about');
+                    } else {
+                      handleLinkClick();
+                    }
+                  }}
+                >
+                  À propos
+                </Link>
+              </li>
               <li>
                 <Link 
                   to="/#contact" 
-                  className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors"
+                  className="text-black opacity-80 hover:opacity-100 transition-colors"
                   onClick={(e) => {
-                    if (window.location.pathname === '/') {
+                    if (location.pathname === '/') {
                       e.preventDefault();
                       scrollToSection('contact');
+                    } else {
+                      handleLinkClick();
                     }
                   }}
                 >
@@ -90,15 +124,39 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><Link to="/services/business-transformation" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Intelligent Business & Data Transformation</Link></li>
-              <li><Link to="/services/secure-ecosystems" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Secure & Trusted Ecosystems</Link></li>
-              <li><Link to="/services/technology-foundations" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Advanced Technology Foundations</Link></li>
+              <li>
+                <Link 
+                  to="/services/business-transformation" 
+                  className="text-black opacity-80 hover:opacity-100 transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  Intelligent Business & Data Transformation
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/services/secure-ecosystems" 
+                  className="text-black opacity-80 hover:opacity-100 transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  Secure & Trusted Ecosystems
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/services/technology-foundations" 
+                  className="text-black opacity-80 hover:opacity-100 transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  Advanced Technology Foundations
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
-            <p className="text-skillia-blue opacity-80 mb-4">Inscrivez-vous pour recevoir nos dernières actualités</p>
+            <p className="text-black opacity-80 mb-4">Inscrivez-vous pour recevoir nos dernières actualités</p>
             <form className="flex">
               <input
                 type="email"
@@ -116,7 +174,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-skillia-gray-medium">
-          <p className="text-center text-skillia-blue opacity-70">
+          <p className="text-center text-black opacity-70">
             &copy; {currentYear} Skillia. Tous droits réservés.
           </p>
         </div>

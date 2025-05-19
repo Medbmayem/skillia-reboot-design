@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -36,6 +36,11 @@ const services = [
 ];
 
 const TechnologyFoundationsPage = () => {
+  // Scroll to the top of the page when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -46,7 +51,7 @@ const TechnologyFoundationsPage = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-skillia-blue">
               Advanced Technology Foundations
             </h1>
-            <p className="text-xl max-w-3xl text-skillia-blue">
+            <p className="text-xl max-w-3xl text-black">
               Déployer des fondations technologiques performantes pour soutenir l'IA, la Data et la cybersécurité à grande échelle
             </p>
           </div>
@@ -63,7 +68,7 @@ const TechnologyFoundationsPage = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <ul className="space-y-2 text-skillia-blue opacity-80">
+                    <ul className="space-y-2 text-black">
                       {service.description.map((item, idx) => (
                         <li key={idx} className="flex items-start">
                           <span className="mr-2 text-[#403AF2] font-bold">•</span>
