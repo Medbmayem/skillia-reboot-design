@@ -41,12 +41,12 @@ const TechnologyFoundationsPage = () => {
       <Navbar />
       
       <main className="flex-grow">
-        <section className="bg-skillia-blue text-white py-16">
+        <section className="bg-[#F0F0F0] py-16">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-skillia-blue">
               Advanced Technology Foundations
             </h1>
-            <p className="text-xl max-w-3xl">
+            <p className="text-xl max-w-3xl text-skillia-blue">
               Déployer des fondations technologiques performantes pour soutenir l'IA, la Data et la cybersécurité à grande échelle
             </p>
           </div>
