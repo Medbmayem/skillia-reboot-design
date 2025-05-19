@@ -16,7 +16,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-300 mb-6">
-              Nous vous accompagnons dans la transition vers un Business Intelligent en intégrant l'IA et la Data au cœur de votre stratégie.
+              <span className="text-[#403AF2] font-medium">Smart</span> Tech. <span className="text-[#403AF2] font-medium">Real</span> Impact.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-gray-300 transition-colors">
