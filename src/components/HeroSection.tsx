@@ -36,7 +36,11 @@ const HeroSection = () => {
               >
                 Découvrir nos services
               </Button>
-              <Button variant="outline" className="border-skillia-blue text-skillia-blue hover:bg-skillia-gray px-6 py-4 text-base">
+              <Button 
+                variant="outline" 
+                className="border-skillia-blue text-skillia-blue hover:bg-skillia-gray px-6 py-4 text-base"
+                onClick={() => scrollToSection('contact')}
+              >
                 Prendre rendez-vous
               </Button>
             </div>

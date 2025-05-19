@@ -52,13 +52,33 @@ const Navbar = () => {
           >
             Services
           </a>
-          <a href="#about" className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors">
+          <a 
+            href="#about" 
+            className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors"
+            onClick={(e) => {
+              e.preventDefault(); 
+              scrollToSection('about');
+            }}
+          >
             À propos
           </a>
-          <a href="#testimonials" className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors">
+          <a 
+            href="#testimonials" 
+            className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('testimonials');
+            }}
+          >
             Témoignages
           </a>
-          <a href="#contact">
+          <a 
+            href="#contact"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('contact');
+            }}
+          >
             <Button className="bg-skillia-blue hover:bg-opacity-90 text-white">
               Contact
             </Button>
@@ -91,21 +111,30 @@ const Navbar = () => {
             <a 
               href="#about" 
               className="text-skillia-blue py-2 font-medium"
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('about');
+              }}
             >
               À propos
             </a>
             <a 
               href="#testimonials" 
               className="text-skillia-blue py-2 font-medium"
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('testimonials');
+              }}
             >
               Témoignages
             </a>
             <a 
               href="#contact" 
               className="py-2"
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('contact');
+              }}
             >
               <Button className="w-full bg-skillia-blue hover:bg-opacity-90 text-white">
                 Contact
