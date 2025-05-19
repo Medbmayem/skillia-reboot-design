@@ -1,11 +1,19 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <footer className="bg-skillia-gray text-skillia-blue">
+    <footer className="bg-[#F0F0F0] text-skillia-blue">
       <div className="container mx-auto py-12">
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-1">
@@ -46,22 +54,45 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Liens Rapides</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Accueil</a></li>
-              <li><a href="#services" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Services</a></li>
-              <li><a href="#about" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">À propos</a></li>
-              <li><a href="#testimonials" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Témoignages</a></li>
-              <li><a href="#contact" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Contact</a></li>
+              <li><Link to="/" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Accueil</Link></li>
+              <li>
+                <Link 
+                  to="/#services" 
+                  className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors"
+                  onClick={(e) => {
+                    if (window.location.pathname === '/') {
+                      e.preventDefault();
+                      scrollToSection('services');
+                    }
+                  }}
+                >
+                  Services
+                </Link>
+              </li>
+              <li><Link to="/#about" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">À propos</Link></li>
+              <li>
+                <Link 
+                  to="/#contact" 
+                  className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors"
+                  onClick={(e) => {
+                    if (window.location.pathname === '/') {
+                      e.preventDefault();
+                      scrollToSection('contact');
+                    }
+                  }}
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Intelligence Artificielle</a></li>
-              <li><a href="#" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Cybersécurité</a></li>
-              <li><a href="#" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Conseil Stratégique</a></li>
-              <li><a href="#" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Solutions Cloud</a></li>
-              <li><a href="#" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Analyse de Données</a></li>
+              <li><Link to="/services/business-transformation" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Intelligent Business & Data Transformation</Link></li>
+              <li><Link to="/services/secure-ecosystems" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Secure & Trusted Ecosystems</Link></li>
+              <li><Link to="/services/technology-foundations" className="text-skillia-blue opacity-80 hover:opacity-100 transition-colors">Advanced Technology Foundations</Link></li>
             </ul>
           </div>
 
