@@ -4,47 +4,83 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Lock, Database, Users } from 'lucide-react';
-
-const services = [
-  {
-    title: "Cybersecurity Intelligence",
-    description: [
-      "Solutions avancées de cybersécurité (SOC & SIEM augmentés par l'IA, détection des menaces, réponse aux incidents)",
-      "Protection proactive contre les cyberattaques ciblées"
-    ],
-    icon: Shield
-  },
-  {
-    title: "AI Security & Compliance",
-    description: [
-      "Sécurisation des environnements Data et IA",
-      "Mise en conformité avec les réglementations (AI Act, GDPR, ISO 27001, etc.)"
-    ],
-    icon: Lock
-  },
-  {
-    title: "Risk Management & Resilience",
-    description: [
-      "Gestion des risques liés aux données et aux infrastructures",
-      "Plans de continuité d'activité (BCP) et de reprise après sinistre (DRP)"
-    ],
-    icon: Database
-  },
-  {
-    title: "Ethical AI & Data Governance",
-    description: [
-      "Gouvernance éthique des données et des systèmes IA",
-      "Gestion de la confidentialité et des consentements pour les utilisateurs"
-    ],
-    icon: Users
-  }
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const SecureEcosystemsPage = () => {
+  const { t, language } = useLanguage();
+  
   // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
+  const services = language === 'en' ? [
+    {
+      title: "Cybersecurity Intelligence",
+      description: [
+        "Advanced cybersecurity solutions (AI-augmented SOC & SIEM, threat detection, incident response)",
+        "Proactive protection against targeted cyber attacks"
+      ],
+      icon: Shield
+    },
+    {
+      title: "AI Security & Compliance",
+      description: [
+        "Securing Data and AI environments",
+        "Compliance with regulations (AI Act, GDPR, ISO 27001, etc.)"
+      ],
+      icon: Lock
+    },
+    {
+      title: "Risk Management & Resilience",
+      description: [
+        "Managing risks related to data and infrastructure",
+        "Business Continuity Plans (BCP) and Disaster Recovery Plans (DRP)"
+      ],
+      icon: Database
+    },
+    {
+      title: "Ethical AI & Data Governance",
+      description: [
+        "Ethical governance of data and AI systems",
+        "Management of privacy and user consent"
+      ],
+      icon: Users
+    }
+  ] : [
+    {
+      title: "Cybersecurity Intelligence",
+      description: [
+        "Solutions avancées de cybersécurité (SOC & SIEM augmentés par l'IA, détection des menaces, réponse aux incidents)",
+        "Protection proactive contre les cyberattaques ciblées"
+      ],
+      icon: Shield
+    },
+    {
+      title: "AI Security & Compliance",
+      description: [
+        "Sécurisation des environnements Data et IA",
+        "Mise en conformité avec les réglementations (AI Act, GDPR, ISO 27001, etc.)"
+      ],
+      icon: Lock
+    },
+    {
+      title: "Risk Management & Resilience",
+      description: [
+        "Gestion des risques liés aux données et aux infrastructures",
+        "Plans de continuité d'activité (BCP) et de reprise après sinistre (DRP)"
+      ],
+      icon: Database
+    },
+    {
+      title: "Ethical AI & Data Governance",
+      description: [
+        "Gouvernance éthique des données et des systèmes IA",
+        "Gestion de la confidentialité et des consentements pour les utilisateurs"
+      ],
+      icon: Users
+    }
+  ];
   
   return (
     <div className="min-h-screen flex flex-col">
@@ -54,11 +90,11 @@ const SecureEcosystemsPage = () => {
         {/* Header section with increased spacing */}
         <section className="bg-[#F6F6F6] pt-32 pb-16">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-[#F6F6F6]">
-              Secure & Trusted Ecosystems
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-[#403AF2]">
+              {t('services.secure.title')}
             </h1>
             <p className="text-xl max-w-3xl text-black">
-              Créer des écosystèmes intelligents sécurisés, conformes aux réglementations, résilients et capables de soutenir une innovation responsable
+              {t('services.secure.description')}
             </p>
           </div>
         </section>
@@ -79,7 +115,7 @@ const SecureEcosystemsPage = () => {
                         <div className="p-3 bg-skillia-blue/10 rounded-lg text-skillia-blue group-hover:bg-skillia-blue/20 transition-colors">
                           <Icon size={24} />
                         </div>
-                        <CardTitle className="text-xl font-semibold text-[#F6F6F6]">
+                        <CardTitle className="text-xl font-semibold text-[#403AF2]">
                           {service.title}
                         </CardTitle>
                       </div>

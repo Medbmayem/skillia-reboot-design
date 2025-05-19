@@ -45,7 +45,7 @@ const ServiceSection = () => {
     <section id="services" className="section bg-white">
       <div className="container mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-skillia-blue">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#403AF2]">
             {t('services.title')}
           </h2>
           <p className="text-lg text-skillia-blue opacity-80">
@@ -65,7 +65,7 @@ const ServiceSection = () => {
                   <div className="text-skillia-blue mb-4">
                     {service.icon}
                   </div>
-                  <CardTitle className="text-xl font-semibold text-skillia-blue">
+                  <CardTitle className="text-xl font-semibold text-[#403AF2]">
                     {service.title}
                   </CardTitle>
                 </CardHeader>

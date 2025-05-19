@@ -21,6 +21,18 @@ export const translations = {
     'nav.about': 'Nous découvrir',
     'nav.contact': 'Contact',
     
+    // Hero Section
+    'hero.subtitle': 'Nous vous accompagnons dans la transition vers un Business Intelligent en intégrant l\'IA et la Data au cœur de votre stratégie.',
+    'hero.services.button': 'Découvrir nos services',
+    'hero.contact.button': 'Prendre rendez-vous',
+    
+    // Vision section
+    'vision.title': 'Notre Vision',
+    'vision.paragraph1': 'Chez Skillia, nous croyons que la transformation des entreprises par l\'IA et la Data est une évolution inévitable et fondamentale.',
+    'vision.paragraph2': 'Ces technologies redéfinissent les règles du jeu, transformant non seulement les outils, mais aussi les modèles économiques, les décisions stratégiques, et la manière de créer de la valeur.',
+    'vision.paragraph3': 'Adopter l\'IA et la Data n\'est plus une option : c\'est le moteur qui façonne l\'avenir des entreprises.',
+    'vision.button': 'En Savoir Plus',
+    
     // Services
     'services.title': 'Nos Services Spécialisés',
     'services.subtitle': 'Boostez votre transformation numérique grâce à des écosystèmes intelligents, sécurisés et performants.',
@@ -47,6 +59,21 @@ export const translations = {
     'tech.service4.point1': 'Adoption d\'une approche AIOps pour l\'industrialisation des plateformes',
     'tech.service4.point2': 'Amélioration des performances des systèmes IA/Data tout en réduisant les coûts opérationnels',
     
+    // Business Transformation Page
+    'business.subtitle': 'Transformer les modèles business en exploitant l\'IA et la Data pour créer des entreprises plus intelligentes, plus performantes et prêtes pour l\'avenir.',
+    
+    // About Section
+    'about.title': 'Notre Mission et Nos Valeurs',
+    'about.subtitle': 'Transformez votre entreprise en combinant advisory, technologies de pointe et programmes de formation adaptés.',
+    'about.since': 'Depuis 2021',
+    'about.button': 'En savoir plus sur notre équipe',
+    
+    // Contact Section
+    'contact.title': 'Contactez-nous',
+    'contact.subtitle': 'Discutons de vos besoins et de comment nous pouvons vous accompagner dans vos projets',
+    'contact.details': 'Nos coordonnées',
+    'contact.send': 'Envoyer',
+    
     // Language selector
     'language': 'FR',
     'language.switch': 'Switch to English',
@@ -57,6 +84,18 @@ export const translations = {
     'nav.services': 'Services',
     'nav.about': 'About Us',
     'nav.contact': 'Contact',
+    
+    // Hero Section
+    'hero.subtitle': 'We guide you in the transition to Intelligent Business by integrating AI and Data at the core of your strategy.',
+    'hero.services.button': 'Discover our services',
+    'hero.contact.button': 'Book a meeting',
+    
+    // Vision section
+    'vision.title': 'Our Vision',
+    'vision.paragraph1': 'At Skillia, we believe that transforming businesses through AI and Data is an inevitable and fundamental evolution.',
+    'vision.paragraph2': 'These technologies are redefining the rules of the game, transforming not only tools, but also business models, strategic decisions, and how value is created.',
+    'vision.paragraph3': 'Adopting AI and Data is no longer an option: it\'s the driving force shaping the future of businesses.',
+    'vision.button': 'Learn More',
     
     // Services
     'services.title': 'Our Specialized Services',
@@ -83,6 +122,21 @@ export const translations = {
     'tech.service4.title': 'Performance Industrialization',
     'tech.service4.point1': 'Adoption of an AIOps approach for platform industrialization',
     'tech.service4.point2': 'Improvement of AI/Data systems performance while reducing operational costs',
+    
+    // Business Transformation Page
+    'business.subtitle': 'Transform business models by leveraging AI and Data to create smarter, more effective companies ready for the future.',
+    
+    // About Section
+    'about.title': 'Our Mission and Values',
+    'about.subtitle': 'Transform your business by combining advisory, cutting-edge technologies and tailored training programs.',
+    'about.since': 'Since 2021',
+    'about.button': 'Learn more about our team',
+    
+    // Contact Section
+    'contact.title': 'Contact Us',
+    'contact.subtitle': 'Let\'s discuss your needs and how we can support you in your projects',
+    'contact.details': 'Our Contact Details',
+    'contact.send': 'Send',
     
     // Language selector
     'language': 'EN',

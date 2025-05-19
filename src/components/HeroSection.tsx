@@ -1,8 +1,11 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const HeroSection = () => {
+  const { t } = useLanguage();
+  
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -26,7 +29,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-skillia-blue opacity-80 mb-8 md:pr-10 max-w-xl">
-              Nous vous accompagnons dans la transition vers un Business Intelligent en intégrant l'IA et la Data au cœur de votre stratégie.
+              {t('hero.subtitle') || "Nous vous accompagnons dans la transition vers un Business Intelligent en intégrant l'IA et la Data au cœur de votre stratégie."}
             </p>
             
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 z-20 relative">
@@ -34,14 +37,14 @@ const HeroSection = () => {
                 className="bg-skillia-blue hover:bg-opacity-90 text-white px-6 py-4 text-base"
                 onClick={() => scrollToSection('services')}
               >
-                Découvrir nos services
+                {t('hero.services.button') || "Découvrir nos services"}
               </Button>
               <Button 
                 variant="outline" 
                 className="border-skillia-blue text-skillia-blue hover:bg-skillia-gray px-6 py-4 text-base"
                 onClick={() => scrollToSection('contact')}
               >
-                Prendre rendez-vous
+                {t('hero.contact.button') || "Prendre rendez-vous"}
               </Button>
             </div>
           </div>
