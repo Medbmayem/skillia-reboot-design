@@ -69,7 +69,7 @@ export default {
 					pink: "#FA2A88",
 					lightblue: "#DCE8FF",
 					white: "#FFFFFF",
-					gray: "#F0F0F0",
+					gray: "#F6F6F6",  // Updated from #F0F0F0 to #F6F6F6
 					"gray-medium": "#C2C2C2",
 					"gray-dark": "#6E6E6E"
 				}

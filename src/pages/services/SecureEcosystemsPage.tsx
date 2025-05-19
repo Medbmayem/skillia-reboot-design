@@ -52,9 +52,9 @@ const SecureEcosystemsPage = () => {
       
       <main className="flex-grow">
         {/* Header section with increased spacing */}
-        <section className="bg-[#F0F0F0] pt-32 pb-16">
+        <section className="bg-[#F6F6F6] pt-32 pb-16">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-skillia-blue">
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-[#F6F6F6]">
               Secure & Trusted Ecosystems
             </h1>
             <p className="text-xl max-w-3xl text-black">
@@ -79,7 +79,7 @@ const SecureEcosystemsPage = () => {
                         <div className="p-3 bg-skillia-blue/10 rounded-lg text-skillia-blue group-hover:bg-skillia-blue/20 transition-colors">
                           <Icon size={24} />
                         </div>
-                        <CardTitle className="text-xl font-semibold text-skillia-blue">
+                        <CardTitle className="text-xl font-semibold text-[#F6F6F6]">
                           {service.title}
                         </CardTitle>
                       </div>
