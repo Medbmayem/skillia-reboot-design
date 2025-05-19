@@ -16,7 +16,7 @@ const AboutSection = () => {
               />
               <div className="absolute -bottom-5 -right-5 bg-skillia-blue p-4 md:p-6 rounded-lg shadow-lg">
                 <p className="text-white font-semibold text-lg md:text-xl">
-                  Depuis 2015
+                  Depuis 2021
                 </p>
               </div>
             </div>
@@ -28,7 +28,7 @@ const AboutSection = () => {
             </h2>
             
             <p className="text-lg mb-6 text-skillia-blue opacity-80">
-              Chez Skillia, nous comprenons que la révolution numérique transforme tous les secteurs d'activité. Notre mission est d'accompagner les entreprises dans cette transition avec des solutions intelligentes et sécurisées.
+              Transformez votre entreprise en combinant advisory, technologies de pointe et programmes de formation adaptés.
             </p>
             
             <div className="space-y-4 mb-8">
@@ -38,10 +38,13 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-skillia-blue">
-                    Excellence Technique
+                    Advise
                   </h3>
                   <p className="text-skillia-blue opacity-80">
-                    Nous maintenons une veille technologique constante pour vous proposer les solutions les plus innovantes.
+                    A travers notre compréhension du contexte métier, nous identifions les opportunités offertes par les techs AI-Driven pour définir une stratégie claire et des objectifs mesurables.
+                  </p>
+                  <p className="text-skillia-blue opacity-80 mt-2">
+                    Nous vous aidons à prioriser les initiatives à fort impact et à bâtir une feuille de route alignée avec vos ambitions stratégiques.
                   </p>
                 </div>
               </div>
@@ -52,10 +55,10 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-skillia-blue">
-                    Sécurité Sans Compromis
+                    Implement
                   </h3>
                   <p className="text-skillia-blue opacity-80">
-                    La protection des données et systèmes de nos clients est notre priorité absolue.
+                    Nous concevons et mettons en œuvre des projets technologiques industrialisables qui exploitent l'IA, la data et les solutions Cloud dans un écosystème sécurisé et durable. Nous sélectionnons les outils et les plateformes les plus adaptés, pilotons leur déploiement de bout en bout et assurons le suivi des performances pour garantir des résultats mesurables.
                   </p>
                 </div>
               </div>
@@ -66,10 +69,10 @@ const AboutSection = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2 text-skillia-blue">
-                    Approche Collaborative
+                    Enable
                   </h3>
                   <p className="text-skillia-blue opacity-80">
-                    Nous travaillons en étroite collaboration avec nos clients pour développer des solutions sur mesure.
+                    Nous préparons votre organisation à tirer le meilleur parti de l'IA et des modern techs. Nos programmes d'acculturation et de learning renforcent la culture d'entreprise AI-Driven, favorisent l'adhésion aux nouvelles pratiques et créent une culture d'innovation. Votre organisation gagne ainsi en agilité, en expertise, et en impact durable.
                   </p>
                 </div>
               </div>
