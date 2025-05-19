@@ -10,25 +10,28 @@ import AboutUsPage from "./pages/AboutUsPage";
 import BusinessTransformationPage from "./pages/services/BusinessTransformationPage";
 import SecureEcosystemsPage from "./pages/services/SecureEcosystemsPage";
 import TechnologyFoundationsPage from "./pages/services/TechnologyFoundationsPage";
+import { LanguageProvider } from "./contexts/LanguageContext";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<AboutUsPage />} />
-          <Route path="/services/business-transformation" element={<BusinessTransformationPage />} />
-          <Route path="/services/secure-ecosystems" element={<SecureEcosystemsPage />} />
-          <Route path="/services/technology-foundations" element={<TechnologyFoundationsPage />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <LanguageProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<AboutUsPage />} />
+            <Route path="/services/business-transformation" element={<BusinessTransformationPage />} />
+            <Route path="/services/secure-ecosystems" element={<SecureEcosystemsPage />} />
+            <Route path="/services/technology-foundations" element={<TechnologyFoundationsPage />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </LanguageProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );

@@ -3,10 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t } = useLanguage();
 
   const scrollToSection = (sectionId: string) => {
     if (location.pathname === '/') {
@@ -39,6 +42,13 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
+          <Link 
+            to="/" 
+            className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors"
+            onClick={handleLinkClick}
+          >
+            {t('nav.home')}
+          </Link>
           <a 
             href="#services" 
             className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors"
@@ -47,14 +57,14 @@ const Navbar = () => {
               scrollToSection('services');
             }}
           >
-            Services
+            {t('nav.services')}
           </a>
           <Link 
             to="/about" 
             className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors"
             onClick={handleLinkClick}
           >
-            Nous découvrir
+            {t('nav.about')}
           </Link>
           <a 
             href="#contact" 
@@ -64,23 +74,34 @@ const Navbar = () => {
               scrollToSection('contact');
             }}
           >
-            Contact
+            {t('nav.contact')}
           </a>
+          <LanguageSwitcher />
         </nav>
 
         {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-skillia-blue"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <Menu />
-        </button>
+        <div className="md:hidden flex items-center">
+          <LanguageSwitcher />
+          <button 
+            className="ml-4 text-skillia-blue"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <Menu />
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <div className="container py-4 flex flex-col space-y-4">
+            <Link 
+              to="/" 
+              className="text-skillia-blue py-2 font-medium"
+              onClick={handleLinkClick}
+            >
+              {t('nav.home')}
+            </Link>
             <a 
               href="#services" 
               className="text-skillia-blue py-2 font-medium"
@@ -89,14 +110,14 @@ const Navbar = () => {
                 scrollToSection('services');
               }}
             >
-              Services
+              {t('nav.services')}
             </a>
             <Link 
               to="/about" 
               className="text-skillia-blue py-2 font-medium"
               onClick={handleLinkClick}
             >
-              Nous découvrir
+              {t('nav.about')}
             </Link>
             <a 
               href="#contact" 
@@ -106,7 +127,7 @@ const Navbar = () => {
                 scrollToSection('contact');
               }}
             >
-              Contact
+              {t('nav.contact')}
             </a>
           </div>
         </div>

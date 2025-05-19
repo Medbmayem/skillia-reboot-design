@@ -4,47 +4,50 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Server, Cloud, Code, Zap } from 'lucide-react';
-
-const services = [
-  {
-    title: "Data & AI Platforms & Architecture",
-    description: [
-      "Conception et déploiement de plateformes Data AI-driven",
-      "Conception des architectures Data-Driven et AI-centric"
-    ],
-    icon: Server
-  },
-  {
-    title: "Cloud & Data Infrastructure",
-    description: [
-      "Migration et optimisation des environnements Cloud pour des charges intensives en IA et Data",
-      "Plateformes technologiques robustes pour soutenir des modèles business complexes"
-    ],
-    icon: Cloud
-  },
-  {
-    title: "DevSecOps",
-    description: [
-      "Intégration de la sécurité dans les pipelines DevOps",
-      "Automatisation des tests de sécurité dans les déploiements"
-    ],
-    icon: Code
-  },
-  {
-    title: "Performance Industrialization",
-    description: [
-      "Adoption d'une approche AIOps pour l'industrialisation des plateformes",
-      "Amélioration des performances des systèmes IA/Data tout en réduisant les coûts opérationnels"
-    ],
-    icon: Zap
-  }
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const TechnologyFoundationsPage = () => {
+  const { t } = useLanguage();
+  
   // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
+  const services = [
+    {
+      title: t('tech.service1.title'),
+      description: [
+        t('tech.service1.point1'),
+        t('tech.service1.point2')
+      ],
+      icon: Server
+    },
+    {
+      title: t('tech.service2.title'),
+      description: [
+        t('tech.service2.point1'),
+        t('tech.service2.point2')
+      ],
+      icon: Cloud
+    },
+    {
+      title: t('tech.service3.title'),
+      description: [
+        t('tech.service3.point1'),
+        t('tech.service3.point2')
+      ],
+      icon: Code
+    },
+    {
+      title: t('tech.service4.title'),
+      description: [
+        t('tech.service4.point1'),
+        t('tech.service4.point2')
+      ],
+      icon: Zap
+    }
+  ];
   
   return (
     <div className="min-h-screen flex flex-col">
@@ -55,10 +58,10 @@ const TechnologyFoundationsPage = () => {
         <section className="bg-[#F6F6F6] pt-32 pb-16">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-8 text-[#F6F6F6]">
-              Advanced Technology Foundations
+              {t('services.technology.title')}
             </h1>
             <p className="text-xl max-w-3xl text-black">
-              Déployer des fondations technologiques performantes pour soutenir l'IA, la Data et la cybersécurité à grande échelle
+              {t('tech.subtitle')}
             </p>
           </div>
         </section>
