@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Brain, BarChart3, Robot, Database, Users } from 'lucide-react';
+import { Brain, BarChart3, Bot, Database, Users } from 'lucide-react';
 
 const services = [
   {
@@ -28,7 +28,7 @@ const services = [
       "Automatisation des workflows grâce à l'IA et à la Data",
       "Solutions d'hyper-automatisation augmentées par l'Agentic AI"
     ],
-    icon: Robot
+    icon: Bot
   },
   {
     title: "AI-Powered Data Management",
