@@ -23,10 +23,10 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 z-20 relative">
-              <Button className="bg-skillia-blue hover:bg-opacity-90 text-white px-8 py-6 text-lg">
+              <Button className="bg-skillia-blue hover:bg-opacity-90 text-white px-6 py-4 text-base">
                 Découvrir nos services
               </Button>
-              <Button variant="outline" className="border-skillia-blue text-skillia-blue hover:bg-skillia-gray px-8 py-6 text-lg">
+              <Button variant="outline" className="border-skillia-blue text-skillia-blue hover:bg-skillia-gray px-6 py-4 text-base">
                 Prendre rendez-vous
               </Button>
             </div>
