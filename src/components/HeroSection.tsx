@@ -22,7 +22,7 @@ const HeroSection = () => {
               Nous vous accompagnons dans la transition vers un Business Intelligent en intégrant l'IA et la Data au cœur de votre stratégie.
             </p>
             
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 z-20 relative">
               <Button className="bg-skillia-blue hover:bg-opacity-90 text-white px-8 py-6 text-lg">
                 Découvrir nos services
               </Button>
