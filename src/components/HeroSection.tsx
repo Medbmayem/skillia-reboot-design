@@ -15,7 +15,7 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-12 md:mb-0 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-skillia-blue">
-              Solutions avancées en IA et cybersécurité
+              Nous vous accompagnons dans la transition vers un Business Intelligent en intégrant l'IA et la Data au cœur de votre stratégie.
             </h1>
             
             <p className="text-lg md:text-xl text-skillia-blue opacity-80 mb-8 md:pr-10 max-w-xl">
