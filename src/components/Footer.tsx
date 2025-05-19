@@ -12,6 +12,9 @@ const Footer = () => {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
+    } else {
+      // If not on home page, navigate to home page with anchor
+      window.location.href = `/#${sectionId}`;
     }
   };
 
@@ -71,52 +74,37 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/#services" 
+                <a 
+                  href="#services" 
                   className="text-black opacity-80 hover:opacity-100 transition-colors"
                   onClick={(e) => {
-                    if (location.pathname === '/') {
-                      e.preventDefault();
-                      scrollToSection('services');
-                    } else {
-                      handleLinkClick();
-                    }
+                    e.preventDefault();
+                    scrollToSection('services');
                   }}
                 >
                   Services
-                </Link>
+                </a>
               </li>
               <li>
                 <Link 
-                  to="/#about" 
+                  to="/about" 
                   className="text-black opacity-80 hover:opacity-100 transition-colors"
-                  onClick={(e) => {
-                    if (location.pathname === '/') {
-                      e.preventDefault();
-                      scrollToSection('about');
-                    } else {
-                      handleLinkClick();
-                    }
-                  }}
+                  onClick={handleLinkClick}
                 >
-                  À propos
+                  Nous découvrir
                 </Link>
               </li>
               <li>
-                <Link 
-                  to="/#contact" 
+                <a 
+                  href="#contact" 
                   className="text-black opacity-80 hover:opacity-100 transition-colors"
                   onClick={(e) => {
-                    if (location.pathname === '/') {
-                      e.preventDefault();
-                      scrollToSection('contact');
-                    } else {
-                      handleLinkClick();
-                    }
+                    e.preventDefault();
+                    scrollToSection('contact');
                   }}
                 >
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
