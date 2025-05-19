@@ -10,24 +10,9 @@ const AboutSection = () => {
     <section id="about" className="section bg-skillia-gray">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="animate-fade-in">
-            <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1483058712412-4245e9b90334"
-                alt="Skillia Team"
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
-              <div className="absolute -bottom-5 -right-5 bg-skillia-blue p-4 md:p-6 rounded-lg shadow-lg">
-                <p className="text-white font-semibold text-lg md:text-xl">
-                  {language === 'en' ? 'Since 2021' : 'Depuis 2021'}
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="animate-fade-in order-2 md:order-1">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#403AF2]">
-              {language === 'en' ? 'Our Mission and Values' : 'Notre Mission et Nos Valeurs'}
+              {language === 'en' ? 'Our Approach' : 'Notre Approche'}
             </h2>
             
             <p className="text-lg mb-6 text-skillia-blue opacity-80">
@@ -94,6 +79,21 @@ const AboutSection = () => {
             <Button className="bg-skillia-blue hover:bg-opacity-90 text-white">
               {language === 'en' ? 'Learn more about our team' : 'En savoir plus sur notre équipe'}
             </Button>
+          </div>
+          
+          <div className="animate-fade-in order-1 md:order-2" style={{ animationDelay: '0.2s' }}>
+            <div className="relative">
+              <img
+                src="https://images.unsplash.com/photo-1483058712412-4245e9b90334"
+                alt="Skillia Team"
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+              <div className="absolute -bottom-5 -right-5 bg-skillia-blue p-4 md:p-6 rounded-lg shadow-lg">
+                <p className="text-white font-semibold text-lg md:text-xl">
+                  {language === 'en' ? 'Since 2021' : 'Depuis 2021'}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

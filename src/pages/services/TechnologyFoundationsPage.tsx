@@ -57,7 +57,7 @@ const TechnologyFoundationsPage = () => {
         {/* Header section with increased spacing */}
         <section className="bg-[#F6F6F6] pt-32 pb-16">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-[#F6F6F6]">
+            <h1 className="text-4xl md:text-5xl font-bold mb-8 text-[#403AF2]">
               {t('services.technology.title')}
             </h1>
             <p className="text-xl max-w-3xl text-black">
@@ -82,7 +82,7 @@ const TechnologyFoundationsPage = () => {
                         <div className="p-3 bg-skillia-blue/10 rounded-lg text-skillia-blue group-hover:bg-skillia-blue/20 transition-colors">
                           <Icon size={24} />
                         </div>
-                        <CardTitle className="text-xl font-semibold text-[#F6F6F6]">
+                        <CardTitle className="text-xl font-semibold text-[#403AF2]">
                           {service.title}
                         </CardTitle>
                       </div>
