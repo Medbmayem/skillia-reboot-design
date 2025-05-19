@@ -64,9 +64,14 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				skillia: {
-					blue: "#1A1F2C",
-					gray: "#F3F3F3",
-					"gray-dark": "#8E9196"
+					blue: "#2F2F9B",
+					purple: "#403AF2",
+					pink: "#FA2A88",
+					lightblue: "#DCE8FF",
+					white: "#FFFFFF",
+					gray: "#F0F0F0",
+					"gray-medium": "#C2C2C2",
+					"gray-dark": "#6E6E6E"
 				}
 			},
 			fontFamily: {
