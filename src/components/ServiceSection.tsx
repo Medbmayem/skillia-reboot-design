@@ -42,7 +42,7 @@ const ServiceSection = () => {
             Nos Services Spécialisés
           </h2>
           <p className="text-lg text-skillia-blue opacity-80">
-            Découvrez comment nos solutions innovantes peuvent transformer votre entreprise et sécuriser votre avenir numérique
+            Boostez votre transformation numérique grâce à des écosystèmes <span className="text-[#403AF2]">intelligents, sécurisés et performants</span>.
           </p>
         </div>
 
