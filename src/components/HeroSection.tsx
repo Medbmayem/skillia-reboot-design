@@ -19,7 +19,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-skillia-blue opacity-80 mb-8 md:pr-10 max-w-xl">
-              Skillia accompagne votre transformation numérique avec des solutions intelligentes et sécurisées, adaptées aux enjeux de demain.
+              Nous vous accompagnons dans la transition vers un Business Intelligent en intégrant l'IA et la Data au cœur de votre stratégie.
             </p>
             
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -39,11 +39,6 @@ const HeroSection = () => {
                 alt="Digital Transformation Solutions" 
                 className="w-full h-auto rounded object-cover"
               />
-            </div>
-            <div className="absolute -bottom-5 -left-5 bg-skillia-blue p-4 rounded-lg shadow-lg">
-              <p className="text-white font-semibold">
-                +200 clients satisfaits
-              </p>
             </div>
           </div>
         </div>
