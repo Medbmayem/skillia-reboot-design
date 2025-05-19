@@ -21,6 +21,14 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false);
+    }
+  };
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto flex items-center justify-between">
@@ -34,7 +42,14 @@ const Navbar = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#services" className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors">
+          <a 
+            href="#services" 
+            className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('services');
+            }}
+          >
             Services
           </a>
           <a href="#about" className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors">
@@ -66,7 +81,10 @@ const Navbar = () => {
             <a 
               href="#services" 
               className="text-skillia-blue py-2 font-medium"
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('services');
+              }}
             >
               Services
             </a>

@@ -3,6 +3,13 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 lg:pt-52 lg:pb-36 overflow-hidden">
       {/* Background Pattern */}
@@ -23,7 +30,10 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 z-20 relative">
-              <Button className="bg-skillia-blue hover:bg-opacity-90 text-white px-6 py-4 text-base">
+              <Button 
+                className="bg-skillia-blue hover:bg-opacity-90 text-white px-6 py-4 text-base"
+                onClick={() => scrollToSection('services')}
+              >
                 Découvrir nos services
               </Button>
               <Button variant="outline" className="border-skillia-blue text-skillia-blue hover:bg-skillia-gray px-6 py-4 text-base">
