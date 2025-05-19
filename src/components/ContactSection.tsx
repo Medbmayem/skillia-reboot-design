@@ -5,7 +5,29 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Phone, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
+
+// Liste des pays EMEA
+const emeaCountries = [
+  "Allemagne", "Autriche", "Belgique", "Bulgarie", "Chypre", "Croatie", "Danemark", 
+  "Espagne", "Estonie", "Finlande", "France", "Grèce", "Hongrie", "Irlande", "Italie", 
+  "Lettonie", "Lituanie", "Luxembourg", "Malte", "Pays-Bas", "Pologne", "Portugal", 
+  "République tchèque", "Roumanie", "Slovaquie", "Slovénie", "Suède", 
+  "Arabie Saoudite", "Bahreïn", "Émirats arabes unis", "Égypte", "Iran", "Irak", "Israël", 
+  "Jordanie", "Koweït", "Liban", "Oman", "Qatar", "Turquie", "Yémen",
+  "Afrique du Sud", "Algérie", "Angola", "Botswana", "Cameroun", "Côte d'Ivoire", "Éthiopie", 
+  "Ghana", "Kenya", "Maroc", "Maurice", "Mozambique", "Namibie", "Nigéria", "Ouganda", 
+  "Rwanda", "Sénégal", "Tanzanie", "Tunisie", "Zambie", "Zimbabwe"
+];
+
+// Sujets basés sur l'image fournie
+const subjects = [
+  "Skillia services", 
+  "Recruitment", 
+  "Sustainability", 
+  "Learning", 
+  "Partnership"
+];
 
 const ContactSection = () => {
   return (
@@ -41,7 +63,7 @@ const ContactSection = () => {
                     <div className="space-y-2">
                       <div className="flex">
                         <div className="flex items-center px-3 bg-background border border-r-0 border-input rounded-l-md">
-                          <Phone className="h-4 w-4 text-skillia-blue" />
+                          <Mail className="h-4 w-4 text-skillia-blue" />
                           <span className="ml-1">+</span>
                         </div>
                         <Input id="phone" placeholder="Mobile" className="w-full rounded-l-none" />
@@ -55,11 +77,12 @@ const ContactSection = () => {
                         <SelectTrigger className="w-full">
                           <SelectValue placeholder="Pays*" />
                         </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="france">France</SelectItem>
-                          <SelectItem value="belgium">Belgique</SelectItem>
-                          <SelectItem value="switzerland">Suisse</SelectItem>
-                          <SelectItem value="canada">Canada</SelectItem>
+                        <SelectContent className="max-h-80">
+                          {emeaCountries.map((country) => (
+                            <SelectItem key={country} value={country.toLowerCase()}>
+                              {country}
+                            </SelectItem>
+                          ))}
                         </SelectContent>
                       </Select>
                     </div>
@@ -94,11 +117,11 @@ const ContactSection = () => {
                         <SelectValue placeholder="Sujet*" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="project">Nouveau projet</SelectItem>
-                        <SelectItem value="quote">Demande de devis</SelectItem>
-                        <SelectItem value="partnership">Partenariat</SelectItem>
-                        <SelectItem value="support">Support</SelectItem>
-                        <SelectItem value="other">Autre</SelectItem>
+                        {subjects.map((subject) => (
+                          <SelectItem key={subject} value={subject.toLowerCase()}>
+                            {subject}
+                          </SelectItem>
+                        ))}
                       </SelectContent>
                     </Select>
                   </div>
