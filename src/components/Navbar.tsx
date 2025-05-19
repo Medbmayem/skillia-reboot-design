@@ -25,7 +25,11 @@ const Navbar = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <span className="text-xl font-bold text-skillia-blue">SKILLIA</span>
+          <img 
+            src="/lovable-uploads/71f18a5e-02ac-4a09-8b12-6f093d2b9c4c.png" 
+            alt="SKILLIA Logo" 
+            className="h-10" 
+          />
         </a>
         
         {/* Desktop Navigation */}

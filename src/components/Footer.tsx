@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer = () => {
@@ -10,7 +9,11 @@ const Footer = () => {
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-1">
             <div className="mb-4">
-              <span className="text-2xl font-bold">SKILLIA</span>
+              <img 
+                src="/lovable-uploads/71f18a5e-02ac-4a09-8b12-6f093d2b9c4c.png" 
+                alt="SKILLIA Logo" 
+                className="h-10" 
+              />
             </div>
             <p className="text-gray-300 mb-6">
               Solutions avancées en IA et cybersécurité pour les entreprises
