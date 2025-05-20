@@ -54,36 +54,36 @@ const AboutUsPage = () => {
             </p>
             
             <div className="grid gap-8 md:grid-cols-3">
-              <Card className="h-full border-t-4 border-t-skillia-blue hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <h3 className="text-xl font-bold text-[#403AF2] mb-4 text-center">
+              <Card className="h-full bg-[#FA2A88] hover:bg-white transition-colors duration-300 group border-none shadow-md hover:shadow-lg">
+                <CardContent className="pt-6 flex flex-col items-center justify-center h-full">
+                  <h3 className="text-xl font-bold text-white group-hover:text-[#403AF2] mb-4 text-center transition-colors duration-300">
                     Innovation Responsable
                   </h3>
-                  <p className="text-black text-center">
+                  <p className="text-transparent h-0 group-hover:h-auto group-hover:text-black group-hover:mt-4 text-center transition-all duration-300 overflow-hidden group-hover:overflow-visible">
                     Placer l'IA et la Data au service de solutions éthiques, durables
                     et adaptées aux défis de demain
                   </p>
                 </CardContent>
               </Card>
               
-              <Card className="h-full border-t-4 border-t-skillia-blue hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <h3 className="text-xl font-bold text-[#403AF2] mb-4 text-center">
+              <Card className="h-full bg-[#FA2A88] hover:bg-white transition-colors duration-300 group border-none shadow-md hover:shadow-lg">
+                <CardContent className="pt-6 flex flex-col items-center justify-center h-full">
+                  <h3 className="text-xl font-bold text-white group-hover:text-[#403AF2] mb-4 text-center transition-colors duration-300">
                     Excellence Collaborative
                   </h3>
-                  <p className="text-black text-center">
+                  <p className="text-transparent h-0 group-hover:h-auto group-hover:text-black group-hover:mt-4 text-center transition-all duration-300 overflow-hidden group-hover:overflow-visible">
                     Encourager une collaboration transparente entre experts, partneaires et clients 
                     pour atteindre des résultats stratégiques et concrets
                   </p>
                 </CardContent>
               </Card>
               
-              <Card className="h-full border-t-4 border-t-skillia-blue hover:shadow-lg transition-shadow">
-                <CardContent className="pt-6">
-                  <h3 className="text-xl font-bold text-[#403AF2] mb-4 text-center">
+              <Card className="h-full bg-[#FA2A88] hover:bg-white transition-colors duration-300 group border-none shadow-md hover:shadow-lg">
+                <CardContent className="pt-6 flex flex-col items-center justify-center h-full">
+                  <h3 className="text-xl font-bold text-white group-hover:text-[#403AF2] mb-4 text-center transition-colors duration-300">
                     Éthique & confiance
                   </h3>
-                  <p className="text-black text-center">
+                  <p className="text-transparent h-0 group-hover:h-auto group-hover:text-black group-hover:mt-4 text-center transition-all duration-300 overflow-hidden group-hover:overflow-visible">
                     Garantir des écosystèmes numériques sûrs et éthique, où la confiance 
                     est le pilier des relations avec nos clients
                   </p>
