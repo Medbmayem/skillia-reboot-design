@@ -15,8 +15,8 @@ const AboutUsPage = () => {
       <Navbar />
       
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="bg-[#F6F6F6] py-16">
+        {/* Hero Section with increased top padding */}
+        <section className="bg-[#F6F6F6] py-16 pt-32 md:pt-40">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#403AF2]">
               Qui sommes nous ?
