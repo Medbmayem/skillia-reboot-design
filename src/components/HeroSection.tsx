@@ -27,13 +27,11 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-12 md:mb-0 animate-fade-in">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-skillia-blue leading-tight">
-              <span className="text-[#403AF2] relative">
+              <span className="text-[#403AF2]">
                 Smart
-                <span className="absolute bottom-1 left-0 w-full h-1 bg-[#FA2A88] transform translate-y-1"></span>
               </span> Tech. <br />
-              <span className="text-[#403AF2] relative">
+              <span className="text-[#403AF2]">
                 Real
-                <span className="absolute bottom-1 left-0 w-full h-1 bg-[#FA2A88] transform translate-y-1"></span>
               </span> Impact.
             </h1>
             
