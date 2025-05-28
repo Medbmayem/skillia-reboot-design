@@ -17,6 +17,11 @@ const FormationsPage = () => {
     }
   };
 
+  const handleContactClick = () => {
+    // Navigate to home page with contact anchor
+    window.location.href = '/#contact';
+  };
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -33,7 +38,7 @@ const FormationsPage = () => {
             </p>
             <Button 
               className="bg-[#FA2A88] hover:bg-opacity-90 text-white px-8 py-6 text-lg"
-              onClick={() => scrollToSection('contact')}
+              onClick={handleContactClick}
             >
               {t('formations.cta')}
             </Button>
@@ -219,7 +224,7 @@ const FormationsPage = () => {
             </p>
             <Button 
               className="bg-white text-[#403AF2] hover:bg-gray-100 px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
-              onClick={() => window.location.href = '/#contact'}
+              onClick={handleContactClick}
             >
               {t('formations.cta.button')}
             </Button>

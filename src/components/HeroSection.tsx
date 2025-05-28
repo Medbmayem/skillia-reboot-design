@@ -14,6 +14,16 @@ const HeroSection = () => {
     }
   };
 
+  const handleContactClick = () => {
+    // Check if we're on the home page
+    if (window.location.pathname === '/') {
+      scrollToSection('contact');
+    } else {
+      // Navigate to home page with contact anchor
+      window.location.href = '/#contact';
+    }
+  };
+
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 lg:pt-52 lg:pb-36 overflow-hidden">
       {/* Background Animation */}
@@ -49,7 +59,7 @@ const HeroSection = () => {
               <Button 
                 variant="outline" 
                 className="border-skillia-blue text-skillia-blue hover:bg-skillia-gray px-6 py-6 text-base flex items-center shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1"
-                onClick={() => scrollToSection('contact')}
+                onClick={handleContactClick}
               >
                 <Calendar className="mr-2" size={20} />
                 {t('hero.contact.button') || "Prendre rendez-vous"}

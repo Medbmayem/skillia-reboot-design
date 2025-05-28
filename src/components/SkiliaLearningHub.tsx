@@ -15,6 +15,19 @@ const SkiliaLearningHub = () => {
     }, 100);
   };
 
+  const handleContactClick = () => {
+    // Check if we're on the home page
+    if (window.location.pathname === '/') {
+      const section = document.getElementById('contact');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to home page with contact anchor
+      window.location.href = '/#contact';
+    }
+  };
+
   return (
     <section className="py-20 bg-gradient-to-br from-skillia-gray to-white">
       <div className="container mx-auto">
