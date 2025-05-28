@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -9,6 +10,20 @@ import { useToast } from '@/hooks/use-toast';
 import { useForm } from 'react-hook-form';
 import { Mail } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+
+// Interface pour les données du formulaire
+interface ContactFormData {
+  firstname: string;
+  lastname: string;
+  email: string;
+  phone: string;
+  country: string;
+  company: string;
+  industry: string;
+  function: string;
+  subject: string;
+  message: string;
+}
 
 // Liste des pays EMEA
 const emeaCountries = [
@@ -51,7 +66,7 @@ const ContactSection = () => {
   
   const countries = language === 'en' ? emeaCountriesEn : emeaCountries;
   
-  const form = useForm<FormData>({
+  const form = useForm<ContactFormData>({
     defaultValues: {
       firstname: '',
       lastname: '',
@@ -66,12 +81,12 @@ const ContactSection = () => {
     },
   });
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async (data: ContactFormData) => {
     console.log('Submitting form data:', data);
     
     try {
-      // URL de votre formulaire Tally - vous devrez remplacer cette URL par votre vrai formulaire Tally
-      const tallyFormUrl = 'YOUR_TALLY_FORM_URL_HERE';
+      // URL du formulaire Tally - remplacez cette URL par votre vrai formulaire Tally
+      const tallyFormUrl = 'https://tally.so/r/w2jM8k';
       
       // Créer les données du formulaire pour Tally
       const formData = new FormData();
@@ -95,8 +110,8 @@ const ContactSection = () => {
       toast({
         title: language === 'en' ? 'Message sent!' : 'Message envoyé !',
         description: language === 'en' 
-          ? 'Thank you for your message. We will get back to you soon.'
-          : 'Merci pour votre message. Nous vous répondrons rapidement.',
+          ? 'Thank you for your message. We will get back to you soon at contact@skillia.fr.'
+          : 'Merci pour votre message. Nous vous répondrons rapidement à contact@skillia.fr.',
       });
 
       form.reset();
@@ -347,7 +362,7 @@ const ContactSection = () => {
                     <p className="text-sm text-skillia-blue opacity-80">
                       {language === 'en' 
                         ? 'Skillia is committed to protecting and respecting your privacy. Your information will be used exclusively to respond to your request and will not be shared with third parties.'
-                        : 'Skillia is committed to protecting and respecting your privacy. Your information will be used exclusively to respond to your request and will not be shared with third parties.'}
+                        : 'Skillia s\'engage à protéger et à respecter votre vie privée. Vos informations seront utilisées exclusivement pour répondre à votre demande et ne seront pas partagées avec des tiers.'}
                     </p>
 
                     <Button 
