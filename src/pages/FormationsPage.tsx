@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -21,8 +20,14 @@ const FormationsPage = () => {
   };
 
   const handleContactClick = () => {
-    // Navigate to home page with contact anchor
-    navigate('/#contact', { replace: true });
+    // Navigate to home page first, then scroll to contact
+    navigate('/');
+    setTimeout(() => {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 300);
   };
 
   return (
@@ -241,4 +246,3 @@ const FormationsPage = () => {
 };
 
 export default FormationsPage;
-
