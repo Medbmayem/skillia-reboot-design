@@ -1,10 +1,12 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
+import { useToast } from '@/hooks/use-toast';
+import { useForm } from 'react-hook-form';
 import { Mail } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
@@ -45,9 +47,71 @@ const subjects = [
 
 const ContactSection = () => {
   const { language } = useLanguage();
+  const { toast } = useToast();
   
   const countries = language === 'en' ? emeaCountriesEn : emeaCountries;
   
+  const form = useForm<FormData>({
+    defaultValues: {
+      firstname: '',
+      lastname: '',
+      email: '',
+      phone: '',
+      country: '',
+      company: '',
+      industry: '',
+      function: '',
+      subject: '',
+      message: '',
+    },
+  });
+
+  const onSubmit = async (data: FormData) => {
+    console.log('Submitting form data:', data);
+    
+    try {
+      // URL de votre formulaire Tally - vous devrez remplacer cette URL par votre vrai formulaire Tally
+      const tallyFormUrl = 'YOUR_TALLY_FORM_URL_HERE';
+      
+      // Créer les données du formulaire pour Tally
+      const formData = new FormData();
+      formData.append('firstname', data.firstname);
+      formData.append('lastname', data.lastname);
+      formData.append('email', data.email);
+      formData.append('phone', data.phone);
+      formData.append('country', data.country);
+      formData.append('company', data.company);
+      formData.append('industry', data.industry);
+      formData.append('function', data.function);
+      formData.append('subject', data.subject);
+      formData.append('message', data.message);
+
+      const response = await fetch(tallyFormUrl, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors',
+      });
+
+      toast({
+        title: language === 'en' ? 'Message sent!' : 'Message envoyé !',
+        description: language === 'en' 
+          ? 'Thank you for your message. We will get back to you soon.'
+          : 'Merci pour votre message. Nous vous répondrons rapidement.',
+      });
+
+      form.reset();
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: language === 'en' ? 'Error' : 'Erreur',
+        description: language === 'en' 
+          ? 'There was an error sending your message. Please try again.'
+          : 'Une erreur s\'est produite lors de l\'envoi de votre message. Veuillez réessayer.',
+        variant: 'destructive',
+      });
+    }
+  };
+
   return (
     <section id="contact" className="section bg-skillia-gray">
       <div className="container mx-auto">
@@ -66,104 +130,238 @@ const ContactSection = () => {
           <div className="animate-fade-in">
             <Card className="border-t-4 border-t-skillia-blue">
               <CardContent className="p-6">
-                <form className="space-y-6">
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Input id="firstname" placeholder={language === 'en' ? "First name*" : "Prénom*"} className="w-full" />
+                <Form {...form}>
+                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      <FormField
+                        control={form.control}
+                        name="firstname"
+                        rules={{ required: 'Ce champ est requis' }}
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormControl>
+                              <Input 
+                                placeholder={language === 'en' ? "First name*" : "Prénom*"} 
+                                {...field} 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <FormField
+                        control={form.control}
+                        name="lastname"
+                        rules={{ required: 'Ce champ est requis' }}
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormControl>
+                              <Input 
+                                placeholder={language === 'en' ? "Last name*" : "Nom*"} 
+                                {...field} 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
                     </div>
-                    <div className="space-y-2">
-                      <Input id="name" placeholder={language === 'en' ? "Last name*" : "Nom*"} className="w-full" />
-                    </div>
-                  </div>
 
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Input id="email" type="email" placeholder="E-mail*" className="w-full" />
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      <FormField
+                        control={form.control}
+                        name="email"
+                        rules={{ 
+                          required: 'Ce champ est requis',
+                          pattern: {
+                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            message: 'Email invalide'
+                          }
+                        }}
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormControl>
+                              <Input 
+                                type="email" 
+                                placeholder="E-mail*" 
+                                {...field} 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <FormField
+                        control={form.control}
+                        name="phone"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormControl>
+                              <div className="flex">
+                                <div className="flex items-center px-3 bg-background border border-r-0 border-input rounded-l-md">
+                                  <Mail className="h-4 w-4 text-skillia-blue" />
+                                  <span className="ml-1">+</span>
+                                </div>
+                                <Input 
+                                  placeholder={language === 'en' ? "Mobile" : "Mobile"} 
+                                  className="rounded-l-none" 
+                                  {...field} 
+                                />
+                              </div>
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
                     </div>
-                    <div className="space-y-2">
-                      <div className="flex">
-                        <div className="flex items-center px-3 bg-background border border-r-0 border-input rounded-l-md">
-                          <Mail className="h-4 w-4 text-skillia-blue" />
-                          <span className="ml-1">+</span>
-                        </div>
-                        <Input id="phone" placeholder={language === 'en' ? "Mobile" : "Mobile"} className="w-full rounded-l-none" />
-                      </div>
-                    </div>
-                  </div>
 
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Select>
-                        <SelectTrigger className="w-full">
-                          <SelectValue placeholder={language === 'en' ? "Country*" : "Pays*"} />
-                        </SelectTrigger>
-                        <SelectContent className="max-h-80">
-                          {countries.map((country) => (
-                            <SelectItem key={country} value={country.toLowerCase()}>
-                              {country}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      <FormField
+                        control={form.control}
+                        name="country"
+                        rules={{ required: 'Ce champ est requis' }}
+                        render={({ field }) => (
+                          <FormItem>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger>
+                                  <SelectValue placeholder={language === 'en' ? "Country*" : "Pays*"} />
+                                </SelectTrigger>
+                              </FormControl>
+                              <SelectContent className="max-h-80">
+                                {countries.map((country) => (
+                                  <SelectItem key={country} value={country.toLowerCase()}>
+                                    {country}
+                                  </SelectItem>
+                                ))}
+                              </SelectContent>
+                            </Select>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <FormField
+                        control={form.control}
+                        name="company"
+                        rules={{ required: 'Ce champ est requis' }}
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormControl>
+                              <Input 
+                                placeholder={language === 'en' ? "Company*" : "Société*"} 
+                                {...field} 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
                     </div>
-                    <div className="space-y-2">
-                      <Input id="company" placeholder={language === 'en' ? "Company*" : "Société*"} className="w-full" />
+                    
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      <FormField
+                        control={form.control}
+                        name="industry"
+                        rules={{ required: 'Ce champ est requis' }}
+                        render={({ field }) => (
+                          <FormItem>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger>
+                                  <SelectValue placeholder={language === 'en' ? "Industry*" : "Secteur d'activité*"} />
+                                </SelectTrigger>
+                              </FormControl>
+                              <SelectContent>
+                                <SelectItem value="technology">{language === 'en' ? "Technology" : "Technologies"}</SelectItem>
+                                <SelectItem value="finance">{language === 'en' ? "Finance" : "Finance"}</SelectItem>
+                                <SelectItem value="healthcare">{language === 'en' ? "Healthcare" : "Santé"}</SelectItem>
+                                <SelectItem value="retail">{language === 'en' ? "Retail" : "Commerce"}</SelectItem>
+                                <SelectItem value="manufacturing">{language === 'en' ? "Manufacturing" : "Industrie"}</SelectItem>
+                              </SelectContent>
+                            </Select>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <FormField
+                        control={form.control}
+                        name="function"
+                        rules={{ required: 'Ce champ est requis' }}
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormControl>
+                              <Input 
+                                placeholder={language === 'en' ? "Function*" : "Fonction*"} 
+                                {...field} 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
                     </div>
-                  </div>
-                  
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Select>
-                        <SelectTrigger className="w-full">
-                          <SelectValue placeholder={language === 'en' ? "Industry*" : "Secteur d'activité*"} />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="technology">{language === 'en' ? "Technology" : "Technologies"}</SelectItem>
-                          <SelectItem value="finance">{language === 'en' ? "Finance" : "Finance"}</SelectItem>
-                          <SelectItem value="healthcare">{language === 'en' ? "Healthcare" : "Santé"}</SelectItem>
-                          <SelectItem value="retail">{language === 'en' ? "Retail" : "Commerce"}</SelectItem>
-                          <SelectItem value="manufacturing">{language === 'en' ? "Manufacturing" : "Industrie"}</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div className="space-y-2">
-                      <Input id="function" placeholder={language === 'en' ? "Function*" : "Fonction*"} className="w-full" />
-                    </div>
-                  </div>
 
-                  <div className="space-y-2">
-                    <Select>
-                      <SelectTrigger className="w-full">
-                        <SelectValue placeholder={language === 'en' ? "Subject*" : "Sujet*"} />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {subjects.map((subject) => (
-                          <SelectItem key={subject} value={subject.toLowerCase()}>
-                            {subject}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Textarea 
-                      id="message" 
-                      placeholder={language === 'en' ? "Message*" : "Message*"} 
-                      className="w-full min-h-[120px]" 
+                    <FormField
+                      control={form.control}
+                      name="subject"
+                      rules={{ required: 'Ce champ est requis' }}
+                      render={({ field }) => (
+                        <FormItem>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger>
+                                <SelectValue placeholder={language === 'en' ? "Subject*" : "Sujet*"} />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              {subjects.map((subject) => (
+                                <SelectItem key={subject} value={subject.toLowerCase()}>
+                                  {subject}
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
                     />
-                  </div>
 
-                  <p className="text-sm text-skillia-blue opacity-80">
-                    {language === 'en' 
-                      ? 'Skillia is committed to protecting and respecting your privacy. Your information will be used exclusively to respond to your request and will not be shared with third parties.'
-                      : 'Skillia is committed to protecting and respecting your privacy. Your information will be used exclusively to respond to your request and will not be shared with third parties.'}
-                  </p>
+                    <FormField
+                      control={form.control}
+                      name="message"
+                      rules={{ required: 'Ce champ est requis' }}
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormControl>
+                            <Textarea 
+                              placeholder={language === 'en' ? "Message*" : "Message*"} 
+                              className="min-h-[120px]" 
+                              {...field} 
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
 
-                  <Button type="submit" className="w-full bg-skillia-blue hover:bg-opacity-90 text-white">
-                    {language === 'en' ? 'Send' : 'Envoyer'}
-                  </Button>
-                </form>
+                    <p className="text-sm text-skillia-blue opacity-80">
+                      {language === 'en' 
+                        ? 'Skillia is committed to protecting and respecting your privacy. Your information will be used exclusively to respond to your request and will not be shared with third parties.'
+                        : 'Skillia is committed to protecting and respecting your privacy. Your information will be used exclusively to respond to your request and will not be shared with third parties.'}
+                    </p>
+
+                    <Button 
+                      type="submit" 
+                      className="w-full bg-skillia-blue hover:bg-opacity-90 text-white"
+                      disabled={form.formState.isSubmitting}
+                    >
+                      {form.formState.isSubmitting 
+                        ? (language === 'en' ? 'Sending...' : 'Envoi...') 
+                        : (language === 'en' ? 'Send' : 'Envoyer')
+                      }
+                    </Button>
+                  </form>
+                </Form>
               </CardContent>
             </Card>
           </div>
