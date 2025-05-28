@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -19,7 +20,7 @@ const FormationsPage = () => {
   };
 
   const handleContactClick = () => {
-    // Navigate to home page with contact anchor
+    // Navigate to home page with contact anchor for direct display
     navigate('/#contact', { replace: true });
   };
 

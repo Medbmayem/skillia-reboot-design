@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -18,7 +19,7 @@ const SkiliaLearningHub = () => {
   const handleContactClick = () => {
     // Check if we're on the home page
     if (window.location.pathname === '/') {
-      // If on home page, jump directly to contact section
+      // If on home page, jump directly to contact section using anchor
       window.location.hash = 'contact';
     } else {
       // Navigate to home page with contact anchor
