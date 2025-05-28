@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Linkedin } from 'lucide-react';
@@ -25,7 +26,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#F0F0F0] text-skillia-blue">
       <div className="container mx-auto py-12">
-        <div className="grid gap-8 md:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-5">
           <div className="md:col-span-1">
             <div className="mb-4">
               <img 
@@ -88,6 +89,21 @@ const Footer = () => {
                 >
                   Contact
                 </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Formation</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link 
+                  to="/formations" 
+                  className="text-black opacity-80 hover:opacity-100 transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  Formations sur-mesure
+                </Link>
               </li>
             </ul>
           </div>
