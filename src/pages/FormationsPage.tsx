@@ -155,7 +155,7 @@ const FormationsPage = () => {
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <Users className="w-20 h-20 text-[#403AF2] mx-auto mb-6" />
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-skillia-blue mb-4">+50 Formateurs</h3>
+                  <h3 className="text-2xl font-bold text-skillia-blue mb-4">+100 Formateurs</h3>
                   <p className="text-skillia-blue opacity-70">
                     Experts certifiés et évalués dans tous les domaines tech et métiers
                   </p>
