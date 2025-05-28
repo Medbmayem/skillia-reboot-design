@@ -105,6 +105,15 @@ const Footer = () => {
                   Formations sur-mesure
                 </Link>
               </li>
+              <li>
+                <Link 
+                  to="/formations" 
+                  className="text-black opacity-80 hover:opacity-100 transition-colors"
+                  onClick={handleLinkClick}
+                >
+                  Sourcing de formateurs
+                </Link>
+              </li>
             </ul>
           </div>
 
