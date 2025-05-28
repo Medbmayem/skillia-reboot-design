@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 type Language = 'fr' | 'en';
@@ -52,7 +51,7 @@ export const translations = {
     
     // Sourcing
     'formations.sourcing.title': 'Sourcing de formateurs experts',
-    'formations.sourcing.point1': 'Réseau de +50 formateurs évalués (certifiés, terrain, pédagogues)',
+    'formations.sourcing.point1': 'Réseau de +100 formateurs évalués (certifiés, terrain, pédagogues)',
     'formations.sourcing.point2': 'Accompagnement dans le recrutement ponctuel ou récurrent',
     'formations.sourcing.point3': 'Logistique et animation prises en charge',
     'formations.sourcing.point4': 'Thématiques couvertes : IA, cybersécurité, dev, RH, soft skills…',
@@ -161,7 +160,7 @@ export const translations = {
     
     // Sourcing
     'formations.sourcing.title': 'Expert trainer sourcing',
-    'formations.sourcing.point1': 'Network of +50 evaluated trainers (certified, field experience, educators)',
+    'formations.sourcing.point1': 'Network of +100 evaluated trainers (certified, field experience, educators)',
     'formations.sourcing.point2': 'Support in one-time or recurring recruitment',
     'formations.sourcing.point3': 'Logistics and facilitation handled',
     'formations.sourcing.point4': 'Topics covered: AI, cybersecurity, dev, HR, soft skills…',
