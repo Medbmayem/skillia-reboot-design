@@ -18,19 +18,11 @@ const SkiliaLearningHub = () => {
   const handleContactClick = () => {
     // Check if we're on the home page
     if (window.location.pathname === '/') {
-      const section = document.getElementById('contact');
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
+      // If on home page, jump directly to contact section
+      window.location.hash = 'contact';
     } else {
-      // Navigate to home page and then scroll to contact
-      navigate('/', { replace: true });
-      setTimeout(() => {
-        const section = document.getElementById('contact');
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
+      // Navigate to home page with contact anchor
+      navigate('/#contact', { replace: true });
     }
   };
 

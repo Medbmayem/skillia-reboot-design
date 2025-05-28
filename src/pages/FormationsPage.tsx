@@ -19,14 +19,8 @@ const FormationsPage = () => {
   };
 
   const handleContactClick = () => {
-    // Navigate to home page and then scroll to contact
-    navigate('/', { replace: true });
-    setTimeout(() => {
-      const section = document.getElementById('contact');
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
+    // Navigate to home page with contact anchor
+    navigate('/#contact', { replace: true });
   };
 
   return (
