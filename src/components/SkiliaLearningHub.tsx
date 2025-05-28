@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -23,8 +22,14 @@ const SkiliaLearningHub = () => {
         section.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // Navigate to home page with contact anchor
+      // Navigate to home page and then scroll to contact
       window.location.href = '/#contact';
+      setTimeout(() => {
+        const section = document.getElementById('contact');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
     }
   };
 

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -18,8 +17,14 @@ const FormationsPage = () => {
   };
 
   const handleContactClick = () => {
-    // Navigate to home page with contact anchor
+    // Navigate to home page and then scroll to contact
     window.location.href = '/#contact';
+    setTimeout(() => {
+      const section = document.getElementById('contact');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 500);
   };
 
   return (

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -21,6 +20,13 @@ const HeroSection = () => {
     } else {
       // Navigate to home page with contact anchor
       window.location.href = '/#contact';
+      // Wait for navigation and then scroll
+      setTimeout(() => {
+        const section = document.getElementById('contact');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
     }
   };
 
