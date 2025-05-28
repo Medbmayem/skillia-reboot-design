@@ -86,7 +86,7 @@ const Navbar = () => {
             className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors hover:text-[#403AF2] py-2"
             onClick={handleLinkClick}
           >
-            Formation
+            {t('nav.formations')}
           </Link>
           <Link 
             to="/about" 
@@ -150,7 +150,7 @@ const Navbar = () => {
             className="text-skillia-blue py-3 font-medium text-lg border-b border-gray-100 hover:text-[#403AF2] transition-colors"
             onClick={handleLinkClick}
           >
-            Formation
+            {t('nav.formations')}
           </Link>
           <Link 
             to="/about" 
