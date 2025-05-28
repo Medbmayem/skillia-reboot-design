@@ -79,14 +79,14 @@ const Navbar = () => {
               scrollToSection('services');
             }}
           >
-            {t('nav.services')}
+            Consulting
           </a>
           <Link 
             to="/formations" 
             className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors hover:text-[#403AF2] py-2"
             onClick={handleLinkClick}
           >
-            {t('nav.formations')}
+            Formation
           </Link>
           <Link 
             to="/about" 
@@ -143,14 +143,14 @@ const Navbar = () => {
               scrollToSection('services');
             }}
           >
-            {t('nav.services')}
+            Consulting
           </a>
           <Link 
             to="/formations" 
             className="text-skillia-blue py-3 font-medium text-lg border-b border-gray-100 hover:text-[#403AF2] transition-colors"
             onClick={handleLinkClick}
           >
-            {t('nav.formations')}
+            Formation
           </Link>
           <Link 
             to="/about" 

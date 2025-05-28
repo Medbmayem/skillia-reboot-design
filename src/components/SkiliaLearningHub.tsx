@@ -8,6 +8,13 @@ import { Link } from 'react-router-dom';
 const SkiliaLearningHub = () => {
   const { t } = useLanguage();
 
+  const handleFormationsClick = () => {
+    window.location.href = '/formations';
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+  };
+
   return (
     <section className="py-20 bg-gradient-to-br from-skillia-gray to-white">
       <div className="container mx-auto">
@@ -24,17 +31,16 @@ const SkiliaLearningHub = () => {
               </p>
             </div>
             
-            <p className="text-lg text-skillia-blue opacity-80 leading-relaxed">
+            <p className="text-lg text-skillia-blue opacity-80 leading-relaxed mb-12">
               {t('learning.description')}
             </p>
             
-            <Link to="/formations">
-              <Button 
-                className="bg-[#FA2A88] hover:bg-opacity-90 text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
-              >
-                {t('learning.button')}
-              </Button>
-            </Link>
+            <Button 
+              className="bg-[#FA2A88] hover:bg-opacity-90 text-white px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+              onClick={handleFormationsClick}
+            >
+              {t('learning.button')}
+            </Button>
           </div>
 
           {/* Right side - Visual elements */}

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Linkedin } from 'lucide-react';
@@ -66,7 +65,7 @@ const Footer = () => {
                     scrollToSection('services');
                   }}
                 >
-                  Services
+                  Consulting
                 </a>
               </li>
               <li>
@@ -94,7 +93,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-lg font-semibold mb-4">Consulting</h3>
             <ul className="space-y-2">
               <li>
                 <Link 
