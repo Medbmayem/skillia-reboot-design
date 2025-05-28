@@ -5,9 +5,11 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { GraduationCap, Users, BookOpen, Award, Zap, Heart, CheckCircle } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const FormationsPage = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -18,13 +20,13 @@ const FormationsPage = () => {
 
   const handleContactClick = () => {
     // Navigate to home page and then scroll to contact
-    window.location.href = '/#contact';
+    navigate('/', { replace: true });
     setTimeout(() => {
       const section = document.getElementById('contact');
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 500);
+    }, 100);
   };
 
   return (

@@ -2,9 +2,11 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Calendar } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
   
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -18,15 +20,14 @@ const HeroSection = () => {
     if (window.location.pathname === '/') {
       scrollToSection('contact');
     } else {
-      // Navigate to home page with contact anchor
-      window.location.href = '/#contact';
-      // Wait for navigation and then scroll
+      // Navigate to home page and then scroll to contact
+      navigate('/', { replace: true });
       setTimeout(() => {
         const section = document.getElementById('contact');
         if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 500);
+      }, 100);
     }
   };
 

@@ -2,13 +2,14 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { GraduationCap, Users, BookOpen, Award } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const SkiliaLearningHub = () => {
   const { t } = useLanguage();
+  const navigate = useNavigate();
 
   const handleFormationsClick = () => {
-    window.location.href = '/formations';
+    navigate('/formations');
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 100);
@@ -23,13 +24,13 @@ const SkiliaLearningHub = () => {
       }
     } else {
       // Navigate to home page and then scroll to contact
-      window.location.href = '/#contact';
+      navigate('/', { replace: true });
       setTimeout(() => {
         const section = document.getElementById('contact');
         if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 500);
+      }, 100);
     }
   };
 
