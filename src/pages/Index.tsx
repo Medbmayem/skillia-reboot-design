@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import VisionSection from '@/components/VisionSection';
 import ServiceSection from '@/components/ServiceSection';
+import SkiliaLearningHub from '@/components/SkiliaLearningHub';
 import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -17,6 +18,7 @@ const Index = () => {
         <HeroSection />
         <VisionSection />
         <ServiceSection />
+        <SkiliaLearningHub />
         <AboutSection />
         <ContactSection />
       </main>

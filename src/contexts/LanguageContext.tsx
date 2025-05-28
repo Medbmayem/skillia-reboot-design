@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 type Language = 'fr' | 'en';
@@ -18,6 +17,7 @@ export const translations = {
     // Navigation
     'nav.home': 'Accueil',
     'nav.services': 'Services',
+    'nav.formations': 'Formations',
     'nav.about': 'Nous découvrir',
     'nav.contact': 'Contact',
     
@@ -25,6 +25,50 @@ export const translations = {
     'hero.subtitle': 'Nous vous accompagnons dans la transition vers un Business Intelligent en intégrant l\'IA et la Data au cœur de votre stratégie.',
     'hero.services.button': 'Découvrir nos services',
     'hero.contact.button': 'Prendre rendez-vous',
+    
+    // Skillia Learning Hub
+    'learning.title': 'Skillia Learning Hub',
+    'learning.subtitle': 'Formez vos talents, sécurisez vos systèmes.',
+    'learning.description': 'Skillia vous accompagne dans la montée en compétence de vos équipes avec des formations pratiques en IA, automatisation, cybersécurité et métiers digitaux. Nous mettons aussi à votre disposition un réseau de formateurs certifiés.',
+    'learning.button': 'Découvrir nos formations',
+    
+    // Formations Page
+    'formations.title': 'Nos Formations & Sourcing de Formateurs',
+    'formations.subtitle': 'Formez vos équipes aux technologies d\'avenir avec des programmes sur-mesure et des formateurs experts.',
+    'formations.cta': 'Contactez-nous',
+    
+    // Formations custom
+    'formations.custom.title': 'Nos formations sur-mesure',
+    'formations.custom.ai.title': 'Intelligence artificielle appliquée',
+    'formations.custom.ai.description': 'Formations pratiques pour métiers non techniques',
+    'formations.custom.automation.title': 'Automatisation & No-Code',
+    'formations.custom.automation.description': 'Outils et processus d\'automatisation',
+    'formations.custom.cyber.title': 'Cybersécurité opérationnelle',
+    'formations.custom.cyber.description': 'Sensibilisation et pratiques sécurisées',
+    'formations.custom.digital.title': 'Transformation digitale',
+    'formations.custom.digital.description': 'Métiers tech et évolution numérique',
+    'formations.custom.target': '🎯 Ciblées Product Owner, RH, Data, managers métier…',
+    
+    // Sourcing
+    'formations.sourcing.title': 'Sourcing de formateurs experts',
+    'formations.sourcing.point1': 'Réseau de +50 formateurs évalués (certifiés, terrain, pédagogues)',
+    'formations.sourcing.point2': 'Accompagnement dans le recrutement ponctuel ou récurrent',
+    'formations.sourcing.point3': 'Logistique et animation prises en charge',
+    'formations.sourcing.point4': 'Thématiques couvertes : IA, cybersécurité, dev, RH, soft skills…',
+    
+    // Why Skillia
+    'formations.why.title': 'Pourquoi choisir Skillia ?',
+    'formations.why.method.title': 'Méthode pédagogique active',
+    'formations.why.method.description': 'Basée sur des projets réels et concrets',
+    'formations.why.reactivity.title': 'Réactivité & adaptation',
+    'formations.why.reactivity.description': 'Aux besoins métiers spécifiques',
+    'formations.why.quality.title': 'Garantie de qualité',
+    'formations.why.quality.description': 'Cohérence pédagogique assurée',
+    
+    // CTA
+    'formations.cta.title': 'Besoin d\'un programme sur mesure ?',
+    'formations.cta.description': 'Discutons de vos enjeux de formation, nous concevons avec vous un parcours adapté à vos équipes.',
+    'formations.cta.button': 'Contactez Skillia',
     
     // Vision section
     'vision.title': 'Notre Vision',
@@ -82,6 +126,7 @@ export const translations = {
     // Navigation
     'nav.home': 'Home',
     'nav.services': 'Services',
+    'nav.formations': 'Training',
     'nav.about': 'About Us',
     'nav.contact': 'Contact',
     
@@ -89,6 +134,50 @@ export const translations = {
     'hero.subtitle': 'We guide you in the transition to Intelligent Business by integrating AI and Data at the core of your strategy.',
     'hero.services.button': 'Discover our services',
     'hero.contact.button': 'Book a meeting',
+    
+    // Skillia Learning Hub
+    'learning.title': 'Skillia Learning Hub',
+    'learning.subtitle': 'Train your talents, secure your systems.',
+    'learning.description': 'Skillia supports you in upskilling your teams with practical training in AI, automation, cybersecurity and digital professions. We also provide you with a network of certified trainers.',
+    'learning.button': 'Discover our training programs',
+    
+    // Formations Page
+    'formations.title': 'Our Training & Trainer Sourcing',
+    'formations.subtitle': 'Train your teams for future technologies with custom programs and expert trainers.',
+    'formations.cta': 'Contact us',
+    
+    // Formations custom
+    'formations.custom.title': 'Our custom training programs',
+    'formations.custom.ai.title': 'Applied Artificial Intelligence',
+    'formations.custom.ai.description': 'Practical training for non-technical professions',
+    'formations.custom.automation.title': 'Automation & No-Code',
+    'formations.custom.automation.description': 'Automation tools and processes',
+    'formations.custom.cyber.title': 'Operational Cybersecurity',
+    'formations.custom.cyber.description': 'Awareness and secure practices',
+    'formations.custom.digital.title': 'Digital Transformation',
+    'formations.custom.digital.description': 'Tech professions and digital evolution',
+    'formations.custom.target': '🎯 Targeted at Product Owners, HR, Data, business managers…',
+    
+    // Sourcing
+    'formations.sourcing.title': 'Expert trainer sourcing',
+    'formations.sourcing.point1': 'Network of +50 evaluated trainers (certified, field experience, educators)',
+    'formations.sourcing.point2': 'Support in one-time or recurring recruitment',
+    'formations.sourcing.point3': 'Logistics and facilitation handled',
+    'formations.sourcing.point4': 'Topics covered: AI, cybersecurity, dev, HR, soft skills…',
+    
+    // Why Skillia
+    'formations.why.title': 'Why choose Skillia?',
+    'formations.why.method.title': 'Active pedagogical method',
+    'formations.why.method.description': 'Based on real and concrete projects',
+    'formations.why.reactivity.title': 'Reactivity & adaptation',
+    'formations.why.reactivity.description': 'To specific business needs',
+    'formations.why.quality.title': 'Quality guarantee',
+    'formations.why.quality.description': 'Pedagogical consistency assured',
+    
+    // CTA
+    'formations.cta.title': 'Need a custom program?',
+    'formations.cta.description': 'Let\'s discuss your training challenges, we design with you a path adapted to your teams.',
+    'formations.cta.button': 'Contact Skillia',
     
     // Vision section
     'vision.title': 'Our Vision',

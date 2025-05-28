@@ -82,6 +82,13 @@ const Navbar = () => {
             {t('nav.services')}
           </a>
           <Link 
+            to="/formations" 
+            className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors hover:text-[#403AF2] py-2"
+            onClick={handleLinkClick}
+          >
+            {t('nav.formations')}
+          </Link>
+          <Link 
             to="/about" 
             className="text-skillia-blue hover:text-opacity-80 font-medium transition-colors hover:text-[#403AF2] py-2"
             onClick={handleLinkClick}
@@ -117,7 +124,7 @@ const Navbar = () => {
       {/* Mobile Navigation with improved animation */}
       <div 
         className={`md:hidden bg-white shadow-lg absolute w-full left-0 transition-all duration-300 ease-in-out overflow-hidden ${
-          isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+          isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="container py-4 flex flex-col space-y-6 px-6">
@@ -138,6 +145,13 @@ const Navbar = () => {
           >
             {t('nav.services')}
           </a>
+          <Link 
+            to="/formations" 
+            className="text-skillia-blue py-3 font-medium text-lg border-b border-gray-100 hover:text-[#403AF2] transition-colors"
+            onClick={handleLinkClick}
+          >
+            {t('nav.formations')}
+          </Link>
           <Link 
             to="/about" 
             className="text-skillia-blue py-3 font-medium text-lg border-b border-gray-100 hover:text-[#403AF2] transition-colors"
