@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -10,6 +9,7 @@ import { useToast } from '@/hooks/use-toast';
 import { useForm } from 'react-hook-form';
 import { Mail } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { supabase } from '@/integrations/supabase/client';
 
 // Interface pour les données du formulaire
 interface ContactFormData {
@@ -85,27 +85,13 @@ const ContactSection = () => {
     console.log('Submitting form data:', data);
     
     try {
-      // URL du formulaire Tally - remplacez cette URL par votre vrai formulaire Tally
-      const tallyFormUrl = 'https://tally.so/r/w2jM8k';
-      
-      // Créer les données du formulaire pour Tally
-      const formData = new FormData();
-      formData.append('firstname', data.firstname);
-      formData.append('lastname', data.lastname);
-      formData.append('email', data.email);
-      formData.append('phone', data.phone);
-      formData.append('country', data.country);
-      formData.append('company', data.company);
-      formData.append('industry', data.industry);
-      formData.append('function', data.function);
-      formData.append('subject', data.subject);
-      formData.append('message', data.message);
+      const { error } = await supabase
+        .from('contact_messages')
+        .insert([data]);
 
-      const response = await fetch(tallyFormUrl, {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors',
-      });
+      if (error) {
+        throw error;
+      }
 
       toast({
         title: language === 'en' ? 'Message sent!' : 'Message envoyé !',
