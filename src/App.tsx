@@ -11,6 +11,7 @@ import FormationsPage from "./pages/FormationsPage";
 import BusinessTransformationPage from "./pages/services/BusinessTransformationPage";
 import SecureEcosystemsPage from "./pages/services/SecureEcosystemsPage";
 import TechnologyFoundationsPage from "./pages/services/TechnologyFoundationsPage";
+import PlaquettePage from "./pages/PlaquettePage";
 import { LanguageProvider } from "./contexts/LanguageContext";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<AboutUsPage />} />
             <Route path="/formations" element={<FormationsPage />} />
+            <Route path="/plaquette" element={<PlaquettePage />} />
             <Route path="/services/business-transformation" element={<BusinessTransformationPage />} />
             <Route path="/services/secure-ecosystems" element={<SecureEcosystemsPage />} />
             <Route path="/services/technology-foundations" element={<TechnologyFoundationsPage />} />
