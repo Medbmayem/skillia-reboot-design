@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -22,20 +21,22 @@ const PlaquettePage = () => {
         </Button>
       </div>
 
+      {/* White Band with Logo - Top */}
+      <div className="w-full bg-white py-8 print:py-6 flex justify-center">
+        <img 
+          src="/lovable-uploads/71f18a5e-02ac-4a09-8b12-6f093d2b9c4c.png" 
+          alt="Skillia Logo" 
+          className="h-16"
+        />
+      </div>
+
       {/* Header */}
       <header className="bg-gradient-to-r from-[#403AF2] to-[#FA2A88] text-white py-16 print:py-8">
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between">
             <div>
-              <div className="bg-white rounded-lg p-3 inline-block mb-4">
-                <img 
-                  src="/lovable-uploads/71f18a5e-02ac-4a09-8b12-6f093d2b9c4c.png" 
-                  alt="Skillia Logo" 
-                  className="h-12"
-                />
-              </div>
               <h1 className="text-4xl font-bold mb-2">Smart Tech. Real Impact.</h1>
-              <p className="text-xl">Expert en intelligence artificielle et cybersécurité</p>
+              <p className="text-xl">Expert dans la transition vers un business intelligent et secure</p>
             </div>
             <div className="text-right">
               <p className="flex items-center mb-2"><Mail className="mr-2" size={16} /> contact@skillia.fr</p>
@@ -45,9 +46,6 @@ const PlaquettePage = () => {
           </div>
         </div>
       </header>
-
-      {/* White Band - Full Width */}
-      <div className="w-full bg-white py-8 print:py-6"></div>
 
       {/* Vision Section */}
       <section className="py-12 bg-[#F6F6F6] print:py-8">
