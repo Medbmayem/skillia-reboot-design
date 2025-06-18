@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Brain, BarChart3, Lock, Database, Users, GraduationCap, BookOpen, Award, Mail, Phone, Globe } from 'lucide-react';
@@ -223,7 +224,7 @@ const PlaquettePage = () => {
           </div>
           
           <div className="text-center mt-4 pt-3 border-t border-white/20">
-            <p className="text-xs print:text-xs">&copy; 2024 Skillia. Tous droits réservés.</p>
+            <p className="text-xs print:text-xs">&copy; 2025 Skillia. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
