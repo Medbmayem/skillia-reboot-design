@@ -1,7 +1,5 @@
-
 import React, { useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { Shield, Brain, BarChart3, Lock, Database, Users, GraduationCap, BookOpen, Award, Mail, Phone, Globe } from 'lucide-react';
 
 const PlaquettePage = () => {
@@ -9,19 +7,8 @@ const PlaquettePage = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const handlePrint = () => {
-    window.print();
-  };
-
   return (
     <div className="min-h-screen bg-white print:bg-white">
-      {/* Print Button - Hidden when printing */}
-      <div className="fixed top-4 right-4 z-50 print:hidden">
-        <Button onClick={handlePrint} className="bg-[#403AF2] hover:bg-[#403AF2]/90">
-          Imprimer / PDF
-        </Button>
-      </div>
-
       {/* White Band with Logo - Top */}
       <div className="w-full bg-white py-4 print:py-2 flex justify-center">
         <img 
@@ -66,7 +53,7 @@ const PlaquettePage = () => {
         </div>
       </section>
 
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 max-w-6xl">
         {/* Services Section */}
         <section className="py-6 print:py-3">
           <h2 className="text-2xl print:text-xl font-bold text-[#403AF2] mb-6 text-center">Nos Services</h2>
@@ -131,14 +118,14 @@ const PlaquettePage = () => {
           </div>
         </section>
 
-        {/* Skillia Learning Hub - Full width section */}
+        {/* Skillia Learning Hub - Each item on separate line */}
         <section className="py-6 print:py-3 bg-[#F6F6F6] rounded-lg p-4 mb-6">
           <h2 className="text-2xl print:text-xl font-bold text-[#403AF2] mb-4 text-center">Skillia Learning Hub</h2>
           <p className="text-lg print:text-base text-center mb-4 text-gray-800">
             Des formations pratiques pour démocratiser l'IA et la cybersécurité
           </p>
           
-          <div className="grid gap-3 grid-cols-2 md:grid-cols-4">
+          <div className="grid gap-3 grid-cols-1 md:grid-cols-2">
             <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#403AF2]">
               <GraduationCap className="w-6 h-6 text-[#403AF2] mb-2" />
               <h3 className="font-bold text-sm text-gray-800 mb-1">Intelligence Artificielle</h3>
@@ -165,11 +152,11 @@ const PlaquettePage = () => {
           </div>
         </section>
 
-        {/* Valeurs - Full width section */}
+        {/* Valeurs - Each item on separate line */}
         <section className="py-6 print:py-3 mb-6">
           <h2 className="text-2xl print:text-xl font-bold text-[#403AF2] mb-6 text-center">Nos Valeurs</h2>
           
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-4 grid-cols-1">
             <div className="flex items-start gap-3">
               <div className="w-10 h-10 bg-[#403AF2] rounded-full flex items-center justify-center flex-shrink-0">
                 <Brain className="w-5 h-5 text-white" />
