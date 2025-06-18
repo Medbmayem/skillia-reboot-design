@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Shield, Brain, BarChart3, Lock, Database, Users, GraduationCap, BookOpen, Award, Mail, Phone, Globe } from 'lucide-react';
@@ -153,39 +152,33 @@ const PlaquettePage = () => {
           </div>
         </section>
 
-        {/* Valeurs - Each item on separate line */}
+        {/* Valeurs - Back to horizontal layout */}
         <section className="py-6 print:py-3 mb-6">
           <h2 className="text-2xl print:text-xl font-bold text-[#403AF2] mb-6 text-center">Nos Valeurs</h2>
           
-          <div className="grid gap-4 grid-cols-1">
-            <div className="flex items-start gap-3">
-              <div className="w-10 h-10 bg-[#403AF2] rounded-full flex items-center justify-center flex-shrink-0">
-                <Brain className="w-5 h-5 text-white" />
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#403AF2] rounded-full flex items-center justify-center mb-4">
+                <Brain className="w-8 h-8 text-white" />
               </div>
-              <div>
-                <h3 className="text-lg print:text-base font-bold text-gray-800 mb-1">Innovation Responsable</h3>
-                <p className="text-sm print:text-xs text-gray-600">Nous développons des solutions d'IA éthiques et durables qui respectent les valeurs humaines.</p>
-              </div>
+              <h3 className="text-lg print:text-base font-bold text-gray-800 mb-2">Innovation Responsable</h3>
+              <p className="text-sm print:text-xs text-gray-600">Nous développons des solutions d'IA éthiques et durables qui respectent les valeurs humaines.</p>
             </div>
             
-            <div className="flex items-start gap-3">
-              <div className="w-10 h-10 bg-[#FA2A88] rounded-full flex items-center justify-center flex-shrink-0">
-                <Users className="w-5 h-5 text-white" />
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#FA2A88] rounded-full flex items-center justify-center mb-4">
+                <Users className="w-8 h-8 text-white" />
               </div>
-              <div>
-                <h3 className="text-lg print:text-base font-bold text-gray-800 mb-1">Excellence Collaborative</h3>
-                <p className="text-sm print:text-xs text-gray-600">Nous travaillons en partenariat étroit avec nos clients pour garantir leur succès.</p>
-              </div>
+              <h3 className="text-lg print:text-base font-bold text-gray-800 mb-2">Excellence Collaborative</h3>
+              <p className="text-sm print:text-xs text-gray-600">Nous travaillons en partenariat étroit avec nos clients pour garantir leur succès.</p>
             </div>
             
-            <div className="flex items-start gap-3">
-              <div className="w-10 h-10 bg-[#403AF2] rounded-full flex items-center justify-center flex-shrink-0">
-                <Shield className="w-5 h-5 text-white" />
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#403AF2] rounded-full flex items-center justify-center mb-4">
+                <Shield className="w-8 h-8 text-white" />
               </div>
-              <div>
-                <h3 className="text-lg print:text-base font-bold text-gray-800 mb-1">Éthique & Confiance</h3>
-                <p className="text-sm print:text-xs text-gray-600">La sécurité et la confidentialité sont au cœur de toutes nos solutions.</p>
-              </div>
+              <h3 className="text-lg print:text-base font-bold text-gray-800 mb-2">Éthique & Confiance</h3>
+              <p className="text-sm print:text-xs text-gray-600">La sécurité et la confidentialité sont au cœur de toutes nos solutions.</p>
             </div>
           </div>
         </section>
