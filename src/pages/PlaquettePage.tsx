@@ -131,79 +131,76 @@ const PlaquettePage = () => {
           </div>
         </section>
 
-        {/* Two columns layout for Learning Hub and Values */}
-        <div className="grid md:grid-cols-2 gap-8 mb-6">
-          {/* Skillia Learning Hub */}
-          <section className="py-6 print:py-3 bg-[#F6F6F6] rounded-lg p-4">
-            <h2 className="text-2xl print:text-xl font-bold text-[#403AF2] mb-4 text-center">Skillia Learning Hub</h2>
-            <p className="text-lg print:text-base text-center mb-4 text-gray-800">
-              Des formations pratiques pour démocratiser l'IA et la cybersécurité
-            </p>
-            
-            <div className="grid gap-3 grid-cols-2">
-              <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#403AF2]">
-                <GraduationCap className="w-6 h-6 text-[#403AF2] mb-2" />
-                <h3 className="font-bold text-sm text-gray-800 mb-1">Intelligence Artificielle</h3>
-                <p className="text-xs text-gray-600">Formations pratiques pour métiers non-techniques</p>
-              </div>
-              
-              <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#FA2A88]">
-                <BookOpen className="w-6 h-6 text-[#FA2A88] mb-2" />
-                <h3 className="font-bold text-sm text-gray-800 mb-1">Automatisation</h3>
-                <p className="text-xs text-gray-600">Outils No-Code et processus digitaux</p>
-              </div>
-              
-              <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#403AF2]">
-                <Award className="w-6 h-6 text-[#403AF2] mb-2" />
-                <h3 className="font-bold text-sm text-gray-800 mb-1">Cybersécurité</h3>
-                <p className="text-xs text-gray-600">Sensibilisation et opérationnel</p>
-              </div>
-              
-              <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#FA2A88]">
-                <Users className="w-6 h-6 text-[#FA2A88] mb-2" />
-                <h3 className="font-bold text-sm text-gray-800 mb-1">Sourcing Formateurs</h3>
-                <p className="text-xs text-gray-600">Réseau d'experts certifiés</p>
-              </div>
+        {/* Skillia Learning Hub - Full width section */}
+        <section className="py-6 print:py-3 bg-[#F6F6F6] rounded-lg p-4 mb-6">
+          <h2 className="text-2xl print:text-xl font-bold text-[#403AF2] mb-4 text-center">Skillia Learning Hub</h2>
+          <p className="text-lg print:text-base text-center mb-4 text-gray-800">
+            Des formations pratiques pour démocratiser l'IA et la cybersécurité
+          </p>
+          
+          <div className="grid gap-3 grid-cols-2 md:grid-cols-4">
+            <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#403AF2]">
+              <GraduationCap className="w-6 h-6 text-[#403AF2] mb-2" />
+              <h3 className="font-bold text-sm text-gray-800 mb-1">Intelligence Artificielle</h3>
+              <p className="text-xs text-gray-600">Formations pratiques pour métiers non-techniques</p>
             </div>
-          </section>
+            
+            <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#FA2A88]">
+              <BookOpen className="w-6 h-6 text-[#FA2A88] mb-2" />
+              <h3 className="font-bold text-sm text-gray-800 mb-1">Automatisation</h3>
+              <p className="text-xs text-gray-600">Outils No-Code et processus digitaux</p>
+            </div>
+            
+            <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#403AF2]">
+              <Award className="w-6 h-6 text-[#403AF2] mb-2" />
+              <h3 className="font-bold text-sm text-gray-800 mb-1">Cybersécurité</h3>
+              <p className="text-xs text-gray-600">Sensibilisation et opérationnel</p>
+            </div>
+            
+            <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#FA2A88]">
+              <Users className="w-6 h-6 text-[#FA2A88] mb-2" />
+              <h3 className="font-bold text-sm text-gray-800 mb-1">Sourcing Formateurs</h3>
+              <p className="text-xs text-gray-600">Réseau d'experts certifiés</p>
+            </div>
+          </div>
+        </section>
 
-          {/* Valeurs */}
-          <section className="py-6 print:py-3">
-            <h2 className="text-2xl print:text-xl font-bold text-[#403AF2] mb-6 text-center">Nos Valeurs</h2>
-            
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-[#403AF2] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Brain className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-lg print:text-base font-bold text-gray-800 mb-1">Innovation Responsable</h3>
-                  <p className="text-sm print:text-xs text-gray-600">Nous développons des solutions d'IA éthiques et durables qui respectent les valeurs humaines.</p>
-                </div>
+        {/* Valeurs - Full width section */}
+        <section className="py-6 print:py-3 mb-6">
+          <h2 className="text-2xl print:text-xl font-bold text-[#403AF2] mb-6 text-center">Nos Valeurs</h2>
+          
+          <div className="grid gap-4 md:grid-cols-3">
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 bg-[#403AF2] rounded-full flex items-center justify-center flex-shrink-0">
+                <Brain className="w-5 h-5 text-white" />
               </div>
-              
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-[#FA2A88] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Users className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-lg print:text-base font-bold text-gray-800 mb-1">Excellence Collaborative</h3>
-                  <p className="text-sm print:text-xs text-gray-600">Nous travaillons en partenariat étroit avec nos clients pour garantir leur succès.</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-[#403AF2] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Shield className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-lg print:text-base font-bold text-gray-800 mb-1">Éthique & Confiance</h3>
-                  <p className="text-sm print:text-xs text-gray-600">La sécurité et la confidentialité sont au cœur de toutes nos solutions.</p>
-                </div>
+              <div>
+                <h3 className="text-lg print:text-base font-bold text-gray-800 mb-1">Innovation Responsable</h3>
+                <p className="text-sm print:text-xs text-gray-600">Nous développons des solutions d'IA éthiques et durables qui respectent les valeurs humaines.</p>
               </div>
             </div>
-          </section>
-        </div>
+            
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 bg-[#FA2A88] rounded-full flex items-center justify-center flex-shrink-0">
+                <Users className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <h3 className="text-lg print:text-base font-bold text-gray-800 mb-1">Excellence Collaborative</h3>
+                <p className="text-sm print:text-xs text-gray-600">Nous travaillons en partenariat étroit avec nos clients pour garantir leur succès.</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 bg-[#403AF2] rounded-full flex items-center justify-center flex-shrink-0">
+                <Shield className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <h3 className="text-lg print:text-base font-bold text-gray-800 mb-1">Éthique & Confiance</h3>
+                <p className="text-sm print:text-xs text-gray-600">La sécurité et la confidentialité sont au cœur de toutes nos solutions.</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       {/* Contact Footer */}
