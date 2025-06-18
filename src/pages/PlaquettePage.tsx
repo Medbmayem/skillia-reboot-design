@@ -27,11 +27,13 @@ const PlaquettePage = () => {
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between">
             <div>
-              <img 
-                src="/lovable-uploads/71f18a5e-02ac-4a09-8b12-6f093d2b9c4c.png" 
-                alt="Skillia Logo" 
-                className="h-16 mb-4"
-              />
+              <div className="bg-white rounded-lg p-3 inline-block mb-4">
+                <img 
+                  src="/lovable-uploads/71f18a5e-02ac-4a09-8b12-6f093d2b9c4c.png" 
+                  alt="Skillia Logo" 
+                  className="h-12"
+                />
+              </div>
               <h1 className="text-4xl font-bold mb-2">Smart Tech. Real Impact.</h1>
               <p className="text-xl">Expert en intelligence artificielle et cybersécurité</p>
             </div>
