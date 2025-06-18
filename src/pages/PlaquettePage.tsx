@@ -48,7 +48,7 @@ const PlaquettePage = () => {
               Ces technologies redéfinissent les règles du jeu, transformant non seulement les outils, mais aussi les modèles économiques, les décisions stratégiques, et la manière de créer de la valeur.
             </p>
             <p className="text-base print:text-sm text-gray-800 font-semibold">
-              Adopter l'IA et la Data n'est plus une option : c'est le moteur qui façonne l'avenir des entreprises.
+              L'avenir des entreprises se joue dans leur capacité à conjuguer intelligence des données, puissance de l'IA et exigence de sécurité.
             </p>
           </div>
         </div>
