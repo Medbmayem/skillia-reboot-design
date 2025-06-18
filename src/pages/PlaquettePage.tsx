@@ -46,6 +46,9 @@ const PlaquettePage = () => {
         </div>
       </header>
 
+      {/* White Band - Full Width */}
+      <div className="w-full bg-white py-8 print:py-6"></div>
+
       {/* Vision Section */}
       <section className="py-12 bg-[#F6F6F6] print:py-8">
         <div className="container mx-auto px-6">
