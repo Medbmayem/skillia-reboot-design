@@ -57,34 +57,34 @@ const SkiliaLearningHub = () => {
 
           {/* Right side - Visual elements */}
           <div className="lg:w-1/2 relative">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               
               {/* Card 1 - IA */}
-              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 border-l-4 border-[#403AF2]">
-                <GraduationCap className="w-12 h-12 text-[#403AF2] mb-4" />
-                <h3 className="font-bold text-skillia-blue mb-2">Intelligence Artificielle</h3>
-                <p className="text-sm text-skillia-blue opacity-70">Formations pratiques pour métiers non-techniques</p>
+              <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 border-l-4 border-[#403AF2]">
+                <GraduationCap className="w-10 h-10 sm:w-12 sm:h-12 text-[#403AF2] mb-3 sm:mb-4" />
+                <h3 className="font-bold text-base sm:text-lg text-skillia-blue mb-2">Intelligence Artificielle</h3>
+                <p className="text-xs sm:text-sm text-skillia-blue opacity-70">Formations pratiques pour métiers non-techniques</p>
               </div>
 
               {/* Card 2 - Automatisation */}
-              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 border-l-4 border-[#FA2A88] mt-8">
-                <BookOpen className="w-12 h-12 text-[#FA2A88] mb-4" />
-                <h3 className="font-bold text-skillia-blue mb-2">Automatisation</h3>
-                <p className="text-sm text-skillia-blue opacity-70">Outils No-Code et processus digitaux</p>
+              <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 border-l-4 border-[#FA2A88] sm:mt-8">
+                <BookOpen className="w-10 h-10 sm:w-12 sm:h-12 text-[#FA2A88] mb-3 sm:mb-4" />
+                <h3 className="font-bold text-base sm:text-lg text-skillia-blue mb-2">Automatisation</h3>
+                <p className="text-xs sm:text-sm text-skillia-blue opacity-70">Outils No-Code et processus digitaux</p>
               </div>
 
               {/* Card 3 - Cybersécurité */}
-              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 border-l-4 border-[#403AF2]">
-                <Award className="w-12 h-12 text-[#403AF2] mb-4" />
-                <h3 className="font-bold text-skillia-blue mb-2">Cybersécurité</h3>
-                <p className="text-sm text-skillia-blue opacity-70">Sensibilisation et opérationnel</p>
+              <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 border-l-4 border-[#403AF2]">
+                <Award className="w-10 h-10 sm:w-12 sm:h-12 text-[#403AF2] mb-3 sm:mb-4" />
+                <h3 className="font-bold text-base sm:text-lg text-skillia-blue mb-2">Cybersécurité</h3>
+                <p className="text-xs sm:text-sm text-skillia-blue opacity-70">Sensibilisation et opérationnel</p>
               </div>
 
               {/* Card 4 - Sourcing */}
-              <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 border-l-4 border-[#FA2A88] mt-8">
-                <Users className="w-12 h-12 text-[#FA2A88] mb-4" />
-                <h3 className="font-bold text-skillia-blue mb-2">Sourcing Formateurs</h3>
-                <p className="text-sm text-skillia-blue opacity-70">Réseau d'experts certifiés</p>
+              <div className="bg-white p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2 border-l-4 border-[#FA2A88] sm:mt-8">
+                <Users className="w-10 h-10 sm:w-12 sm:h-12 text-[#FA2A88] mb-3 sm:mb-4" />
+                <h3 className="font-bold text-base sm:text-lg text-skillia-blue mb-2">Sourcing Formateurs</h3>
+                <p className="text-xs sm:text-sm text-skillia-blue opacity-70">Réseau d'experts certifiés</p>
               </div>
 
             </div>
