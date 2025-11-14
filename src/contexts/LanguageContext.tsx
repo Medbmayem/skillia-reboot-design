@@ -83,13 +83,13 @@ export const translations = {
     'services.business.title': 'Intelligent Business & Data Transformation',
     'services.business.description': 'Transformer les modèles business en exploitant l\'IA et la Data pour créer des entreprises plus intelligentes, plus performantes et prêtes pour l\'avenir.',
     'services.secure.title': 'Secure & Trusted Ecosystems',
-    'services.secure.description': 'Créer des écosystèmes intelligents sécurisés, conformes aux réglementations, résilients et capables de soutenir une innovation responsable',
+    'services.secure.description': 'Créer des écosystèmes intelligents sécurisés, conformes aux réglementations, résilients et capables de soutenir une innovation responsable.',
     'services.technology.title': 'Advanced Technology Foundations',
-    'services.technology.description': 'Déployer des fondations technologiques performantes pour soutenir l\'IA, la Data et la cybersécurité à grande échelle',
+    'services.technology.description': 'Déployer des fondations technologiques performantes pour soutenir l\'IA, la Data et la cybersécurité à grande échelle.',
     'services.discover': 'Découvrir',
 
     // Technology Foundations Page
-    'tech.subtitle': 'Déployer des fondations technologiques performantes pour soutenir l\'IA, la Data et la cybersécurité à grande échelle',
+    'tech.subtitle': 'Déployer des fondations technologiques performantes pour soutenir l\'IA, la Data et la cybersécurité à grande échelle.',
     'tech.service1.title': 'Data & AI Platforms & Architecture',
     'tech.service1.point1': 'Conception et déploiement de plateformes Data AI-driven',
     'tech.service1.point2': 'Conception des architectures Data-Driven et AI-centric',
@@ -192,13 +192,13 @@ export const translations = {
     'services.business.title': 'Intelligent Business & Data Transformation',
     'services.business.description': 'Transform business models by leveraging AI and Data to create smarter, more effective companies ready for the future.',
     'services.secure.title': 'Secure & Trusted Ecosystems',
-    'services.secure.description': 'Create secure intelligent ecosystems, compliant with regulations, resilient and capable of supporting responsible innovation',
+    'services.secure.description': 'Create secure intelligent ecosystems, compliant with regulations, resilient and capable of supporting responsible innovation.',
     'services.technology.title': 'Advanced Technology Foundations',
-    'services.technology.description': 'Deploy high-performance technology foundations to support AI, Data and cybersecurity at scale',
+    'services.technology.description': 'Deploy high-performance technology foundations to support AI, Data and cybersecurity at scale.',
     'services.discover': 'Learn More',
     
     // Technology Foundations Page
-    'tech.subtitle': 'Deploy high-performance technology foundations to support AI, Data and cybersecurity at scale',
+    'tech.subtitle': 'Deploy high-performance technology foundations to support AI, Data and cybersecurity at scale.',
     'tech.service1.title': 'Data & AI Platforms & Architecture',
     'tech.service1.point1': 'Design and deployment of AI-driven Data platforms',
     'tech.service1.point2': 'Design of Data-Driven and AI-centric architectures',
