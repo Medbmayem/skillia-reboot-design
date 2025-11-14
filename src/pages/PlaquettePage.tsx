@@ -24,7 +24,7 @@ const PlaquettePage = () => {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl print:text-2xl font-bold mb-2">Smart Tech. Real Impact.</h1>
-              <p className="text-lg print:text-base">Expert dans la transition vers un business intelligent et secure</p>
+              <p className="text-lg print:text-base">Expert dans la transition vers un business intelligent et secure.</p>
             </div>
             <div className="text-right text-sm print:text-xs">
               <p className="flex items-center mb-1"><Mail className="mr-2" size={14} /> contact@skillia.fr</p>
@@ -122,32 +122,32 @@ const PlaquettePage = () => {
         <section className="py-6 print:py-3 bg-[#F6F6F6] rounded-lg p-4 mb-6">
           <h2 className="text-2xl print:text-xl font-bold text-[#403AF2] mb-4 text-center">Skillia Learning Hub</h2>
           <p className="text-lg print:text-base text-center mb-4 text-gray-800">
-            Des formations pratiques pour démocratiser l'IA et la cybersécurité
+            Des formations pratiques pour démocratiser l'IA et la cybersécurité.
           </p>
           
           <div className="grid gap-3 grid-cols-1 md:grid-cols-2">
             <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#403AF2]">
               <GraduationCap className="w-6 h-6 text-[#403AF2] mb-2" />
               <h3 className="font-bold text-sm text-gray-800 mb-1">Intelligence Artificielle</h3>
-              <p className="text-xs text-gray-600">Formations pratiques pour métiers non-techniques</p>
+              <p className="text-xs text-gray-600">Formations pratiques pour métiers non-techniques.</p>
             </div>
             
             <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#FA2A88]">
               <BookOpen className="w-6 h-6 text-[#FA2A88] mb-2" />
               <h3 className="font-bold text-sm text-gray-800 mb-1">Automatisation</h3>
-              <p className="text-xs text-gray-600">Outils No-Code et processus digitaux</p>
+              <p className="text-xs text-gray-600">Outils No-Code et processus digitaux.</p>
             </div>
             
             <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#403AF2]">
               <Award className="w-6 h-6 text-[#403AF2] mb-2" />
               <h3 className="font-bold text-sm text-gray-800 mb-1">Cybersécurité</h3>
-              <p className="text-xs text-gray-600">Sensibilisation et opérationnel</p>
+              <p className="text-xs text-gray-600">Sensibilisation et opérationnel.</p>
             </div>
             
             <div className="bg-white p-3 rounded-lg shadow-sm border-l-2 border-[#FA2A88]">
               <Users className="w-6 h-6 text-[#FA2A88] mb-2" />
               <h3 className="font-bold text-sm text-gray-800 mb-1">Sourcing Formateurs</h3>
-              <p className="text-xs text-gray-600">Réseau d'experts certifiés</p>
+              <p className="text-xs text-gray-600">Réseau d'experts certifiés.</p>
             </div>
           </div>
         </section>
