@@ -61,7 +61,7 @@ const AboutUsPage = () => {
                   </h3>
                   <p className="text-transparent h-0 group-hover:h-auto group-hover:text-black group-hover:mt-4 text-center transition-all duration-300 overflow-hidden group-hover:overflow-visible">
                     Placer l'IA et la Data au service de solutions éthiques, durables
-                    et adaptées aux défis de demain
+                    et adaptées aux défis de demain.
                   </p>
                 </CardContent>
               </Card>
