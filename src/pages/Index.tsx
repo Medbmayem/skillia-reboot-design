@@ -70,7 +70,7 @@ const Index = () => {
               {[
                 {
                   title: 'IA & Data',
-                  desc: 'Votre IA doit rapporter. Pas juste fonctionner. Nous partons du business case, pas de l'effet de mode.',
+                  desc: 'Votre IA doit rapporter. Pas juste fonctionner. Nous partons du business case, pas de l\'effet de mode.',
                   items: ['Audit de maturité', 'Stratégie IA', 'Gouvernance data', 'Business case & ROI'],
                   href: '/ia-data',
                   image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80',
