@@ -2,132 +2,133 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import PageBreadcrumb from '@/components/shared/PageBreadcrumb';
-import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 
 const AcademyPage = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="pt-16">
-        <div className="container">
-          <PageBreadcrumb items={[
-            { label: 'Déploiement & adoption', href: '/deploiement-adoption' },
-            { label: 'Skillia Academy' }
-          ]} />
-        </div>
+      <main>
+        <section className="relative min-h-[70vh] flex items-end pb-20">
+          <div className="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=2000&q=80" alt="Formation" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-foreground/10" />
+          </div>
+          <div className="container relative z-10">
+            <nav className="text-xs font-sans text-background/50 mb-6">
+              <Link to="/" className="hover:text-background/80">Skillia</Link>
+              <span className="mx-2">/</span>
+              <Link to="/deploiement-adoption" className="hover:text-background/80">Déploiement & adoption</Link>
+              <span className="mx-2">/</span>
+              <span className="text-background/70">Skillia Academy</span>
+            </nav>
+            <h1 className="text-background text-4xl md:text-5xl lg:text-6xl max-w-4xl leading-[1.1]">
+              Une transformation ne tient<br />
+              <span className="italic font-normal">que si les équipes montent en compétence.</span>
+            </h1>
+          </div>
+        </section>
 
-        <section className="py-16 md:py-24">
+        <section className="py-20 md:py-28">
           <div className="container">
-            <div className="max-w-3xl">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-2 h-8 rounded-full bg-skillia-amber" />
-                <span className="text-sm font-semibold tracking-wider uppercase text-skillia-amber-dark">Skillia Academy</span>
-              </div>
-              <h1 className="mb-6">Une transformation ne tient que si les équipes montent en compétence.</h1>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Des formations conçues par des praticiens du groupe, sur des cas issus du terrain.
+            <div className="max-w-2xl">
+              <p className="editorial-body">
+                Des formations conçues par des praticiens du groupe, sur des cas issus du terrain. Pas de théorie déconnectée — des outils applicables dès le lendemain.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button asChild size="lg" className="bg-skillia-navy hover:bg-skillia-navy/90 text-white">
-                  <Link to="/contact">Demander une session</Link>
-                </Button>
-              </div>
             </div>
           </div>
         </section>
 
         {/* 3 univers */}
-        <section className="section">
+        <section className="pb-24">
           <div className="container">
-            <h2 className="mb-10">Nos univers de formation</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-card rounded-lg border p-6 border-t-4 border-t-skillia-amber">
-                <h3 className="text-lg font-semibold mb-3">Dirigeants & CODIR</h3>
-                <p className="text-sm text-muted-foreground mb-4">Comprendre les enjeux stratégiques de l'IA, de la data et de la cybersécurité pour prendre les bonnes décisions.</p>
-                <ul className="space-y-1.5 text-sm text-muted-foreground">
-                  <li>• Vision stratégique IA & Data</li>
-                  <li>• Enjeux cyber pour dirigeants</li>
-                  <li>• Gouvernance de la transformation</li>
-                </ul>
-              </div>
-              <div className="bg-card rounded-lg border p-6 border-t-4 border-t-skillia-amber">
-                <h3 className="text-lg font-semibold mb-3">Métiers & managers</h3>
-                <p className="text-sm text-muted-foreground mb-4">S'approprier les outils et méthodes pour intégrer l'IA et le digital dans le quotidien métier.</p>
-                <ul className="space-y-1.5 text-sm text-muted-foreground">
-                  <li>• IA appliquée aux métiers</li>
-                  <li>• Automatisation & No-Code</li>
-                  <li>• Conduite du changement</li>
-                </ul>
-              </div>
-              <div className="bg-card rounded-lg border p-6 border-t-4 border-t-skillia-amber">
-                <h3 className="text-lg font-semibold mb-3">Équipes projet</h3>
-                <p className="text-sm text-muted-foreground mb-4">Monter en compétence sur les aspects techniques et opérationnels des projets de transformation.</p>
-                <ul className="space-y-1.5 text-sm text-muted-foreground">
-                  <li>• Data engineering & ML ops</li>
-                  <li>• Cybersécurité opérationnelle</li>
-                  <li>• Gestion de projet agile</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Formats */}
-        <section className="py-16 bg-card border-y">
-          <div className="container">
-            <h2 className="mb-8">Formats</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {['Présentiel', 'Distanciel', 'Intra-entreprise', 'Coaching individuel'].map(format => (
-                <div key={format} className="bg-background rounded-lg border p-4 text-center">
-                  <p className="text-sm font-medium">{format}</p>
+            <div className="max-w-4xl space-y-16">
+              {[
+                {
+                  title: 'Dirigeants & CODIR',
+                  desc: 'Comprendre les enjeux stratégiques de l\'IA, de la data et de la cybersécurité pour prendre les bonnes décisions.',
+                  items: ['Vision stratégique IA & Data', 'Enjeux cyber pour dirigeants', 'Gouvernance de la transformation'],
+                },
+                {
+                  title: 'Métiers & managers',
+                  desc: 'S\'approprier les outils et méthodes pour intégrer l\'IA et le digital dans le quotidien métier.',
+                  items: ['IA appliquée aux métiers', 'Automatisation & No-Code', 'Conduite du changement'],
+                },
+                {
+                  title: 'Équipes projet',
+                  desc: 'Monter en compétence sur les aspects techniques et opérationnels des projets de transformation.',
+                  items: ['Data engineering & ML ops', 'Cybersécurité opérationnelle', 'Gestion de projet agile'],
+                },
+              ].map((univers, i) => (
+                <div key={univers.title}>
+                  <h3 className="text-2xl mb-3">{univers.title}</h3>
+                  <p className="text-base font-sans text-muted-foreground mb-6">{univers.desc}</p>
+                  <ul className="space-y-2">
+                    {univers.items.map(item => (
+                      <li key={item} className="text-sm font-sans text-muted-foreground flex items-center gap-3">
+                        <span className="w-1 h-1 rounded-full bg-skillia-amber flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  {i < 2 && <div className="h-px bg-border/50 mt-16" />}
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Thématiques */}
-        <section className="py-16">
+        {/* Image break */}
+        <section className="h-[40vh] md:h-[50vh]">
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=2000&q=80" alt="Salle de formation" className="w-full h-full object-cover" />
+        </section>
+
+        {/* Formats & thématiques */}
+        <section className="py-20 md:py-24">
           <div className="container">
-            <h2 className="mb-8">Thématiques couvertes</h2>
-            <div className="flex flex-wrap gap-3">
-              {['Intelligence artificielle', 'Transformation digitale', 'Cybersécurité', 'Data & analytics', 'Automatisation', 'No-Code', 'Conduite du changement', 'Agilité'].map(theme => (
-                <span key={theme} className="px-4 py-2 text-sm bg-card rounded-full border">{theme}</span>
-              ))}
+            <div className="max-w-2xl">
+              <p className="editorial-label mb-6">Formats</p>
+              <p className="text-sm font-sans text-muted-foreground">
+                Présentiel · Distanciel · Intra-entreprise · Coaching individuel
+              </p>
             </div>
-            <p className="text-sm text-muted-foreground mt-6">
-              La sensibilisation cybersécurité est conçue en collaboration avec <Link to="/resillia" className="text-skillia-teal hover:underline">Resillia</Link>.
-            </p>
+            <div className="h-px bg-border/50 my-12 max-w-2xl" />
+            <div className="max-w-2xl">
+              <p className="editorial-label mb-6">Thématiques</p>
+              <p className="text-sm font-sans text-muted-foreground">
+                Intelligence artificielle · Transformation digitale · Cybersécurité · Data & analytics · Automatisation · No-Code · Conduite du changement · Agilité
+              </p>
+              <p className="text-sm font-sans text-muted-foreground/60 mt-4">
+                La sensibilisation cybersécurité est conçue en collaboration avec <Link to="/resillia" className="editorial-link text-sm" onClick={() => window.scrollTo(0, 0)}>Resillia</Link>.
+              </p>
+            </div>
           </div>
         </section>
 
         {/* Témoignages */}
-        <section className="py-16 bg-card border-y">
+        <section className="py-24 md:py-32 bg-card">
           <div className="container">
-            <h2 className="mb-8">Ce qu'en disent les participants</h2>
-            <div className="grid md:grid-cols-2 gap-6 max-w-3xl">
-              <div className="bg-background rounded-lg border p-6">
-                <p className="text-sm italic text-muted-foreground mb-3">« Des formations concrètes et directement applicables. On sort avec des outils qu'on peut utiliser dès le lendemain. »</p>
-                <p className="text-xs text-muted-foreground">— Manager, secteur services</p>
+            <p className="editorial-label mb-12">Ce qu&apos;en disent les participants</p>
+            <div className="grid md:grid-cols-2 gap-12 max-w-3xl">
+              <div>
+                <p className="font-serif text-lg italic leading-[1.6] mb-4">« Des formations concrètes et directement applicables. On sort avec des outils qu&apos;on peut utiliser dès le lendemain. »</p>
+                <p className="text-xs font-sans tracking-wide text-muted-foreground">Manager — Secteur services</p>
               </div>
-              <div className="bg-background rounded-lg border p-6">
-                <p className="text-sm italic text-muted-foreground mb-3">« L'approche praticienne fait toute la différence. Ce ne sont pas des formateurs théoriques, ce sont des gens du terrain. »</p>
-                <p className="text-xs text-muted-foreground">— Chef de projet, secteur industriel</p>
+              <div>
+                <p className="font-serif text-lg italic leading-[1.6] mb-4">« L&apos;approche praticienne fait toute la différence. Ce ne sont pas des formateurs théoriques, ce sont des gens du terrain. »</p>
+                <p className="text-xs font-sans tracking-wide text-muted-foreground">Chef de projet — Secteur industriel</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="py-20 bg-skillia-navy text-white">
+        <section className="py-24 md:py-32 bg-foreground text-background">
           <div className="container text-center">
-            <h2 className="text-white mb-4">Formez vos équipes</h2>
-            <p className="text-gray-400 max-w-xl mx-auto mb-8">Discutons de vos enjeux de formation. Nous concevons avec vous un parcours adapté.</p>
-            <Button asChild size="lg" className="bg-skillia-amber hover:bg-skillia-amber/90 text-skillia-navy font-semibold">
-              <Link to="/contact">Demander une session</Link>
-            </Button>
+            <h2 className="text-background mb-6">Formez vos équipes.</h2>
+            <p className="text-sm font-sans text-background/50 mb-10 max-w-md mx-auto">Discutons de vos enjeux de formation. Nous concevons avec vous un parcours adapté.</p>
+            <Link to="/contact" className="inline-block text-sm font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-background text-foreground hover:bg-background/90 transition-colors" onClick={() => window.scrollTo(0, 0)}>
+              Demander une session
+            </Link>
           </div>
         </section>
       </main>
