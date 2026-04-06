@@ -84,7 +84,7 @@ const Index = () => {
                 },
                 {
                   title: 'Cyber & résilience',
-                  desc: 'Une transformation non sécurisée n'est pas une transformation — c'est un risque.',
+                  desc: 'Une transformation non sécurisée n\'est pas une transformation — c\'est un risque.',
                   items: ['Gouvernance & conformité', 'Protection & détection', 'Continuité & résilience'],
                   href: '/cyber-resilience',
                   image: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?auto=format&fit=crop&w=800&q=80',
