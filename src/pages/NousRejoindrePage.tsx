@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 
 const NousRejoindrePage = () => {
   const openings = [
-    { title: 'Consultant(e) IA & Data — Senior', entity: 'Skillia', type: 'CDI', location: 'Paris / Remote' },
-    { title: 'Consultant(e) Cybersécurité — GRC', entity: 'Resillia', type: 'CDI', location: 'Paris / Remote' },
-    { title: 'Ingénieur(e) ML / IA', entity: 'Skillia Tech', type: 'CDI', location: 'Paris / Remote' },
-    { title: 'Formateur(trice) IA & Transformation', entity: 'Skillia Academy', type: 'Freelance', location: 'France' },
+    { title: 'Consultant(e) IA & Data — Senior', meta: 'Skillia · CDI · Paris / Remote' },
+    { title: 'Consultant(e) Cybersécurité — GRC', meta: 'Resillia · CDI · Paris / Remote' },
+    { title: 'Ingénieur(e) ML / IA', meta: 'Skillia Tech · CDI · Paris / Remote' },
+    { title: 'Formateur(trice) IA & Transformation', meta: 'Skillia Academy · Freelance · France' },
   ];
 
   return (
@@ -20,7 +20,7 @@ const NousRejoindrePage = () => {
           <div className="container">
             <div className="max-w-3xl">
               <p className="editorial-label mb-6">Nous rejoindre</p>
-              <h1 className="mb-8">Rejoignez un collectif<br /><span className="italic font-normal">qui transforme les organisations.</span></h1>
+              <h1 className="mb-10">Rejoignez un collectif<br /><span className="italic font-normal">qui transforme les organisations.</span></h1>
               <p className="editorial-body">
                 Chez Skillia, vous travaillez sur des missions à fort impact, au croisement de l&apos;IA, de la cybersécurité et de la transformation digitale.
               </p>
@@ -28,55 +28,32 @@ const NousRejoindrePage = () => {
           </div>
         </section>
 
-        {/* Promesse */}
-        <section className="pb-24">
+        <section className="pb-28 md:pb-40">
           <div className="container">
-            <div className="grid md:grid-cols-3 gap-12 max-w-4xl">
-              {[
-                { title: 'Impact réel', desc: 'Des missions de transformation concrètes chez des clients de premier plan.' },
-                { title: 'Complémentarité', desc: 'Conseil, cyber, build, formation — une variété de missions et de compétences.' },
-                { title: 'Collectif exigeant', desc: 'Une équipe resserrée, senior, qui privilégie la qualité à la quantité.' },
-              ].map(item => (
-                <div key={item.title}>
-                  <h3 className="text-xl mb-3">{item.title}</h3>
-                  <p className="text-sm font-sans text-muted-foreground leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Offres */}
-        <section className="py-24 md:py-32 bg-card">
-          <div className="container">
-            <p className="editorial-label mb-12">Nos offres ouvertes</p>
-            <div className="space-y-0 max-w-4xl">
+            <p className="editorial-label mb-12">Offres ouvertes</p>
+            <div className="max-w-4xl">
               {openings.map((job, i) => (
-                <div key={i} className={`py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 ${i > 0 ? 'border-t border-border/50' : ''}`}>
+                <div key={i} className={`py-10 flex flex-col md:flex-row md:items-baseline justify-between gap-4 ${i > 0 ? 'border-t border-border/40' : ''}`}>
                   <div>
-                    <h3 className="text-lg font-serif mb-1">{job.title}</h3>
-                    <p className="text-xs font-sans text-muted-foreground/60">{job.entity} · {job.type} · {job.location}</p>
+                    <h3 className="text-xl mb-1">{job.title}</h3>
+                    <p className="text-xs font-sans text-muted-foreground/60">{job.meta}</p>
                   </div>
-                  <Link to="/contact" className="editorial-link flex-shrink-0 self-start md:self-center" onClick={() => window.scrollTo(0, 0)}>
-                    Postuler
-                  </Link>
+                  <Link to="/contact" className="editorial-link flex-shrink-0" onClick={() => window.scrollTo(0, 0)}>Postuler</Link>
                 </div>
               ))}
             </div>
             <p className="text-sm font-sans text-muted-foreground mt-12 max-w-2xl">
-              Vous ne trouvez pas votre profil ? Envoyez-nous une candidature spontanée à{' '}
-              <a href="mailto:contact@skillia.fr" className="editorial-link text-sm">contact@skillia.fr</a>.
+              Candidature spontanée : <a href="mailto:contact@skillia.fr" className="editorial-link text-sm">contact@skillia.fr</a>
             </p>
           </div>
         </section>
 
-        <section className="py-24 md:py-32 bg-foreground text-background">
-          <div className="container text-center">
-            <h2 className="text-background mb-6">Rejoignez-nous.</h2>
-            <p className="text-sm font-sans text-background/50 mb-10 max-w-md mx-auto">Envoyez-nous votre candidature ou prenez contact pour en discuter.</p>
-            <Link to="/contact" className="inline-block text-sm font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-background text-foreground hover:bg-background/90 transition-colors" onClick={() => window.scrollTo(0, 0)}>
-              Nous contacter
-            </Link>
+        <section className="py-28 md:py-40 bg-foreground text-background">
+          <div className="container">
+            <div className="max-w-2xl">
+              <h2 className="text-background text-3xl md:text-4xl leading-[1.1] mb-8">Rejoignez-<br /><span className="italic font-normal">nous.</span></h2>
+              <Link to="/contact" className="inline-block text-[13px] font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-background text-foreground hover:bg-background/90 transition-colors" onClick={() => window.scrollTo(0, 0)}>Nous contacter</Link>
+            </div>
           </div>
         </section>
       </main>
