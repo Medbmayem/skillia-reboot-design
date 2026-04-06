@@ -4,15 +4,28 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LanguageProvider } from "./contexts/LanguageContext";
+
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import AboutUsPage from "./pages/AboutUsPage";
-import FormationsPage from "./pages/FormationsPage";
-import BusinessTransformationPage from "./pages/services/BusinessTransformationPage";
-import SecureEcosystemsPage from "./pages/services/SecureEcosystemsPage";
-import TechnologyFoundationsPage from "./pages/services/TechnologyFoundationsPage";
-import PlaquettePage from "./pages/PlaquettePage";
-import { LanguageProvider } from "./contexts/LanguageContext";
+
+// Expertises
+import IADataPage from "./pages/expertises/IADataPage";
+import TransformationPage from "./pages/expertises/TransformationPage";
+import CyberResiliencePage from "./pages/expertises/CyberResiliencePage";
+import DeploiementAdoptionPage from "./pages/expertises/DeploiementAdoptionPage";
+
+// Entités spécialisées
+import ResilliaPage from "./pages/entities/ResilliaPage";
+import TechPage from "./pages/entities/TechPage";
+import AcademyPage from "./pages/entities/AcademyPage";
+
+// Pages transverses
+import ApprochePage from "./pages/ApprochePage";
+import CollectifPage from "./pages/CollectifPage";
+import RessourcesPage from "./pages/RessourcesPage";
+import NousRejoindrePage from "./pages/NousRejoindrePage";
+import ContactPage from "./pages/ContactPage";
 
 const queryClient = new QueryClient();
 
@@ -25,12 +38,25 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/about" element={<AboutUsPage />} />
-            <Route path="/formations" element={<FormationsPage />} />
-            <Route path="/plaquette" element={<PlaquettePage />} />
-            <Route path="/services/business-transformation" element={<BusinessTransformationPage />} />
-            <Route path="/services/secure-ecosystems" element={<SecureEcosystemsPage />} />
-            <Route path="/services/technology-foundations" element={<TechnologyFoundationsPage />} />
+            
+            {/* Expertises */}
+            <Route path="/ia-data" element={<IADataPage />} />
+            <Route path="/transformation" element={<TransformationPage />} />
+            <Route path="/cyber-resilience" element={<CyberResiliencePage />} />
+            <Route path="/deploiement-adoption" element={<DeploiementAdoptionPage />} />
+            
+            {/* Entités spécialisées */}
+            <Route path="/resillia" element={<ResilliaPage />} />
+            <Route path="/tech" element={<TechPage />} />
+            <Route path="/academy" element={<AcademyPage />} />
+            
+            {/* Pages transverses */}
+            <Route path="/approche" element={<ApprochePage />} />
+            <Route path="/collectif" element={<CollectifPage />} />
+            <Route path="/ressources" element={<RessourcesPage />} />
+            <Route path="/nous-rejoindre" element={<NousRejoindrePage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
