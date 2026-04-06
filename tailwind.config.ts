@@ -64,18 +64,20 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				skillia: {
-					blue: "#2F2F9B",
-					purple: "#403AF2",
-					pink: "#FA2A88",
-					lightblue: "#DCE8FF",
-					white: "#FFFFFF",
-					gray: "#F6F6F6",  // Updated from #F0F0F0 to #F6F6F6
-					"gray-medium": "#C2C2C2",
-					"gray-dark": "#6E6E6E"
+					navy: '#1A2B4A',
+					amber: '#C8943A',
+					'amber-dark': '#854F0B',
+					cream: '#F8F5F0',
+					teal: '#0F6E56',
+					purple: '#534AB7',
+					'navy-light': '#E8EEF7',
+					'teal-light': '#E1F5EE',
+					'purple-light': '#F0EBF8',
+					'amber-light': '#FAEEDA',
 				}
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
+				sans: ['Inter', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -95,15 +97,11 @@ export default {
 					'0%': { opacity: '0', transform: 'translateY(10px)' },
 					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
-				'fade-out': {
-					'0%': { opacity: '1', transform: 'translateY(0)' },
-					'100%': { opacity: '0', transform: 'translateY(10px)' }
-				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.3s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
 			}
 		}
 	},

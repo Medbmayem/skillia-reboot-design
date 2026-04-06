@@ -5,65 +5,66 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 5% 43%;
+    /* Skillia Premium Design System */
+    --background: 36 33% 97%;
+    --foreground: 220 40% 13%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 5% 43%;
+    --card-foreground: 220 40% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 5% 43%;
+    --popover-foreground: 220 40% 13%;
 
-    --primary: 240 54% 40%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 220 40% 13%;
+    --primary-foreground: 36 33% 97%;
 
-    --secondary: 0 0% 94%;
-    --secondary-foreground: 240 5% 43%;
+    --secondary: 36 33% 93%;
+    --secondary-foreground: 220 40% 13%;
 
-    --muted: 0 0% 94%;
-    --muted-foreground: 240 5% 43%;
+    --muted: 36 20% 94%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 240 82% 59%;
+    --accent: 244 38% 50%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 334 95% 57%;
+    --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 76%;
-    --input: 0 0% 76%;
-    --ring: 240 54% 40%;
+    --border: 36 15% 88%;
+    --input: 36 15% 85%;
+    --ring: 220 40% 13%;
 
     --radius: 0.5rem;
+
+    /* Skillia Brand Accents */
+    --skillia-navy: 220 40% 13%;
+    --skillia-amber: 38 55% 50%;
+    --skillia-amber-dark: 33 85% 28%;
+    --skillia-cream: 36 33% 97%;
+    --skillia-teal: 160 75% 25%;
+    --skillia-purple: 244 38% 50%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --background: 220 40% 8%;
+    --foreground: 36 33% 95%;
+    --card: 220 35% 11%;
+    --card-foreground: 36 33% 95%;
+    --popover: 220 35% 11%;
+    --popover-foreground: 36 33% 95%;
+    --primary: 36 33% 95%;
+    --primary-foreground: 220 40% 13%;
+    --secondary: 220 30% 18%;
+    --secondary-foreground: 36 33% 95%;
+    --muted: 220 25% 20%;
+    --muted-foreground: 36 15% 65%;
+    --accent: 244 38% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 25% 20%;
+    --input: 220 25% 20%;
+    --ring: 36 33% 85%;
   }
 }
 
@@ -73,7 +74,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground font-sans antialiased;
   }
 
   .container {
@@ -81,23 +82,23 @@
   }
 
   .section {
-    @apply py-12 md:py-16 lg:py-24;
+    @apply py-16 md:py-20 lg:py-28;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-sans font-semibold tracking-tight;
+    @apply font-sans font-semibold tracking-tight text-foreground;
   }
 
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+    @apply text-3xl md:text-4xl lg:text-5xl leading-tight;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl;
+    @apply text-2xl md:text-3xl lg:text-4xl;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl;
+    @apply text-xl md:text-2xl;
   }
 
   p {
@@ -105,7 +106,43 @@
   }
 }
 
-/* Print Styles for PDF optimization */
+/* Premium utility classes */
+@layer components {
+  .section-navy {
+    background-color: hsl(var(--skillia-navy));
+    color: hsl(var(--skillia-cream));
+  }
+
+  .text-amber {
+    color: hsl(var(--skillia-amber));
+  }
+
+  .text-teal {
+    color: hsl(var(--skillia-teal));
+  }
+
+  .text-purple-accent {
+    color: hsl(var(--skillia-purple));
+  }
+
+  .bg-cream {
+    background-color: hsl(var(--skillia-cream));
+  }
+
+  .border-teal {
+    border-color: hsl(var(--skillia-teal));
+  }
+
+  .border-purple-accent {
+    border-color: hsl(var(--skillia-purple));
+  }
+
+  .border-amber {
+    border-color: hsl(var(--skillia-amber));
+  }
+}
+
+/* Print Styles */
 @media print {
   @page {
     size: A4;
@@ -117,35 +154,15 @@
     -webkit-print-color-adjust: exact;
   }
   
-  .print\\:hidden {
+  .print\:hidden {
     display: none !important;
   }
   
-  .print\\:py-8 {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-  }
-  
-  .print\\:py-6 {
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
-  }
-  
-  .print\\:bg-white {
-    background-color: white !important;
-  }
-  
-  /* Ensure page breaks */
   section {
     break-inside: avoid;
   }
   
   h1, h2, h3 {
     break-after: avoid;
-  }
-  
-  /* Optimize colors for print */
-  .bg-gradient-to-r {
-    background: #403AF2 !important;
   }
 }
