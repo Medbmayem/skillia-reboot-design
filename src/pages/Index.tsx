@@ -91,7 +91,7 @@ const Index = () => {
                 },
                 {
                   title: 'Déploiement & adoption',
-                  desc: 'Déployer c'est bien. Que vos équipes l'utilisent vraiment, c'est mieux.',
+                  desc: 'Déployer c\'est bien. Que vos équipes l\'utilisent vraiment, c\'est mieux.',
                   items: ['Co-construction métiers', 'KPIs d\'adoption', 'Formation à l\'usage', 'Transfert de compétences'],
                   href: '/deploiement-adoption',
                   image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80',
