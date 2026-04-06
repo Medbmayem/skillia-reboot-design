@@ -2,7 +2,6 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
 const NousRejoindrePage = () => {
@@ -16,32 +15,31 @@ const NousRejoindrePage = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="pt-16">
-        <section className="py-16 md:py-24">
+      <main>
+        <section className="pt-32 pb-20 md:pt-40 md:pb-28">
           <div className="container">
             <div className="max-w-3xl">
-              <p className="text-sm font-medium tracking-wide uppercase text-skillia-amber mb-4">Nous rejoindre</p>
-              <h1 className="mb-6">Rejoignez un collectif qui transforme les organisations.</h1>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Chez Skillia, vous travaillez sur des missions à fort impact, au croisement de l'IA, de la cybersécurité et de la transformation digitale.
+              <p className="editorial-label mb-6">Nous rejoindre</p>
+              <h1 className="mb-8">Rejoignez un collectif<br /><span className="italic font-normal">qui transforme les organisations.</span></h1>
+              <p className="editorial-body">
+                Chez Skillia, vous travaillez sur des missions à fort impact, au croisement de l&apos;IA, de la cybersécurité et de la transformation digitale.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Promesse employeur */}
-        <section className="py-16 bg-card border-y">
+        {/* Promesse */}
+        <section className="pb-24">
           <div className="container">
-            <h2 className="mb-8">Pourquoi nous rejoindre</h2>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-12 max-w-4xl">
               {[
                 { title: 'Impact réel', desc: 'Des missions de transformation concrètes chez des clients de premier plan.' },
                 { title: 'Complémentarité', desc: 'Conseil, cyber, build, formation — une variété de missions et de compétences.' },
                 { title: 'Collectif exigeant', desc: 'Une équipe resserrée, senior, qui privilégie la qualité à la quantité.' },
-              ].map((item, i) => (
-                <div key={i} className="bg-background rounded-lg border p-6">
-                  <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+              ].map(item => (
+                <div key={item.title}>
+                  <h3 className="text-xl mb-3">{item.title}</h3>
+                  <p className="text-sm font-sans text-muted-foreground leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -49,42 +47,36 @@ const NousRejoindrePage = () => {
         </section>
 
         {/* Offres */}
-        <section className="section">
+        <section className="py-24 md:py-32 bg-card">
           <div className="container">
-            <h2 className="mb-8">Nos offres ouvertes</h2>
-            <div className="space-y-4">
+            <p className="editorial-label mb-12">Nos offres ouvertes</p>
+            <div className="space-y-0 max-w-4xl">
               {openings.map((job, i) => (
-                <div key={i} className="bg-card rounded-lg border p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:shadow-md transition-shadow">
+                <div key={i} className={`py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 ${i > 0 ? 'border-t border-border/50' : ''}`}>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1">{job.title}</h3>
-                    <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
-                      <span>{job.entity}</span>
-                      <span>•</span>
-                      <span>{job.type}</span>
-                      <span>•</span>
-                      <span>{job.location}</span>
-                    </div>
+                    <h3 className="text-lg font-serif mb-1">{job.title}</h3>
+                    <p className="text-xs font-sans text-muted-foreground/60">{job.entity} · {job.type} · {job.location}</p>
                   </div>
-                  <Button asChild variant="outline" size="sm">
-                    <Link to="/contact">Postuler</Link>
-                  </Button>
+                  <Link to="/contact" className="editorial-link flex-shrink-0 self-start md:self-center" onClick={() => window.scrollTo(0, 0)}>
+                    Postuler
+                  </Link>
                 </div>
               ))}
             </div>
-            <p className="text-sm text-muted-foreground mt-6">
+            <p className="text-sm font-sans text-muted-foreground mt-12 max-w-2xl">
               Vous ne trouvez pas votre profil ? Envoyez-nous une candidature spontanée à{' '}
-              <a href="mailto:contact@skillia.fr" className="text-foreground hover:underline">contact@skillia.fr</a>.
+              <a href="mailto:contact@skillia.fr" className="editorial-link text-sm">contact@skillia.fr</a>.
             </p>
           </div>
         </section>
 
-        <section className="py-20 bg-skillia-navy text-white">
+        <section className="py-24 md:py-32 bg-foreground text-background">
           <div className="container text-center">
-            <h2 className="text-white mb-4">Rejoignez-nous</h2>
-            <p className="text-gray-400 max-w-xl mx-auto mb-8">Envoyez-nous votre candidature ou prenez contact pour en discuter.</p>
-            <Button asChild size="lg" className="bg-skillia-amber hover:bg-skillia-amber/90 text-skillia-navy font-semibold">
-              <Link to="/contact">Nous contacter</Link>
-            </Button>
+            <h2 className="text-background mb-6">Rejoignez-nous.</h2>
+            <p className="text-sm font-sans text-background/50 mb-10 max-w-md mx-auto">Envoyez-nous votre candidature ou prenez contact pour en discuter.</p>
+            <Link to="/contact" className="inline-block text-sm font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-background text-foreground hover:bg-background/90 transition-colors" onClick={() => window.scrollTo(0, 0)}>
+              Nous contacter
+            </Link>
           </div>
         </section>
       </main>

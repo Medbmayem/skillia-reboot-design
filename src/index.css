@@ -1,70 +1,72 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* Skillia Premium Design System */
-    --background: 36 33% 97%;
-    --foreground: 220 40% 13%;
+    --background: 38 30% 96%;
+    --foreground: 220 30% 18%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 40% 13%;
+    --card: 38 25% 93%;
+    --card-foreground: 220 30% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 40% 13%;
+    --popover-foreground: 220 30% 18%;
 
-    --primary: 220 40% 13%;
-    --primary-foreground: 36 33% 97%;
+    --primary: 220 30% 18%;
+    --primary-foreground: 38 30% 96%;
 
-    --secondary: 36 33% 93%;
-    --secondary-foreground: 220 40% 13%;
+    --secondary: 38 20% 90%;
+    --secondary-foreground: 220 30% 18%;
 
-    --muted: 36 20% 94%;
-    --muted-foreground: 220 15% 45%;
+    --muted: 38 15% 91%;
+    --muted-foreground: 220 10% 50%;
 
-    --accent: 244 38% 50%;
+    --accent: 150 25% 35%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 36 15% 88%;
-    --input: 36 15% 85%;
-    --ring: 220 40% 13%;
+    --border: 38 15% 87%;
+    --input: 38 15% 84%;
+    --ring: 220 30% 18%;
 
     --radius: 0.5rem;
 
-    /* Skillia Brand Accents */
-    --skillia-navy: 220 40% 13%;
-    --skillia-amber: 38 55% 50%;
-    --skillia-amber-dark: 33 85% 28%;
-    --skillia-cream: 36 33% 97%;
-    --skillia-teal: 160 75% 25%;
-    --skillia-purple: 244 38% 50%;
+    --skillia-navy: 220 30% 18%;
+    --skillia-amber: 36 50% 48%;
+    --skillia-amber-dark: 33 60% 32%;
+    --skillia-cream: 38 30% 96%;
+    --skillia-teal: 155 30% 38%;
+    --skillia-purple: 245 25% 45%;
+    --skillia-olive: 80 15% 42%;
+    --skillia-warm: 25 20% 88%;
   }
 
   .dark {
-    --background: 220 40% 8%;
-    --foreground: 36 33% 95%;
-    --card: 220 35% 11%;
-    --card-foreground: 36 33% 95%;
-    --popover: 220 35% 11%;
-    --popover-foreground: 36 33% 95%;
-    --primary: 36 33% 95%;
-    --primary-foreground: 220 40% 13%;
-    --secondary: 220 30% 18%;
-    --secondary-foreground: 36 33% 95%;
-    --muted: 220 25% 20%;
-    --muted-foreground: 36 15% 65%;
-    --accent: 244 38% 55%;
+    --background: 220 25% 8%;
+    --foreground: 38 20% 92%;
+    --card: 220 20% 12%;
+    --card-foreground: 38 20% 92%;
+    --popover: 220 20% 12%;
+    --popover-foreground: 38 20% 92%;
+    --primary: 38 20% 92%;
+    --primary-foreground: 220 25% 8%;
+    --secondary: 220 20% 16%;
+    --secondary-foreground: 38 20% 92%;
+    --muted: 220 15% 18%;
+    --muted-foreground: 38 10% 60%;
+    --accent: 155 25% 40%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 25% 20%;
-    --input: 220 25% 20%;
-    --ring: 36 33% 85%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 38 20% 80%;
   }
 }
 
@@ -74,71 +76,79 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
   }
 
-  .container {
-    @apply px-4 md:px-6 lg:px-8 mx-auto max-w-7xl;
-  }
-
-  .section {
-    @apply py-16 md:py-20 lg:py-28;
-  }
-  
   h1, h2, h3, h4, h5, h6 {
-    @apply font-sans font-semibold tracking-tight text-foreground;
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply font-medium tracking-tight text-foreground;
   }
 
   h1 {
-    @apply text-3xl md:text-4xl lg:text-5xl leading-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl leading-[1.1];
+    letter-spacing: -0.03em;
   }
 
   h2 {
-    @apply text-2xl md:text-3xl lg:text-4xl;
+    @apply text-3xl md:text-4xl leading-[1.15];
+    letter-spacing: -0.02em;
   }
 
   h3 {
-    @apply text-xl md:text-2xl;
+    @apply text-xl md:text-2xl leading-[1.2];
   }
 
   p {
-    @apply leading-relaxed;
+    @apply leading-[1.7];
   }
 }
 
-/* Premium utility classes */
 @layer components {
+  .container {
+    @apply px-6 md:px-10 lg:px-16 mx-auto;
+    max-width: 1280px;
+  }
+
+  .section {
+    @apply py-24 md:py-32 lg:py-40;
+  }
+
   .section-navy {
     background-color: hsl(var(--skillia-navy));
     color: hsl(var(--skillia-cream));
   }
 
-  .text-amber {
+  .editorial-label {
+    font-family: 'Inter', sans-serif;
+    @apply text-xs tracking-[0.2em] uppercase font-medium;
     color: hsl(var(--skillia-amber));
   }
 
-  .text-teal {
-    color: hsl(var(--skillia-teal));
+  .editorial-body {
+    @apply text-base md:text-lg leading-[1.8] max-w-2xl;
+    color: hsl(var(--muted-foreground));
   }
 
-  .text-purple-accent {
-    color: hsl(var(--skillia-purple));
+  .editorial-link {
+    font-family: 'Inter', sans-serif;
+    @apply text-sm font-medium tracking-wide;
+    color: hsl(var(--foreground));
+    text-decoration: none;
+    border-bottom: 1px solid hsl(var(--border));
+    padding-bottom: 2px;
+    transition: border-color 0.3s ease;
   }
 
-  .bg-cream {
-    background-color: hsl(var(--skillia-cream));
+  .editorial-link:hover {
+    border-color: hsl(var(--foreground));
   }
 
-  .border-teal {
-    border-color: hsl(var(--skillia-teal));
-  }
-
-  .border-purple-accent {
-    border-color: hsl(var(--skillia-purple));
-  }
-
-  .border-amber {
-    border-color: hsl(var(--skillia-amber));
+  .divider {
+    @apply w-12 h-px;
+    background-color: hsl(var(--skillia-amber));
   }
 }
 

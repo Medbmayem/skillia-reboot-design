@@ -2,107 +2,115 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import PageBreadcrumb from '@/components/shared/PageBreadcrumb';
-import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
-import CaseStudyCard from '@/components/shared/CaseStudyCard';
 
 const CyberResiliencePage = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="pt-16">
-        <div className="container">
-          <PageBreadcrumb items={[{ label: 'Expertises' }, { label: 'Cyber & résilience' }]} />
-        </div>
+      <main>
+        <section className="relative min-h-[70vh] flex items-end pb-20">
+          <div className="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?auto=format&fit=crop&w=2000&q=80" alt="Sécurité" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/40 to-foreground/10" />
+          </div>
+          <div className="container relative z-10">
+            <nav className="text-xs font-sans text-background/50 mb-6">
+              <Link to="/" className="hover:text-background/80">Skillia</Link>
+              <span className="mx-2">/</span>
+              <span className="text-background/70">Cyber & résilience</span>
+            </nav>
+            <h1 className="text-background text-4xl md:text-5xl lg:text-6xl max-w-4xl leading-[1.1]">
+              Une transformation non sécurisée<br />
+              <span className="italic font-normal">n&apos;est pas une transformation.</span>
+            </h1>
+          </div>
+        </section>
 
-        <section className="py-16 md:py-24">
+        <section className="py-20 md:py-28">
           <div className="container">
-            <div className="max-w-3xl">
-              <span className="inline-block text-xs font-semibold tracking-wider uppercase px-3 py-1 rounded-full bg-skillia-teal-light text-skillia-teal mb-4">Cyber & résilience</span>
-              <h1 className="mb-6">Une transformation non sécurisée n'est pas une transformation — c'est un risque.</h1>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                Chez Skillia, la sécurité n'est pas une option ajoutée en fin de projet. Elle fait partie du socle de toute transformation.
+            <div className="max-w-2xl">
+              <p className="editorial-body">
+                Chez Skillia, la sécurité n&apos;est pas une option ajoutée en fin de projet. Elle fait partie du socle de toute transformation responsable.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button asChild size="lg" className="bg-skillia-navy hover:bg-skillia-navy/90 text-white">
-                  <Link to="/contact">Prendre RDV</Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link to="/contact">Demander un audit</Link>
-                </Button>
-              </div>
             </div>
           </div>
         </section>
 
-        {/* 3 blocs resserrés */}
-        <section className="section">
+        {/* 3 blocs éditoriaux */}
+        <section className="pb-24">
           <div className="container">
-            <h2 className="mb-10">Ce que nous faisons concrètement</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-card rounded-lg border p-6 border-l-4 border-l-skillia-teal">
-                <h3 className="text-lg font-semibold mb-3">Gouvernance & conformité</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Audit de posture sécurité</li>
-                  <li>• Conformité IA Act, ISO 27001, DORA</li>
-                  <li>• Gouvernance des risques</li>
-                  <li>• Politique de sécurité</li>
-                </ul>
-              </div>
-              <div className="bg-card rounded-lg border p-6 border-l-4 border-l-skillia-teal">
-                <h3 className="text-lg font-semibold mb-3">Protection & détection</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• SOC et monitoring</li>
-                  <li>• Réponse aux incidents</li>
-                  <li>• Tests d'intrusion</li>
-                  <li>• Sécurisation des SI</li>
-                </ul>
-              </div>
-              <div className="bg-card rounded-lg border p-6 border-l-4 border-l-skillia-teal">
-                <h3 className="text-lg font-semibold mb-3">Continuité & résilience</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• PCA / PRA</li>
-                  <li>• Tests de résistance</li>
-                  <li>• Gestion de crise</li>
-                  <li>• Plan de reprise</li>
-                </ul>
-              </div>
+            <div className="max-w-4xl space-y-16">
+              {[
+                {
+                  title: 'Gouvernance & conformité',
+                  items: ['Audit de posture sécurité', 'Conformité IA Act, ISO 27001, DORA', 'Gouvernance des risques', 'Politique de sécurité'],
+                },
+                {
+                  title: 'Protection & détection',
+                  items: ['SOC et monitoring', 'Réponse aux incidents', 'Tests d\'intrusion', 'Sécurisation des SI'],
+                },
+                {
+                  title: 'Continuité & résilience',
+                  items: ['PCA / PRA', 'Tests de résistance', 'Gestion de crise', 'Plan de reprise'],
+                },
+              ].map((bloc, i) => (
+                <div key={bloc.title}>
+                  <h3 className="text-2xl mb-6">{bloc.title}</h3>
+                  <ul className="space-y-3">
+                    {bloc.items.map(item => (
+                      <li key={item} className="text-sm font-sans text-muted-foreground flex items-center gap-3">
+                        <span className="w-1 h-1 rounded-full bg-skillia-teal flex-shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  {i < 2 && <div className="h-px bg-border/50 mt-16" />}
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
-        <section className="py-16 bg-card border-y">
+        {/* Cas clients */}
+        <section className="py-24 md:py-32 bg-card">
           <div className="container">
-            <h2 className="mb-8">Cas clients</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <CaseStudyCard sector="Finance" challenge="Mise en conformité DORA" solution="Audit de posture, plan de remédiation et mise en place de la gouvernance sécurité." result="Conformité atteinte en 6 mois" />
-              <CaseStudyCard sector="Industrie" challenge="Renforcement de la posture cyber" solution="Audit, politique de sécurité et tests d'intrusion sur l'ensemble du SI." result="Réduction de 60 % des vulnérabilités critiques" />
+            <p className="editorial-label mb-4">Résultats</p>
+            <div className="space-y-12 max-w-3xl">
+              <div>
+                <p className="text-xs tracking-[0.15em] uppercase font-sans text-muted-foreground/60 mb-3">Finance</p>
+                <h3 className="text-xl md:text-2xl mb-3">Mise en conformité DORA</h3>
+                <p className="text-base font-sans text-muted-foreground">Audit de posture, plan de remédiation et mise en place de la gouvernance sécurité. Conformité atteinte en 6 mois.</p>
+              </div>
+              <div className="h-px bg-border/50" />
+              <div>
+                <p className="text-xs tracking-[0.15em] uppercase font-sans text-muted-foreground/60 mb-3">Industrie</p>
+                <h3 className="text-xl md:text-2xl mb-3">Renforcement de la posture cyber</h3>
+                <p className="text-base font-sans text-muted-foreground">Audit, politique de sécurité, pentest sur l&apos;ensemble du SI. Réduction de 60 % des vulnérabilités critiques.</p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Lien Resillia */}
-        <section className="py-16">
+        <section className="py-20 md:py-24">
           <div className="container">
-            <div className="bg-skillia-teal-light rounded-lg p-8">
-              <h3 className="text-lg font-semibold mb-2">Pour les projets nécessitant une capacité cyber dédiée et renforcée</h3>
-              <p className="text-sm text-muted-foreground mb-6">Skillia mobilise Resillia, son entité spécialisée en cybersécurité et résilience.</p>
-              <Button asChild variant="outline" className="flex-shrink-0">
-                <Link to="/resillia">Découvrir Resillia <ArrowRight className="ml-2 h-4 w-4" /></Link>
-              </Button>
+            <div className="max-w-2xl">
+              <p className="editorial-label mb-4">Capacité dédiée</p>
+              <h3 className="text-2xl mb-4">Pour les projets nécessitant une capacité cyber renforcée</h3>
+              <p className="text-base font-sans text-muted-foreground mb-6">Skillia mobilise Resillia, son entité spécialisée en cybersécurité et résilience.</p>
+              <Link to="/resillia" className="editorial-link" onClick={() => window.scrollTo(0, 0)}>Découvrir Resillia</Link>
             </div>
           </div>
         </section>
 
-        <section className="py-20 bg-skillia-navy text-white">
+        <section className="py-24 md:py-32 bg-foreground text-background">
           <div className="container text-center">
-            <h2 className="text-white mb-4">Sécurisons votre transformation</h2>
-            <p className="text-gray-400 max-w-xl mx-auto mb-8">Un premier échange pour évaluer votre posture et identifier les priorités.</p>
-            <Button asChild size="lg" className="bg-skillia-amber hover:bg-skillia-amber/90 text-skillia-navy font-semibold">
-              <Link to="/contact">Demander un audit</Link>
-            </Button>
+            <h2 className="text-background mb-6 max-w-xl mx-auto">Sécurisons votre transformation.</h2>
+            <p className="text-sm font-sans text-background/50 mb-10 max-w-md mx-auto">Un premier échange pour évaluer votre posture et identifier les priorités.</p>
+            <Link to="/contact" className="inline-block text-sm font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-background text-foreground hover:bg-background/90 transition-colors" onClick={() => window.scrollTo(0, 0)}>
+              Demander un audit
+            </Link>
           </div>
         </section>
       </main>
