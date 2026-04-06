@@ -218,7 +218,7 @@ const Index = () => {
               {[
                 { sector: 'Industrie', challenge: 'Déploiement IA sur 3 business units', result: 'Réduction de 40 % du temps de traitement.' },
                 { sector: 'Finance', challenge: 'Mise en conformité réglementaire DORA', result: 'Conformité atteinte en 6 mois.' },
-                { sector: 'Services', challenge: 'Transformation digitale et adoption par les équipes', result: 'Taux d'adoption de 85 % en 4 mois.' },
+                { sector: 'Services', challenge: 'Transformation digitale et adoption par les équipes', result: 'Taux d\'adoption de 85 % en 4 mois.' },
               ].map((cas, i) => (
                 <div key={i}>
                   <p className="text-xs tracking-[0.15em] uppercase font-sans text-muted-foreground/60 mb-3">{cas.sector}</p>
