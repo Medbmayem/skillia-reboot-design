@@ -77,7 +77,7 @@ const Index = () => {
                 },
                 {
                   title: 'Transformation digitale',
-                  desc: 'La transformation échoue quand elle oublie les personnes. Nous remettons l'humain au centre.',
+                  desc: 'La transformation échoue quand elle oublie les personnes. Nous remettons l\'humain au centre.',
                   items: ['Diagnostic de maturité', 'Refonte de processus', 'Conduite du changement', 'Accompagnement CODIR'],
                   href: '/transformation',
                   image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80',
