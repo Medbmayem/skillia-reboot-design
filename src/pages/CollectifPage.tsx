@@ -11,7 +11,7 @@ const CollectifPage = () => {
       <main>
         <section className="relative min-h-[65vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=2000&q=80" alt="Collectif" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=80" alt="Espace de travail premium" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-transparent" />
           </div>
           <div className="container relative z-10">
@@ -46,7 +46,7 @@ const CollectifPage = () => {
         </section>
 
         <section className="h-[40vh] md:h-[55vh]">
-          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80" alt="Équipe" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" alt="Salle de réunion — lumière naturelle" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-28 md:py-40">
