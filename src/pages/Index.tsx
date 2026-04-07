@@ -14,7 +14,7 @@ const Index = () => {
         <section className="relative min-h-screen flex items-end pb-24 md:pb-32">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80"
+              src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80"
               alt="Salle de direction"
               className="w-full h-full object-cover"
             />
@@ -42,8 +42,8 @@ const Index = () => {
         {/* ===== IMAGE BREAK — Horizontal band ===== */}
         <section className="h-[50vh] md:h-[65vh]">
           <img
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
-            alt="Session de travail stratégique"
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
+            alt="Architecture corporate contemporaine"
             className="w-full h-full object-cover"
           />
         </section>
@@ -66,7 +66,7 @@ const Index = () => {
 
         {/* ===== EXPERTISE 1 — Full-width image with overlaid text ===== */}
         <section id="expertises-start" className="relative h-[70vh] md:h-[80vh] flex items-end">
-          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=2000&q=80" alt="IA & Data — analyse stratégique" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80" alt="IA & Data — flux de données" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
           <div className="container relative z-10 pb-16 md:pb-24">
             <p className="text-xs font-sans tracking-[0.2em] uppercase font-medium text-background/40 mb-5">IA & Data</p>
@@ -120,7 +120,7 @@ const Index = () => {
         {/* ===== IMAGE BREAK ===== */}
         <section className="h-[45vh] md:h-[60vh]">
           <img
-            src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=2000&q=80"
+            src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=2000&q=80"
             alt="Architecture de bureau contemporaine"
             className="w-full h-full object-cover"
           />
@@ -190,8 +190,8 @@ const Index = () => {
         {/* ===== FULL IMAGE ===== */}
         <section className="h-[50vh] md:h-[65vh]">
           <img
-            src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=2000&q=80"
-            alt="Espace de travail premium"
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2000&q=80"
+            alt="Analyse stratégique et données"
             className="w-full h-full object-cover"
           />
         </section>
