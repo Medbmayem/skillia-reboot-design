@@ -14,28 +14,36 @@ const Index = () => {
         <section className="relative min-h-screen flex items-end pb-24 md:pb-32">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80"
-              alt="Espace de travail"
+              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80"
+              alt="Salle de direction"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/25 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-foreground/5" />
           </div>
           <div className="container relative z-10">
             <h1 className="text-background text-4xl md:text-6xl lg:text-[5.5rem] max-w-4xl mb-8 leading-[1.05]">
               Des organisations<br />plus intelligentes.<br />
               <span className="italic font-normal">Des décisions<br />plus humaines.</span>
             </h1>
-            <p className="text-background/50 text-lg max-w-lg font-sans font-light leading-relaxed">
+            <p className="text-background/50 text-lg max-w-lg font-sans font-light leading-relaxed mb-10">
               Nous aidons les organisations à cadrer, sécuriser, déployer et faire adopter leurs transformations.
             </p>
+            <div className="flex items-center gap-8">
+              <Link to="/contact" className="text-sm font-sans font-medium text-background border-b border-background/30 pb-1 hover:border-background transition-colors" onClick={() => window.scrollTo(0, 0)}>
+                Prendre rendez-vous
+              </Link>
+              <button onClick={() => { const el = document.getElementById('expertises-start'); if (el) el.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-sans text-background/40 hover:text-background/70 transition-colors">
+                Voir nos expertises
+              </button>
+            </div>
           </div>
         </section>
 
         {/* ===== IMAGE BREAK — Horizontal band ===== */}
         <section className="h-[50vh] md:h-[65vh]">
           <img
-            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80"
-            alt="Collaboration"
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=80"
+            alt="Session de travail stratégique"
             className="w-full h-full object-cover"
           />
         </section>
@@ -57,8 +65,8 @@ const Index = () => {
         </section>
 
         {/* ===== EXPERTISE 1 — Full-width image with overlaid text ===== */}
-        <section className="relative h-[70vh] md:h-[80vh] flex items-end">
-          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80" alt="IA & Data" className="absolute inset-0 w-full h-full object-cover" />
+        <section id="expertises-start" className="relative h-[70vh] md:h-[80vh] flex items-end">
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=2000&q=80" alt="IA & Data — analyse stratégique" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
           <div className="container relative z-10 pb-16 md:pb-24">
             <p className="text-xs font-sans tracking-[0.2em] uppercase font-medium text-background/40 mb-5">IA & Data</p>
@@ -83,7 +91,7 @@ const Index = () => {
         <section>
           <div className="grid md:grid-cols-5 gap-0">
             <div className="md:col-span-3 aspect-[16/10] md:aspect-auto overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?auto=format&fit=crop&w=1400&q=80" alt="Cybersécurité" className="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1400&q=80" alt="Infrastructure sécurisée" className="w-full h-full object-cover" />
             </div>
             <div className="md:col-span-2 flex flex-col justify-center px-8 py-16 md:px-16 lg:px-20">
               <p className="editorial-label mb-5">Cyber & résilience</p>
@@ -112,8 +120,8 @@ const Index = () => {
         {/* ===== IMAGE BREAK ===== */}
         <section className="h-[45vh] md:h-[60vh]">
           <img
-            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80"
-            alt="Espace de réflexion"
+            src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=2000&q=80"
+            alt="Architecture de bureau contemporaine"
             className="w-full h-full object-cover"
           />
         </section>
@@ -182,8 +190,8 @@ const Index = () => {
         {/* ===== FULL IMAGE ===== */}
         <section className="h-[50vh] md:h-[65vh]">
           <img
-            src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=2000&q=80"
-            alt="Réunion d'équipe"
+            src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=2000&q=80"
+            alt="Espace de travail premium"
             className="w-full h-full object-cover"
           />
         </section>

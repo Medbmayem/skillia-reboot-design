@@ -85,7 +85,7 @@ const Navbar = () => {
 
           <div className="relative" onMouseEnter={() => handleMouseEnter('entities')} onMouseLeave={handleMouseLeave}>
             <button className="text-[13px] font-sans font-medium tracking-wide text-foreground/60 hover:text-foreground transition-colors">
-              Entités
+              Entités spécialisées
             </button>
             {openDropdown === 'entities' && (
               <div className="absolute top-full left-0 mt-4 w-48 bg-background py-3 animate-fade-in">
