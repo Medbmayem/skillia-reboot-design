@@ -11,7 +11,7 @@ const TechPage = () => {
       <main>
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=2000&q=80" alt="Développement" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80" alt="Intelligence technologique — vision globale" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-transparent" />
           </div>
           <div className="container relative z-10">
@@ -68,7 +68,7 @@ const TechPage = () => {
         </section>
 
         <section className="h-[40vh] md:h-[55vh]">
-          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=80" alt="Technology" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" alt="Architecture technologique — perspective" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-28 md:py-40">

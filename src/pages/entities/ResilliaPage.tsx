@@ -11,7 +11,7 @@ const ResilliaPage = () => {
       <main>
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2000&q=80" alt="Cybersécurité" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=2000&q=80" alt="Architecture sécurisée — protection" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-transparent" />
           </div>
           <div className="container relative z-10">
@@ -64,7 +64,7 @@ const ResilliaPage = () => {
         </section>
 
         <section className="h-[40vh] md:h-[50vh]">
-          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?auto=format&fit=crop&w=2000&q=80" alt="Sécurité" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=2000&q=80" alt="Architecture contemporaine — solidité" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-28 md:py-40">

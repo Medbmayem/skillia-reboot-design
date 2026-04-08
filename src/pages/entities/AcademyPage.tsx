@@ -11,7 +11,7 @@ const AcademyPage = () => {
       <main>
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=2000&q=80" alt="Formation" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=2000&q=80" alt="Espace de formation premium" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-transparent" />
           </div>
           <div className="container relative z-10">
@@ -64,7 +64,7 @@ const AcademyPage = () => {
         </section>
 
         <section className="h-[40vh] md:h-[55vh]">
-          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=2000&q=80" alt="Formation" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80" alt="Table de travail — environnement calme" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-28 md:py-40">
