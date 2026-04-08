@@ -14,8 +14,8 @@ const Index = () => {
         <section className="relative min-h-screen flex items-end pb-24 md:pb-32">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80"
-              alt="Salle de conseil stratégique"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
+              alt="Architecture contemporaine — perspective stratégique"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-foreground/5" />
@@ -43,7 +43,7 @@ const Index = () => {
         <section className="h-[50vh] md:h-[65vh]">
           <img
             src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80"
-            alt="Table de réunion vide — lumière naturelle"
+            alt="Table de réunion — lumière naturelle"
             className="w-full h-full object-cover"
           />
         </section>
@@ -66,11 +66,11 @@ const Index = () => {
 
         {/* ===== EXPERTISE 1 — Full-width image with overlaid text ===== */}
         <section id="expertises-start" className="relative h-[70vh] md:h-[80vh] flex items-end">
-          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=80" alt="Circuits et infrastructure technologique" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80" alt="Flux de données et intelligence artificielle" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
           <div className="container relative z-10 pb-16 md:pb-24">
             <p className="text-xs font-sans tracking-[0.2em] uppercase font-medium text-background/40 mb-5">IA & Data</p>
-            <h3 className="text-background text-2xl md:text-4xl leading-[1.15] max-w-xl mb-4">Votre IA doit rapporter.<br /><span className="italic font-normal">Pas juste fonctionner.</span></h3>
+            <h3 className="text-background text-2xl md:text-4xl leading-[1.15] max-w-xl mb-4">L'IA n'a d'intérêt que<br /><span className="italic font-normal">lorsqu'elle crée de la valeur.</span></h3>
             <Link to="/ia-data" className="text-sm font-sans text-background/50 border-b border-background/20 pb-0.5 hover:text-background hover:border-background/50 transition-colors" onClick={() => window.scrollTo(0, 0)}>Approfondir</Link>
           </div>
         </section>
@@ -91,7 +91,7 @@ const Index = () => {
         <section>
           <div className="grid md:grid-cols-5 gap-0">
             <div className="md:col-span-3 aspect-[16/10] md:aspect-auto overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1400&q=80" alt="Cybersécurité — réseau protégé" className="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1400&q=80" alt="Architecture sécurisée — perspective" className="w-full h-full object-cover" />
             </div>
             <div className="md:col-span-2 flex flex-col justify-center px-8 py-16 md:px-16 lg:px-20">
               <p className="editorial-label mb-5">Cyber & résilience</p>
@@ -120,8 +120,8 @@ const Index = () => {
         {/* ===== IMAGE BREAK ===== */}
         <section className="h-[45vh] md:h-[60vh]">
           <img
-            src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=2000&q=80"
-            alt="Détail de bureau — carnet et lumière"
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
+            alt="Espace de travail — analyse et réflexion"
             className="w-full h-full object-cover"
           />
         </section>
@@ -190,8 +190,8 @@ const Index = () => {
         {/* ===== FULL IMAGE ===== */}
         <section className="h-[50vh] md:h-[65vh]">
           <img
-            src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=2000&q=80"
-            alt="Bureau contemporain — espace de travail vide"
+            src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2000&q=80"
+            alt="Architecture contemporaine — façade"
             className="w-full h-full object-cover"
           />
         </section>

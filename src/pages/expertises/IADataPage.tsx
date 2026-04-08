@@ -36,7 +36,7 @@ const IADataPage = () => {
         </section>
 
         <section className="h-[40vh] md:h-[50vh]">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=2000&q=80" alt="Stratégie data" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80" alt="Analyse stratégique — espace de travail" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-28 md:py-40">
