@@ -81,12 +81,12 @@ const Navbar = () => {
           </div>
 
           <Link to="/approche" onClick={handleLinkClick}
-            className="text-[13px] font-sans font-medium tracking-wide text-foreground/60 hover:text-foreground transition-colors">
+            className="text-[13px] font-sans font-medium tracking-wide transition-colors">
             Notre approche
           </Link>
 
           <div className="relative" onMouseEnter={() => handleMouseEnter('entities')} onMouseLeave={handleMouseLeave}>
-            <button className="text-[13px] font-sans font-medium tracking-wide text-foreground/60 hover:text-foreground transition-colors">
+            <button className="text-[13px] font-sans font-medium tracking-wide transition-colors">
               Entités spécialisées
             </button>
             {openDropdown === 'entities' && (
@@ -102,17 +102,17 @@ const Navbar = () => {
           </div>
 
           <Link to="/ressources" onClick={handleLinkClick}
-            className="text-[13px] font-sans font-medium tracking-wide text-foreground/60 hover:text-foreground transition-colors">
+            className="text-[13px] font-sans font-medium tracking-wide transition-colors">
             Ressources
           </Link>
 
           <Link to="/collectif" onClick={handleLinkClick}
-            className="text-[13px] font-sans font-medium tracking-wide text-foreground/60 hover:text-foreground transition-colors">
+            className="text-[13px] font-sans font-medium tracking-wide transition-colors">
             Collectif
           </Link>
 
           <Link to="/contact" onClick={handleLinkClick}
-            className="text-[13px] font-sans font-medium tracking-wide text-foreground/60 hover:text-foreground transition-colors">
+            className="text-[13px] font-sans font-medium tracking-wide transition-colors">
             Contact
           </Link>
         </nav>
