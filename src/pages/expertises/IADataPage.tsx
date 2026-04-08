@@ -19,8 +19,8 @@ const IADataPage = () => {
               <Link to="/" className="hover:text-background/70">Skillia</Link> / IA & Data
             </p>
             <h1 className="text-background text-4xl md:text-5xl lg:text-6xl max-w-3xl leading-[1.1]">
-              Votre IA doit rapporter.<br />
-              <span className="italic font-normal">Pas juste fonctionner.</span>
+              L'IA n'a d'intérêt que<br />
+              <span className="italic font-normal">lorsqu'elle crée de la valeur.</span>
             </h1>
           </div>
         </section>
