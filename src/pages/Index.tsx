@@ -14,11 +14,11 @@ const Index = () => {
         <section className="relative min-h-screen flex items-end pb-24 md:pb-32">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
-              alt="Architecture contemporaine — perspective stratégique"
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80"
+              alt="Espace de travail contemporain — cabinet de conseil premium"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-foreground/5" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-foreground/10" />
           </div>
           <div className="container relative z-10">
             <h1 className="text-background text-4xl md:text-6xl lg:text-[5.5rem] max-w-4xl mb-8 leading-[1.05]">
@@ -39,13 +39,29 @@ const Index = () => {
           </div>
         </section>
 
-        {/* ===== IMAGE BREAK — Horizontal band ===== */}
-        <section className="h-[50vh] md:h-[65vh]">
-          <img
-            src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80"
-            alt="Table de réunion — lumière naturelle"
-            className="w-full h-full object-cover"
-          />
+        {/* ===== SECTEURS & PREUVES — Bande de crédibilité ===== */}
+        <section className="py-20 md:py-28 border-b border-border/30">
+          <div className="container">
+            <p className="editorial-label mb-12 text-center">Secteurs d'intervention</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-8 max-w-3xl mx-auto text-center">
+              <div>
+                <p className="font-serif text-2xl md:text-3xl mb-2">Industrie</p>
+                <p className="text-xs font-sans text-muted-foreground tracking-wide">IA & optimisation</p>
+              </div>
+              <div>
+                <p className="font-serif text-2xl md:text-3xl mb-2">Finance</p>
+                <p className="text-xs font-sans text-muted-foreground tracking-wide">Conformité & data</p>
+              </div>
+              <div>
+                <p className="font-serif text-2xl md:text-3xl mb-2">Services</p>
+                <p className="text-xs font-sans text-muted-foreground tracking-wide">Transformation digitale</p>
+              </div>
+              <div>
+                <p className="font-serif text-2xl md:text-3xl mb-2">Santé</p>
+                <p className="text-xs font-sans text-muted-foreground tracking-wide">Résilience & sécurité</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* ===== POSITIONNEMENT — Left-aligned prose ===== */}
