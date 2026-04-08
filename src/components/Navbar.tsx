@@ -57,13 +57,15 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <Link to="/" onClick={handleLinkClick} className="font-serif text-xl md:text-2xl font-medium tracking-tight text-foreground">
+        <Link to="/" onClick={handleLinkClick} className={`font-serif text-2xl md:text-[1.7rem] font-semibold tracking-[-0.02em] transition-colors duration-500 ${
+          scrolled ? 'text-foreground' : 'text-background'
+        }`}>
           Skillia
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-9">
+        <nav className={`hidden lg:flex items-center gap-9 transition-colors duration-500 ${scrolled ? '[&_a]:text-foreground/60 [&_button]:text-foreground/60 [&_a:hover]:text-foreground [&_button:hover]:text-foreground' : '[&_a]:text-background/60 [&_button]:text-background/60 [&_a:hover]:text-background [&_button:hover]:text-background'}`}>
           <div className="relative" onMouseEnter={() => handleMouseEnter('expertises')} onMouseLeave={handleMouseLeave}>
-            <button className="text-[13px] font-sans font-medium tracking-wide text-foreground/60 hover:text-foreground transition-colors">
+            <button className="text-[13px] font-sans font-medium tracking-wide transition-colors">
               Expertises
             </button>
             {openDropdown === 'expertises' && (
