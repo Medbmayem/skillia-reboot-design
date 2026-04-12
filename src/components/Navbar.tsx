@@ -83,7 +83,10 @@ const Navbar = () => {
           {/* Shared styles for all nav items */}
           {/* Expertises dropdown */}
           <div
-            className="relative flex items-center h-full"
+            className="relative"
+            onMouseEnter={() => handleMouseEnter('expertises')}
+            onMouseLeave={handleMouseLeave}
+          >
             onMouseEnter={() => handleMouseEnter('expertises')}
             onMouseLeave={handleMouseLeave}
           >
