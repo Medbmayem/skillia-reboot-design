@@ -77,7 +77,9 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-9 h-full">
+        <nav className="hidden lg:flex items-baseline gap-9"
+          style={{ marginTop: 'auto', marginBottom: 'auto' }}
+        >
           {/* Shared styles for all nav items */}
           {/* Expertises dropdown */}
           <div
