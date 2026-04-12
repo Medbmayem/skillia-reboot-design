@@ -87,9 +87,6 @@ const Navbar = () => {
             onMouseEnter={() => handleMouseEnter('expertises')}
             onMouseLeave={handleMouseLeave}
           >
-            onMouseEnter={() => handleMouseEnter('expertises')}
-            onMouseLeave={handleMouseLeave}
-          >
             <button
               className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
               style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
