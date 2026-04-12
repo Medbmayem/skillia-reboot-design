@@ -118,7 +118,7 @@ const Navbar = () => {
           <Link
             to="/approche"
             onClick={handleLinkClick}
-            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 flex items-center h-full ${textMutedClass} ${textHoverClass}`}
+            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
             style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
           >
             Notre approche
@@ -126,7 +126,7 @@ const Navbar = () => {
 
           {/* Entities dropdown */}
           <div
-            className="relative flex items-center h-full"
+            className="relative"
             onMouseEnter={() => handleMouseEnter('entities')}
             onMouseLeave={handleMouseLeave}
           >
@@ -161,7 +161,7 @@ const Navbar = () => {
           <Link
             to="/ressources"
             onClick={handleLinkClick}
-            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 flex items-center h-full ${textMutedClass} ${textHoverClass}`}
+            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
             style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
           >
             Ressources
@@ -170,7 +170,7 @@ const Navbar = () => {
           <Link
             to="/collectif"
             onClick={handleLinkClick}
-            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 flex items-center h-full ${textMutedClass} ${textHoverClass}`}
+            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
             style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
           >
             Collectif
@@ -179,7 +179,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             onClick={handleLinkClick}
-            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 flex items-center h-full ${textMutedClass} ${textHoverClass}`}
+            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
             style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
           >
             Contact
