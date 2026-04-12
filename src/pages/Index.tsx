@@ -11,14 +11,15 @@ const Index = () => {
 
       <main>
         {/* ===== HERO — Full bleed, cinematic ===== */}
+        {/* ===== HERO — Full bleed, cinematic ===== */}
         <section className="relative min-h-screen flex items-end pb-24 md:pb-32">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80"
-              alt="Espace de travail contemporain — cabinet de conseil premium"
+              src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=2000&q=80"
+              alt="Réunion stratégique — cabinet de transformation premium"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-foreground/10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 via-foreground/40 to-foreground/15" />
           </div>
           <div className="container relative z-10">
             <h1 className="text-background text-4xl md:text-6xl lg:text-[5.5rem] max-w-4xl mb-8 leading-[1.05]">
@@ -39,26 +40,37 @@ const Index = () => {
           </div>
         </section>
 
-        {/* ===== SECTEURS & PREUVES — Bande de crédibilité ===== */}
+        {/* ===== CRÉDIBILITÉ — Chiffres & preuves ===== */}
         <section className="py-20 md:py-28 border-b border-border/30">
           <div className="container">
-            <p className="editorial-label mb-12 text-center">Secteurs d'intervention</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-8 max-w-3xl mx-auto text-center">
+            <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
               <div>
-                <p className="font-serif text-2xl md:text-3xl mb-2">Industrie</p>
-                <p className="text-xs font-sans text-muted-foreground tracking-wide">IA & optimisation</p>
+                <p className="editorial-label mb-6">Qui nous sommes</p>
+                <h2 className="text-2xl md:text-3xl leading-[1.2] mb-6">
+                  Un cabinet né pour les transformations<br />
+                  <span className="italic font-normal">qui comptent vraiment.</span>
+                </h2>
+                <p className="text-sm font-sans text-muted-foreground leading-[1.9] max-w-md">
+                  IA, digital, cybersécurité, adoption — nous réunissons les expertises qui permettent aux organisations de passer de la stratégie à l'impact mesurable.
+                </p>
               </div>
-              <div>
-                <p className="font-serif text-2xl md:text-3xl mb-2">Finance</p>
-                <p className="text-xs font-sans text-muted-foreground tracking-wide">Conformité & data</p>
-              </div>
-              <div>
-                <p className="font-serif text-2xl md:text-3xl mb-2">Services</p>
-                <p className="text-xs font-sans text-muted-foreground tracking-wide">Transformation digitale</p>
-              </div>
-              <div>
-                <p className="font-serif text-2xl md:text-3xl mb-2">Santé</p>
-                <p className="text-xs font-sans text-muted-foreground tracking-wide">Résilience & sécurité</p>
+              <div className="grid grid-cols-2 gap-x-8 gap-y-10">
+                <div>
+                  <p className="font-serif text-4xl md:text-5xl mb-2">4</p>
+                  <p className="text-xs font-sans text-muted-foreground tracking-wide leading-relaxed">expertises intégrées<br />IA · Digital · Cyber · Adoption</p>
+                </div>
+                <div>
+                  <p className="font-serif text-4xl md:text-5xl mb-2">85%</p>
+                  <p className="text-xs font-sans text-muted-foreground tracking-wide leading-relaxed">taux d'adoption moyen<br />sur nos missions</p>
+                </div>
+                <div>
+                  <p className="font-serif text-4xl md:text-5xl mb-2">6–18</p>
+                  <p className="text-xs font-sans text-muted-foreground tracking-wide leading-relaxed">mois de programmes<br />de transformation</p>
+                </div>
+                <div>
+                  <p className="font-serif text-4xl md:text-5xl mb-2">3</p>
+                  <p className="text-xs font-sans text-muted-foreground tracking-wide leading-relaxed">entités spécialisées<br />Resillia · Tech · Academy</p>
+                </div>
               </div>
             </div>
           </div>
