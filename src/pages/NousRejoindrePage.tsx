@@ -19,7 +19,7 @@ const NousRejoindrePage = () => {
         {/* Hero — cinematic like homepage */}
         <section className="relative min-h-[65vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80" alt="Collaboration — environnement professionnel" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=2000&q=80" alt="Équipe en mouvement — rejoindre le collectif" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">

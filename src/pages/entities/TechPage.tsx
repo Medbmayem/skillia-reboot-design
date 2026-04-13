@@ -11,7 +11,7 @@ const TechPage = () => {
       <main>
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=80" alt="Espace de travail — environnement premium" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=2000&q=80" alt="Poste de travail — environnement technique premium" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
@@ -80,10 +80,10 @@ const TechPage = () => {
                   Assistant IA de maintenance prédictive — <span className="font-sans text-base text-muted-foreground">Industrie, 30 % de temps d&apos;arrêt en moins.</span>
                 </p>
                 <p className="font-serif text-xl md:text-2xl leading-[1.4]">
-                  Plateforme de détection de fraudes — <span className="font-sans text-base text-muted-foreground">Finance, détection en temps réel, 95 % de précision.</span>
+                  Plateforme de détection de fraudes — <span className="font-sans text-base text-muted-foreground">Finance, détection en temps réel, précision supérieure à 90 %.</span>
                 </p>
                 <p className="font-serif text-xl md:text-2xl leading-[1.4]">
-                  Automatisation du support client — <span className="font-sans text-base text-muted-foreground">Services, 60 % de tickets résolus automatiquement.</span>
+                  Automatisation du support client — <span className="font-sans text-base text-muted-foreground">Services, majorité des tickets résolus automatiquement.</span>
                 </p>
               </div>
             </div>
