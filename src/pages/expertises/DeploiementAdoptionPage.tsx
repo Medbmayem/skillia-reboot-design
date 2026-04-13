@@ -36,7 +36,7 @@ const DeploiementAdoptionPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80" alt="Équipe en collaboration — travail collectif" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2000&q=80" alt="Réunion d'équipe — collaboration" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">
