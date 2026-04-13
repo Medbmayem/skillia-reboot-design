@@ -39,7 +39,7 @@ const IADataPage = () => {
 
         {/* Image break */}
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80" alt="Analyse stratégique — espace de travail" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=2000&q=80" alt="Bureau minimaliste — concentration" className="w-full h-full object-cover" />
         </section>
 
         {/* Offre — asymmetric grid */}

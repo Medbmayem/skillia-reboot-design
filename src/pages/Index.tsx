@@ -11,7 +11,6 @@ const Index = () => {
 
       <main>
         {/* ===== HERO — Full bleed, cinematic ===== */}
-        {/* ===== HERO — Full bleed, cinematic ===== */}
         <section className="relative min-h-screen flex items-end pb-24 md:pb-32">
           <div className="absolute inset-0 z-0">
             <img
@@ -26,7 +25,7 @@ const Index = () => {
               Des organisations<br />plus intelligentes.<br />
               <span className="italic font-normal">Des décisions<br />plus humaines.</span>
             </h1>
-            <p className="text-background/50 text-lg max-w-lg font-sans font-light leading-relaxed mb-10">
+            <p className="text-background/60 text-lg max-w-lg font-sans font-light leading-relaxed mb-10">
               Nous aidons les organisations à cadrer, sécuriser, déployer et faire adopter leurs transformations.
             </p>
             <div className="flex items-center gap-8">
@@ -60,8 +59,8 @@ const Index = () => {
                   <p className="text-xs font-sans text-muted-foreground tracking-wide leading-relaxed">expertises intégrées<br />IA · Digital · Cyber · Adoption</p>
                 </div>
                 <div>
-                  <p className="font-serif text-4xl md:text-5xl mb-2">85%</p>
-                  <p className="text-xs font-sans text-muted-foreground tracking-wide leading-relaxed">taux d'adoption moyen<br />sur nos missions</p>
+                  <p className="font-serif text-4xl md:text-5xl mb-2">&gt;80%</p>
+                  <p className="text-xs font-sans text-muted-foreground tracking-wide leading-relaxed">taux d'adoption constaté<br />sur nos missions</p>
                 </div>
                 <div>
                   <p className="font-serif text-4xl md:text-5xl mb-2">6–18</p>
@@ -94,7 +93,7 @@ const Index = () => {
 
         {/* ===== EXPERTISE 1 — Full-width image with overlaid text ===== */}
         <section id="expertises-start" className="relative h-[70vh] md:h-[80vh] flex items-end">
-          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80" alt="Flux de données et intelligence artificielle" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80" alt="Analyse de données — environnement de travail" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
           <div className="container relative z-10 pb-16 md:pb-24">
             <p className="text-xs font-sans tracking-[0.2em] uppercase font-medium text-background/40 mb-5">IA & Data</p>
@@ -241,7 +240,7 @@ const Index = () => {
                   Conformité réglementaire DORA — <span className="font-sans text-base text-muted-foreground">Finance, conformité atteinte en 6 mois.</span>
                 </p>
                 <p className="font-serif text-xl md:text-2xl leading-[1.4]">
-                  Transformation et adoption — <span className="font-sans text-base text-muted-foreground">Services, 85 % d&apos;adoption en 4 mois.</span>
+                  Transformation et adoption — <span className="font-sans text-base text-muted-foreground">Services, plus de 80 % d&apos;adoption en 4 mois.</span>
                 </p>
               </div>
             </div>

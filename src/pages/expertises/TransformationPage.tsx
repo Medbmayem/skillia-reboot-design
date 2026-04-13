@@ -36,7 +36,7 @@ const TransformationPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80" alt="Salle de réunion — lumière naturelle" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=2000&q=80" alt="Espace de conférence — lumière naturelle" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">
@@ -77,7 +77,7 @@ const TransformationPage = () => {
               <p className="editorial-label mb-8">Résultats</p>
               <div className="space-y-10">
                 <p className="font-serif text-xl md:text-2xl leading-[1.4]">
-                  Transformation digitale et adoption — <span className="font-sans text-base text-muted-foreground">Services, taux d&apos;adoption de 85 % en 4 mois.</span>
+                  Transformation digitale et adoption — <span className="font-sans text-base text-muted-foreground">Services, taux d&apos;adoption supérieur à 80 % en 4 mois.</span>
                 </p>
                 <p className="font-serif text-xl md:text-2xl leading-[1.4]">
                   Programme de transformation 12 mois — <span className="font-sans text-base text-muted-foreground">Industrie, 30 % de gain de productivité sur les processus cibles.</span>
