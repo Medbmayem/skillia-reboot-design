@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -28,17 +27,13 @@ const ContactPage = () => {
                 <p className="editorial-label mb-6">Contact</p>
                 <h1 className="mb-8">Parlons de<br /><span className="italic font-normal">votre projet.</span></h1>
                 <p className="editorial-body mb-12">
-                  Que vous souhaitiez cadrer une stratégie IA, renforcer votre posture cyber, former vos équipes ou construire une solution.
+                  Que vous souhaitiez cadrer une stratégie IA, renforcer votre posture cyber, former vos équipes ou construire une solution, nous pouvons vous aider à structurer la suite.
                 </p>
 
                 <div className="space-y-6">
                   <div>
                     <p className="text-xs tracking-[0.15em] uppercase font-sans text-muted-foreground/50 mb-2">Email</p>
                     <a href="mailto:contact@skillia.fr" className="text-sm font-sans text-foreground hover:text-muted-foreground transition-colors">contact@skillia.fr</a>
-                  </div>
-                  <div>
-                    <p className="text-xs tracking-[0.15em] uppercase font-sans text-muted-foreground/50 mb-2">Téléphone</p>
-                    <p className="text-sm font-sans text-muted-foreground">[Numéro — placeholder]</p>
                   </div>
                   <div>
                     <p className="text-xs tracking-[0.15em] uppercase font-sans text-muted-foreground/50 mb-2">Adresse</p>
