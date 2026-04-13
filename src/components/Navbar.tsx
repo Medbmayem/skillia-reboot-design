@@ -16,6 +16,13 @@ const entities = [
   { label: 'Skillia Academy', href: '/academy' },
 ];
 
+const navLinks = [
+  { label: 'Ressources', href: '/ressources' },
+  { label: 'Cas d\u2019usage', href: '/use-cases' },
+  { label: 'Collectif', href: '/collectif' },
+  { label: 'Contact', href: '/contact' },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -26,7 +33,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
-    handleScroll(); // Set initial state immediately
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -50,13 +57,12 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  // On homepage at top: light text on dark hero. Otherwise: dark text on light bg.
   const isTransparent = isHomePage && !scrolled;
 
-  const textClass = isTransparent ? 'text-white' : 'text-foreground';
-  const textMutedClass = isTransparent ? 'text-white/70' : 'text-foreground/60';
-  const textHoverClass = isTransparent ? 'hover:text-white' : 'hover:text-foreground';
-  const burgerClass = isTransparent ? 'text-white' : 'text-foreground';
+  const linkClass = isTransparent
+    ? 'text-white/70 hover:text-white'
+    : 'text-foreground/60 hover:text-foreground';
+  const linkStyle = isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined;
 
   return (
     <header
@@ -66,20 +72,21 @@ const Navbar = () => {
           : 'bg-background/95 backdrop-blur-md shadow-sm'
       }`}
     >
-      <div className="container flex items-center justify-between h-16 md:h-20">
+      <div className="container flex items-center h-16 md:h-20">
+        {/* Logo */}
         <Link
           to="/"
           onClick={handleLinkClick}
-          className={`font-serif text-2xl md:text-[1.7rem] font-semibold tracking-[-0.02em] transition-colors duration-300 ${textClass}`}
+          className={`font-serif text-2xl md:text-[1.7rem] font-semibold tracking-[-0.02em] transition-colors duration-300 flex-shrink-0 ${
+            isTransparent ? 'text-white' : 'text-foreground'
+          }`}
           style={isTransparent ? { textShadow: '0 2px 10px rgba(0,0,0,0.4)' } : undefined}
         >
           Skillia
         </Link>
 
-        {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-10"
-        >
-          {/* Shared styles for all nav items */}
+        {/* Desktop nav — pushed to the right */}
+        <nav className="hidden lg:flex items-center gap-8 ml-auto">
           {/* Expertises dropdown */}
           <div
             className="relative"
@@ -87,8 +94,8 @@ const Navbar = () => {
             onMouseLeave={handleMouseLeave}
           >
             <button
-              className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
-              style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
+              className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${linkClass}`}
+              style={linkStyle}
             >
               Expertises
             </button>
@@ -117,8 +124,8 @@ const Navbar = () => {
           <Link
             to="/approche"
             onClick={handleLinkClick}
-            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
-            style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
+            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${linkClass}`}
+            style={linkStyle}
           >
             Notre approche
           </Link>
@@ -130,8 +137,8 @@ const Navbar = () => {
             onMouseLeave={handleMouseLeave}
           >
             <button
-              className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
-              style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
+              className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${linkClass}`}
+              style={linkStyle}
             >
               Entités spécialisées
             </button>
@@ -157,46 +164,24 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Link
-            to="/ressources"
-            onClick={handleLinkClick}
-            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
-            style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
-          >
-            Ressources
-          </Link>
-
-          <Link
-            to="/use-cases"
-            onClick={handleLinkClick}
-            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
-            style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
-          >
-            Cas d&apos;usage
-          </Link>
-
-          <Link
-            to="/collectif"
-            onClick={handleLinkClick}
-            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
-            style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
-          >
-            Collectif
-          </Link>
-
-          <Link
-            to="/contact"
-            onClick={handleLinkClick}
-            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
-            style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
-          >
-            Contact
-          </Link>
+          {navLinks.map(item => (
+            <Link
+              key={item.href}
+              to={item.href}
+              onClick={handleLinkClick}
+              className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${linkClass}`}
+              style={linkStyle}
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
 
         {/* Mobile burger */}
         <button
-          className={`lg:hidden p-2 transition-colors duration-300 ${burgerClass}`}
+          className={`lg:hidden p-2 transition-colors duration-300 ml-auto ${
+            isTransparent ? 'text-white' : 'text-foreground'
+          }`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Menu"
         >
@@ -239,10 +224,12 @@ const Navbar = () => {
 
           <div className="h-px bg-border/30 my-5" />
 
-          <Link to="/ressources" onClick={handleLinkClick} className="py-2 text-sm font-sans text-foreground/60 hover:text-foreground">Ressources</Link>
-          <Link to="/use-cases" onClick={handleLinkClick} className="py-2 text-sm font-sans text-foreground/60 hover:text-foreground">Cas d'usage</Link>
-          <Link to="/collectif" onClick={handleLinkClick} className="py-2 text-sm font-sans text-foreground/60 hover:text-foreground">Collectif</Link>
-          <Link to="/contact" onClick={handleLinkClick} className="py-2 text-sm font-sans text-foreground/60 hover:text-foreground">Contact</Link>
+          {navLinks.map(item => (
+            <Link key={item.href} to={item.href} onClick={handleLinkClick}
+              className="py-2 text-sm font-sans text-foreground/60 hover:text-foreground transition-colors">
+              {item.label}
+            </Link>
+          ))}
         </div>
       </div>
     </header>
