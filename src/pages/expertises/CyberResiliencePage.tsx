@@ -11,7 +11,7 @@ const CyberResiliencePage = () => {
       <main>
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=2000&q=80" alt="Architecture sécurisée — profondeur" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" alt="Architecture moderne — structure et protection" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
@@ -64,7 +64,7 @@ const CyberResiliencePage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2000&q=80" alt="Structure architecturale — résilience" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2?auto=format&fit=crop&w=2000&q=80" alt="Lignes architecturales — perspective et rigueur" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">

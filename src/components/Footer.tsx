@@ -33,6 +33,7 @@ const Footer = () => {
             <Link to="/ressources" onClick={handleClick} className="block text-sm opacity-40 hover:opacity-70 transition-opacity">Articles & guides</Link>
             <Link to="/collectif" onClick={handleClick} className="block text-sm opacity-40 hover:opacity-70 transition-opacity">Collectif</Link>
             <Link to="/contact" onClick={handleClick} className="block text-sm opacity-40 hover:opacity-70 transition-opacity">Contact</Link>
+            <Link to="/nous-rejoindre" onClick={handleClick} className="block text-sm opacity-40 hover:opacity-70 transition-opacity">Nous rejoindre</Link>
           </div>
         </div>
         <div className="mt-20 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">

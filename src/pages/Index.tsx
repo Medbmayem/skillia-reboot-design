@@ -25,7 +25,7 @@ const Index = () => {
               Des organisations<br />plus intelligentes.<br />
               <span className="italic font-normal">Des décisions<br />plus humaines.</span>
             </h1>
-            <p className="text-background/60 text-lg max-w-lg font-sans font-light leading-relaxed mb-10">
+            <p className="text-background/70 text-lg max-w-lg font-sans font-light leading-relaxed mb-10">
               Nous aidons les organisations à cadrer, sécuriser, déployer et faire adopter leurs transformations.
             </p>
             <div className="flex items-center gap-8">
