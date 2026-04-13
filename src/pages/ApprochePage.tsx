@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 
 const ApprochePage = () => {
   const steps = [
-    { num: '01', title: 'Cadrer', desc: 'Comprendre vos enjeux, évaluer votre maturité, prioriser les initiatives à fort impact.', image: 'https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=1200&q=80' },
+    { num: '01', title: 'Cadrer', desc: 'Comprendre vos enjeux, évaluer votre maturité, prioriser les initiatives à fort impact.', image: 'https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?auto=format&fit=crop&w=1200&q=80' },
     { num: '02', title: 'Sécuriser', desc: 'Intégrer la sécurité et la conformité dès la conception, pas en fin de projet.', image: 'https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?auto=format&fit=crop&w=1200&q=80' },
-    { num: '03', title: 'Déployer', desc: 'Mettre en œuvre progressivement, piloter par les résultats et les KPIs.', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80' },
-    { num: '04', title: 'Faire adopter', desc: 'Former, accompagner et ancrer les nouvelles pratiques dans le quotidien des équipes.', image: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80' },
+    { num: '03', title: 'Déployer', desc: 'Mettre en œuvre progressivement, piloter par les résultats et les KPIs.', image: 'https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=1200&q=80' },
+    { num: '04', title: 'Faire adopter', desc: 'Former, accompagner et ancrer les nouvelles pratiques dans le quotidien des équipes.', image: 'https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?auto=format&fit=crop&w=1200&q=80' },
   ];
 
   return (

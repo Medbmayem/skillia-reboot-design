@@ -12,7 +12,7 @@ const IADataPage = () => {
         {/* Hero — cinematic, aligned with homepage */}
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=2000&q=80" alt="Écrans sombres — environnement technologique sobre" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2000&q=80" alt="Abstraction numérique — flux et données" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
