@@ -12,7 +12,7 @@ const ResilliaPage = () => {
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=2000&q=80" alt="Architecture sécurisée — protection" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
             <p className="text-xs tracking-[0.2em] uppercase font-sans text-background/50 mb-6">
@@ -25,7 +25,7 @@ const ResilliaPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="max-w-2xl">
               <p className="editorial-body">
@@ -35,7 +35,7 @@ const ResilliaPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40 bg-card">
+        <section className="py-32 md:py-44 bg-card">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-20 lg:gap-32">
               <div>
@@ -63,33 +63,30 @@ const ResilliaPage = () => {
           </div>
         </section>
 
-        <section className="h-[40vh] md:h-[50vh]">
+        <section className="h-[45vh] md:h-[60vh]">
           <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=2000&q=80" alt="Architecture contemporaine — solidité" className="w-full h-full object-cover" />
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="max-w-3xl">
               <p className="editorial-label mb-8">Résultats</p>
-              <div className="space-y-16">
-                <div>
-                  <p className="font-serif text-xl md:text-2xl leading-[1.3] mb-3">Conformité DORA</p>
-                  <p className="text-sm font-sans text-muted-foreground">Finance — Conformité en 6 mois.</p>
-                </div>
-                <div>
-                  <p className="font-serif text-xl md:text-2xl leading-[1.3] mb-3">Posture cyber renforcée</p>
-                  <p className="text-sm font-sans text-muted-foreground">Industrie — 60 % de vulnérabilités critiques en moins.</p>
-                </div>
-                <div>
-                  <p className="font-serif text-xl md:text-2xl leading-[1.3] mb-3">PCA/PRA et gestion de crise</p>
-                  <p className="text-sm font-sans text-muted-foreground">Santé — Temps de reprise divisé par 3.</p>
-                </div>
+              <div className="space-y-10">
+                <p className="font-serif text-xl md:text-2xl leading-[1.4]">
+                  Conformité DORA — <span className="font-sans text-base text-muted-foreground">Finance, conformité en 6 mois.</span>
+                </p>
+                <p className="font-serif text-xl md:text-2xl leading-[1.4]">
+                  Posture cyber renforcée — <span className="font-sans text-base text-muted-foreground">Industrie, 60 % de vulnérabilités critiques en moins.</span>
+                </p>
+                <p className="font-serif text-xl md:text-2xl leading-[1.4]">
+                  PCA/PRA et gestion de crise — <span className="font-sans text-base text-muted-foreground">Santé, temps de reprise divisé par 3.</span>
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-32 md:py-44 bg-card">
           <div className="container">
             <div className="max-w-3xl">
               <p className="editorial-label mb-6">Ce que Resillia renforce</p>
@@ -121,11 +118,11 @@ const ResilliaPage = () => {
           </Link>
         </section>
 
-        <section className="py-28 md:py-40 bg-foreground text-background">
+        <section className="py-32 md:py-44 section-navy">
           <div className="container">
             <div className="max-w-2xl">
-              <h2 className="text-background text-3xl md:text-4xl leading-[1.1] mb-8">Renforcez votre<br /><span className="italic font-normal">résilience.</span></h2>
-              <Link to="/contact" className="inline-block text-[13px] font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-background text-foreground hover:bg-background/90 transition-colors" onClick={() => window.scrollTo(0, 0)}>Demander un audit</Link>
+              <h2 className="text-3xl md:text-4xl leading-[1.1] mb-8">Renforcez votre<br /><span className="italic font-normal">résilience.</span></h2>
+              <Link to="/contact" className="text-sm font-sans text-background/50 border-b border-background/20 pb-0.5 hover:text-background hover:border-background/50 transition-colors" onClick={() => window.scrollTo(0, 0)}>Demander un audit</Link>
             </div>
           </div>
         </section>

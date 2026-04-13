@@ -11,8 +11,8 @@ const TechPage = () => {
       <main>
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=80" alt="Intelligence technologique — vision globale" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-transparent" />
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" alt="Architecture technologique — perspective" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
             <p className="text-xs tracking-[0.2em] uppercase font-sans text-background/50 mb-6">
@@ -25,7 +25,7 @@ const TechPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="max-w-2xl">
               <p className="editorial-body">
@@ -35,7 +35,7 @@ const TechPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40 bg-card">
+        <section className="py-32 md:py-44 bg-card">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-20 lg:gap-32">
               <div>
@@ -45,21 +45,21 @@ const TechPage = () => {
                   <span className="italic font-normal">de solutions IA.</span>
                 </h2>
               </div>
-              <div className="space-y-10">
+              <div className="space-y-12">
                 <div>
-                  <h3 className="text-xl mb-2">Assistants métier</h3>
+                  <h3 className="text-xl mb-3">Assistants métier</h3>
                   <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Des assistants IA conçus pour des tâches métier spécifiques : analyse, rédaction, support client, aide à la décision.</p>
                 </div>
                 <div>
-                  <h3 className="text-xl mb-2">Agents IA</h3>
+                  <h3 className="text-xl mb-3">Agents IA</h3>
                   <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Des agents autonomes capables d&apos;exécuter des workflows complexes et de traiter des données à grande échelle.</p>
                 </div>
                 <div>
-                  <h3 className="text-xl mb-2">Plateformes data & IA</h3>
+                  <h3 className="text-xl mb-3">Plateformes data & IA</h3>
                   <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Architecture et déploiement de plateformes data robustes pour centraliser et exploiter vos données.</p>
                 </div>
                 <div>
-                  <h3 className="text-xl mb-2">Intégration IA dans le SI</h3>
+                  <h3 className="text-xl mb-3">Intégration IA dans le SI</h3>
                   <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Connexion de capacités IA à vos outils existants sans rupture, avec sécurité intégrée.</p>
                 </div>
               </div>
@@ -67,33 +67,30 @@ const TechPage = () => {
           </div>
         </section>
 
-        <section className="h-[40vh] md:h-[55vh]">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" alt="Architecture technologique — perspective" className="w-full h-full object-cover" />
+        <section className="h-[45vh] md:h-[60vh]">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=80" alt="Espace de travail — détail" className="w-full h-full object-cover" />
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="max-w-3xl">
               <p className="editorial-label mb-8">Réalisations</p>
-              <div className="space-y-16">
-                <div>
-                  <p className="font-serif text-xl md:text-2xl leading-[1.3] mb-3">Assistant IA de maintenance prédictive</p>
-                  <p className="text-sm font-sans text-muted-foreground">Industrie — 30 % de temps d&apos;arrêt en moins.</p>
-                </div>
-                <div>
-                  <p className="font-serif text-xl md:text-2xl leading-[1.3] mb-3">Plateforme de détection de fraudes</p>
-                  <p className="text-sm font-sans text-muted-foreground">Finance — Détection en temps réel, 95 % de précision.</p>
-                </div>
-                <div>
-                  <p className="font-serif text-xl md:text-2xl leading-[1.3] mb-3">Automatisation du support client</p>
-                  <p className="text-sm font-sans text-muted-foreground">Services — 60 % de tickets résolus automatiquement.</p>
-                </div>
+              <div className="space-y-10">
+                <p className="font-serif text-xl md:text-2xl leading-[1.4]">
+                  Assistant IA de maintenance prédictive — <span className="font-sans text-base text-muted-foreground">Industrie, 30 % de temps d&apos;arrêt en moins.</span>
+                </p>
+                <p className="font-serif text-xl md:text-2xl leading-[1.4]">
+                  Plateforme de détection de fraudes — <span className="font-sans text-base text-muted-foreground">Finance, détection en temps réel, 95 % de précision.</span>
+                </p>
+                <p className="font-serif text-xl md:text-2xl leading-[1.4]">
+                  Automatisation du support client — <span className="font-sans text-base text-muted-foreground">Services, 60 % de tickets résolus automatiquement.</span>
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-32 md:py-44 bg-card">
           <div className="container">
             <div className="max-w-3xl">
               <p className="editorial-label mb-6">Ce que Skillia Tech conçoit</p>
@@ -119,11 +116,11 @@ const TechPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40 bg-foreground text-background">
+        <section className="py-32 md:py-44 section-navy">
           <div className="container">
             <div className="max-w-2xl">
-              <h2 className="text-background text-3xl md:text-4xl leading-[1.1] mb-8">Construisons votre<br /><span className="italic font-normal">solution IA.</span></h2>
-              <Link to="/contact" className="inline-block text-[13px] font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-background text-foreground hover:bg-background/90 transition-colors" onClick={() => window.scrollTo(0, 0)}>Prendre RDV</Link>
+              <h2 className="text-3xl md:text-4xl leading-[1.1] mb-8">Construisons votre<br /><span className="italic font-normal">solution IA.</span></h2>
+              <Link to="/contact" className="text-sm font-sans text-background/50 border-b border-background/20 pb-0.5 hover:text-background hover:border-background/50 transition-colors" onClick={() => window.scrollTo(0, 0)}>Prendre rendez-vous</Link>
             </div>
           </div>
         </section>
