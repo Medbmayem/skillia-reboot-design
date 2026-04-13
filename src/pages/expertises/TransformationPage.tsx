@@ -12,7 +12,7 @@ const TransformationPage = () => {
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?auto=format&fit=crop&w=2000&q=80" alt="Architecture contemporaine — transformation" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
             <p className="text-xs tracking-[0.2em] uppercase font-sans text-background/50 mb-6">
@@ -25,7 +25,7 @@ const TransformationPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="max-w-2xl">
               <p className="editorial-body">
@@ -35,11 +35,11 @@ const TransformationPage = () => {
           </div>
         </section>
 
-        <section className="h-[40vh] md:h-[50vh]">
+        <section className="h-[45vh] md:h-[60vh]">
           <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80" alt="Salle de réunion — lumière naturelle" className="w-full h-full object-cover" />
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-20 lg:gap-32">
               <div>
@@ -49,21 +49,21 @@ const TransformationPage = () => {
                   <span className="italic font-normal">à l&apos;adoption durable.</span>
                 </h2>
               </div>
-              <div className="space-y-10">
+              <div className="space-y-12">
                 <div>
-                  <h3 className="text-xl mb-2">Diagnostic de maturité digitale</h3>
+                  <h3 className="text-xl mb-3">Diagnostic de maturité digitale</h3>
                   <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Évaluation de votre organisation, vos processus et votre capacité à se transformer.</p>
                 </div>
                 <div>
-                  <h3 className="text-xl mb-2">Refonte de processus</h3>
+                  <h3 className="text-xl mb-3">Refonte de processus</h3>
                   <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Simplification et digitalisation des processus métier pour plus d&apos;efficacité.</p>
                 </div>
                 <div>
-                  <h3 className="text-xl mb-2">Conduite du changement</h3>
+                  <h3 className="text-xl mb-3">Conduite du changement</h3>
                   <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Accompagnement des équipes dans l&apos;appropriation des nouvelles pratiques.</p>
                 </div>
                 <div>
-                  <h3 className="text-xl mb-2">Accompagnement CODIR</h3>
+                  <h3 className="text-xl mb-3">Accompagnement CODIR</h3>
                   <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Alignement stratégique et pilotage de la transformation au niveau direction.</p>
                 </div>
               </div>
@@ -71,25 +71,23 @@ const TransformationPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40 bg-card">
+        <section className="py-32 md:py-44 bg-card">
           <div className="container">
             <div className="max-w-3xl">
               <p className="editorial-label mb-8">Résultats</p>
-              <div className="space-y-16">
-                <div>
-                  <p className="font-serif text-xl md:text-2xl leading-[1.3] mb-3">Transformation digitale et adoption</p>
-                  <p className="text-sm font-sans text-muted-foreground">Services — Taux d&apos;adoption de 85 % en 4 mois.</p>
-                </div>
-                <div>
-                  <p className="font-serif text-xl md:text-2xl leading-[1.3] mb-3">Programme de transformation 12 mois</p>
-                  <p className="text-sm font-sans text-muted-foreground">Industrie — 30 % de gain de productivité sur les processus cibles.</p>
-                </div>
+              <div className="space-y-10">
+                <p className="font-serif text-xl md:text-2xl leading-[1.4]">
+                  Transformation digitale et adoption — <span className="font-sans text-base text-muted-foreground">Services, taux d&apos;adoption de 85 % en 4 mois.</span>
+                </p>
+                <p className="font-serif text-xl md:text-2xl leading-[1.4]">
+                  Programme de transformation 12 mois — <span className="font-sans text-base text-muted-foreground">Industrie, 30 % de gain de productivité sur les processus cibles.</span>
+                </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="max-w-3xl">
               <p className="editorial-label mb-8">Problèmes traités</p>
@@ -111,18 +109,19 @@ const TransformationPage = () => {
           </div>
         </section>
 
-        <section className="py-20 md:py-28 bg-card">
+        <section className="py-32 md:py-44 bg-card">
           <div className="container">
             <div className="max-w-2xl">
-              <p className="text-sm font-sans text-muted-foreground mb-4">Ressources liées</p>
-              <Link to="/ressources/erreurs-transformation-digitale" className="editorial-link mb-3 inline-block" onClick={() => window.scrollTo(0, 0)}>Les 3 erreurs qui font échouer la transformation digitale</Link>
-              <br />
-              <Link to="/use-cases/programme-transformation-12-mois" className="editorial-link inline-block" onClick={() => window.scrollTo(0, 0)}>Structurer un programme de transformation sur 12 mois</Link>
+              <p className="editorial-label mb-6">Ressources liées</p>
+              <div className="space-y-4">
+                <Link to="/ressources/erreurs-transformation-digitale" className="editorial-link block" onClick={() => window.scrollTo(0, 0)}>Les 3 erreurs qui font échouer la transformation digitale</Link>
+                <Link to="/use-cases/programme-transformation-12-mois" className="editorial-link block" onClick={() => window.scrollTo(0, 0)}>Structurer un programme de transformation sur 12 mois</Link>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="py-20 md:py-28">
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="max-w-2xl">
               <h3 className="text-2xl mb-4">Besoin de former vos équipes ?</h3>
@@ -132,11 +131,11 @@ const TransformationPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40 bg-foreground text-background">
+        <section className="py-32 md:py-44 section-navy">
           <div className="container">
             <div className="max-w-2xl">
-              <h2 className="text-background text-3xl md:text-4xl leading-[1.1] mb-8">Engageons la<br /><span className="italic font-normal">transformation.</span></h2>
-              <Link to="/contact" className="inline-block text-[13px] font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-background text-foreground hover:bg-background/90 transition-colors" onClick={() => window.scrollTo(0, 0)}>Prendre RDV</Link>
+              <h2 className="text-3xl md:text-4xl leading-[1.1] mb-8">Engageons la<br /><span className="italic font-normal">transformation.</span></h2>
+              <Link to="/contact" className="text-sm font-sans text-background/50 border-b border-background/20 pb-0.5 hover:text-background hover:border-background/50 transition-colors" onClick={() => window.scrollTo(0, 0)}>Prendre rendez-vous</Link>
             </div>
           </div>
         </section>
