@@ -9,11 +9,25 @@ const RessourcesPage = () => {
     <div className="min-h-screen">
       <Navbar />
       <main>
-        <section className="pt-32 pb-20 md:pt-40 md:pb-28">
+        <section className="relative min-h-[65vh] flex items-end pb-20">
+          <div className="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80" alt="Analyse et réflexion — espace de travail" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
+          </div>
+          <div className="container relative z-10">
+            <p className="text-xs tracking-[0.2em] uppercase font-sans text-background/50 mb-6">
+              <Link to="/" className="hover:text-background/70">Skillia</Link> / Ressources
+            </p>
+            <h1 className="text-background text-4xl md:text-5xl lg:text-6xl max-w-4xl leading-[1.1]">
+              Analyses, guides<br />
+              <span className="italic font-normal">et retours d&apos;expérience.</span>
+            </h1>
+          </div>
+        </section>
+
+        <section className="py-32 md:py-44">
           <div className="container">
-            <div className="max-w-3xl">
-              <p className="editorial-label mb-6">Ressources</p>
-              <h1 className="mb-10">Analyses, guides<br /><span className="italic font-normal">et retours d&apos;expérience.</span></h1>
+            <div className="max-w-2xl">
               <p className="editorial-body">
                 Des contenus de fond pour éclairer vos décisions en matière d&apos;IA, de transformation digitale et de cybersécurité.
               </p>
@@ -21,7 +35,7 @@ const RessourcesPage = () => {
           </div>
         </section>
 
-        <section className="pb-28 md:pb-40">
+        <section className="pb-32 md:pb-44">
           <div className="container">
             <div className="max-w-4xl">
               {articles.map((article, i) => (
@@ -40,7 +54,7 @@ const RessourcesPage = () => {
           </div>
         </section>
 
-        <section className="py-20 md:py-28 bg-card">
+        <section className="py-32 md:py-44 bg-card">
           <div className="container">
             <div className="max-w-2xl">
               <p className="editorial-label mb-4">Cas d&apos;usage</p>
@@ -50,11 +64,11 @@ const RessourcesPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40 bg-foreground text-background">
+        <section className="py-32 md:py-44 section-navy">
           <div className="container">
             <div className="max-w-2xl">
-              <h2 className="text-background text-3xl md:text-4xl leading-[1.1] mb-8">Besoin d&apos;un éclairage<br /><span className="italic font-normal">personnalisé ?</span></h2>
-              <Link to="/contact" className="inline-block text-[13px] font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-background text-foreground hover:bg-background/90 transition-colors" onClick={() => window.scrollTo(0, 0)}>Prendre RDV</Link>
+              <h2 className="text-3xl md:text-4xl leading-[1.1] mb-8">Besoin d&apos;un éclairage<br /><span className="italic font-normal">personnalisé ?</span></h2>
+              <Link to="/contact" className="text-sm font-sans text-background/50 border-b border-background/20 pb-0.5 hover:text-background hover:border-background/50 transition-colors" onClick={() => window.scrollTo(0, 0)}>Prendre rendez-vous</Link>
             </div>
           </div>
         </section>
