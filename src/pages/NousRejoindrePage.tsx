@@ -16,11 +16,26 @@ const NousRejoindrePage = () => {
     <div className="min-h-screen">
       <Navbar />
       <main>
-        <section className="pt-32 pb-20 md:pt-40 md:pb-28">
+        {/* Hero — cinematic like homepage */}
+        <section className="relative min-h-[65vh] flex items-end pb-20">
+          <div className="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80" alt="Espace de travail — collaboration" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
+          </div>
+          <div className="container relative z-10">
+            <p className="text-xs tracking-[0.2em] uppercase font-sans text-background/50 mb-6">
+              <Link to="/" className="hover:text-background/70">Skillia</Link> / Nous rejoindre
+            </p>
+            <h1 className="text-background text-4xl md:text-5xl lg:text-6xl max-w-3xl leading-[1.1]">
+              Rejoignez un collectif<br />
+              <span className="italic font-normal">qui transforme les organisations.</span>
+            </h1>
+          </div>
+        </section>
+
+        <section className="py-32 md:py-44">
           <div className="container">
-            <div className="max-w-3xl">
-              <p className="editorial-label mb-6">Nous rejoindre</p>
-              <h1 className="mb-10">Rejoignez un collectif<br /><span className="italic font-normal">qui transforme les organisations.</span></h1>
+            <div className="max-w-2xl">
               <p className="editorial-body">
                 Chez Skillia, vous travaillez sur des missions à fort impact, au croisement de l&apos;IA, de la cybersécurité et de la transformation digitale.
               </p>
@@ -28,7 +43,7 @@ const NousRejoindrePage = () => {
           </div>
         </section>
 
-        <section className="pb-28 md:pb-40">
+        <section className="pb-32 md:pb-44">
           <div className="container">
             <p className="editorial-label mb-12">Offres ouvertes</p>
             <div className="max-w-4xl">
@@ -48,11 +63,11 @@ const NousRejoindrePage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40 bg-foreground text-background">
+        <section className="py-32 md:py-44 section-navy">
           <div className="container">
             <div className="max-w-2xl">
-              <h2 className="text-background text-3xl md:text-4xl leading-[1.1] mb-8">Rejoignez-<br /><span className="italic font-normal">nous.</span></h2>
-              <Link to="/contact" className="inline-block text-[13px] font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-background text-foreground hover:bg-background/90 transition-colors" onClick={() => window.scrollTo(0, 0)}>Nous contacter</Link>
+              <h2 className="text-3xl md:text-4xl leading-[1.1] mb-8">Rejoignez-<br /><span className="italic font-normal">nous.</span></h2>
+              <Link to="/contact" className="text-sm font-sans text-background/50 border-b border-background/20 pb-0.5 hover:text-background hover:border-background/50 transition-colors" onClick={() => window.scrollTo(0, 0)}>Nous contacter</Link>
             </div>
           </div>
         </section>
