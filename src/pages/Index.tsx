@@ -11,28 +11,28 @@ const Index = () => {
 
       <main>
         {/* ===== HERO — Full bleed, cinematic ===== */}
-        <section className="relative min-h-screen flex items-end pb-24 md:pb-32">
+        <section className="relative min-h-screen flex items-end pb-28 md:pb-36">
           <div className="absolute inset-0 z-0">
             <img
               src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=2000&q=80"
               alt="Réunion stratégique — cabinet de transformation premium"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/85 via-foreground/40 to-foreground/15" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/95 via-foreground/55 to-foreground/20" />
           </div>
           <div className="container relative z-10">
-            <h1 className="text-background text-4xl md:text-6xl lg:text-[5.5rem] max-w-4xl mb-8 leading-[1.05]">
+            <h1 className="text-background text-4xl md:text-6xl lg:text-[5.5rem] max-w-4xl mb-6 leading-[1.05] drop-shadow-[0_2px_12px_rgba(0,0,0,0.3)]">
               Des organisations<br />plus intelligentes.<br />
               <span className="italic font-normal">Des décisions<br />plus humaines.</span>
             </h1>
-            <p className="text-background/70 text-lg max-w-lg font-sans font-light leading-relaxed mb-10">
+            <p className="text-background/80 text-lg md:text-xl max-w-lg font-sans font-light leading-relaxed mb-12">
               Nous aidons les organisations à cadrer, sécuriser, déployer et faire adopter leurs transformations.
             </p>
-            <div className="flex items-center gap-8">
-              <Link to="/contact" className="text-sm font-sans font-medium text-background border-b border-background/30 pb-1 hover:border-background transition-colors" onClick={() => window.scrollTo(0, 0)}>
+            <div className="flex items-center gap-10">
+              <Link to="/contact" className="text-sm font-sans font-medium tracking-wide text-background border-b-2 border-background/40 pb-1.5 hover:border-background transition-colors" onClick={() => window.scrollTo(0, 0)}>
                 Prendre rendez-vous
               </Link>
-              <button onClick={() => { const el = document.getElementById('expertises-start'); if (el) el.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-sans text-background/40 hover:text-background/70 transition-colors">
+              <button onClick={() => { const el = document.getElementById('expertises-start'); if (el) el.scrollIntoView({ behavior: 'smooth' }); }} className="text-sm font-sans tracking-wide text-background/50 hover:text-background/80 transition-colors">
                 Voir nos expertises
               </button>
             </div>
