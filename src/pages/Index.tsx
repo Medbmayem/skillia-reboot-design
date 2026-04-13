@@ -14,8 +14,8 @@ const Index = () => {
         <section className="relative min-h-screen flex items-end pb-28 md:pb-36">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=2000&q=80"
-              alt="Formes abstraites — flux et mouvement"
+src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
+              alt="Architecture contemporaine — verre et verticalité"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/95 via-foreground/55 to-foreground/20" />
@@ -93,7 +93,7 @@ const Index = () => {
 
         {/* ===== EXPERTISE 1 — Full-width image with overlaid text ===== */}
         <section id="expertises-start" className="relative h-[70vh] md:h-[80vh] flex items-end">
-          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2000&q=80" alt="Abstraction numérique — flux de données" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80" alt="Bureau sobre — carnet, stylo et décision" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
           <div className="container relative z-10 pb-16 md:pb-24">
             <p className="text-xs font-sans tracking-[0.2em] uppercase font-medium text-background/50 mb-5">IA & Data</p>
@@ -147,8 +147,8 @@ const Index = () => {
         {/* ===== IMAGE BREAK ===== */}
         <section className="h-[50vh] md:h-[65vh]">
           <img
-            src="https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?auto=format&fit=crop&w=2000&q=80"
-            alt="Texture abstraite — matière et profondeur"
+src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?auto=format&fit=crop&w=2000&q=80"
+            alt="Surface de marbre — matière et précision"
             className="w-full h-full object-cover"
           />
         </section>

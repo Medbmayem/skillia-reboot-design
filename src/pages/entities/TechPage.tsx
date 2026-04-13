@@ -11,7 +11,7 @@ const TechPage = () => {
       <main>
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=2000&q=80" alt="Infrastructure technique — serveurs et lumière froide" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80" alt="Espace de travail moderne — verre et précision" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
@@ -68,7 +68,7 @@ const TechPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=2000&q=80" alt="Lignes de lumière — abstraction et mouvement" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=2000&q=80" alt="Escalier moderne — structure et progression" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">
