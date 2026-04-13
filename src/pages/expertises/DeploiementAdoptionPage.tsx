@@ -11,7 +11,7 @@ const DeploiementAdoptionPage = () => {
       <main>
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2000&q=80" alt="Paysage brumeux — trajectoire et progression" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=2000&q=80" alt="Environnement de travail sobre — collaboration discrète" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
@@ -36,7 +36,7 @@ const DeploiementAdoptionPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?auto=format&fit=crop&w=2000&q=80" alt="Paysage brumeux — trajectoire et ancrage" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" alt="Bureau moderne — accompagnement et ancrage" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">

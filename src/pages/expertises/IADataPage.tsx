@@ -12,7 +12,7 @@ const IADataPage = () => {
         {/* Hero — cinematic, aligned with homepage */}
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2000&q=80" alt="Abstraction numérique — flux et données" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=2000&q=80" alt="Couloir architectural — perspective et cadrage" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
@@ -39,7 +39,7 @@ const IADataPage = () => {
 
         {/* Image break */}
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=2000&q=80" alt="Lumière abstraite — flux de données" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" alt="Espace de travail sobre — lumière et concentration" className="w-full h-full object-cover" />
         </section>
 
         {/* Offre — asymmetric grid */}

@@ -48,7 +48,7 @@ const CollectifPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=2000&q=80" alt="Lignes abstraites — mouvement et direction" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1431540015159-0f9f2adcb8f8?auto=format&fit=crop&w=2000&q=80" alt="Béton architectural — structure et solidité" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">
