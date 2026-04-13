@@ -71,14 +71,13 @@ const Navbar = () => {
           to="/"
           onClick={handleLinkClick}
           className={`font-serif text-2xl md:text-[1.7rem] font-semibold tracking-[-0.02em] transition-colors duration-300 ${textClass}`}
-          style={isTransparent ? { textShadow: '0 1px 8px rgba(0,0,0,0.3)' } : undefined}
+          style={isTransparent ? { textShadow: '0 2px 10px rgba(0,0,0,0.4)' } : undefined}
         >
           Skillia
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-baseline gap-9"
-          style={{ marginTop: 'auto', marginBottom: 'auto' }}
+        <nav className="hidden lg:flex items-center gap-10"
         >
           {/* Shared styles for all nav items */}
           {/* Expertises dropdown */}

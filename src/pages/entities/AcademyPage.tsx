@@ -11,7 +11,7 @@ const AcademyPage = () => {
       <main>
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=2000&q=80" alt="Espace de formation premium" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=2000&q=80" alt="Espace de formation lumineux" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
@@ -64,7 +64,7 @@ const AcademyPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=2000&q=80" alt="Couloir de bureau — lumière douce" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1497366216831-852f968c08e2?auto=format&fit=crop&w=2000&q=80" alt="Couloir lumineux — espace premium" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">

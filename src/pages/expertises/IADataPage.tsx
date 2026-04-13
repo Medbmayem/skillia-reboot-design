@@ -12,7 +12,7 @@ const IADataPage = () => {
         {/* Hero — cinematic, aligned with homepage */}
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=2000&q=80" alt="Équipe en réunion stratégique — cadrage IA" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2000&q=80" alt="Travail d'analyse — données et stratégie" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
@@ -39,7 +39,7 @@ const IADataPage = () => {
 
         {/* Image break */}
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=2000&q=80" alt="Bureau minimaliste — concentration" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=2000&q=80" alt="Bureau épuré — concentration" className="w-full h-full object-cover" />
         </section>
 
         {/* Offre — asymmetric grid */}
