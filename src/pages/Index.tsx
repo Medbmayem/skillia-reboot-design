@@ -40,7 +40,7 @@ const Index = () => {
         </section>
 
         {/* ===== CRÉDIBILITÉ — Chiffres & preuves ===== */}
-        <section className="py-20 md:py-28 border-b border-border/30">
+        <section className="py-24 md:py-32 border-b border-border/30">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
               <div>
@@ -53,7 +53,7 @@ const Index = () => {
                   IA, digital, cybersécurité, adoption — nous réunissons les expertises qui permettent aux organisations de passer de la stratégie à l'impact mesurable.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-x-8 gap-y-10">
+              <div className="grid grid-cols-2 gap-x-10 gap-y-12">
                 <div>
                   <p className="font-serif text-4xl md:text-5xl mb-2">4</p>
                   <p className="text-xs font-sans text-muted-foreground tracking-wide leading-relaxed">expertises intégrées<br />IA · Digital · Cyber · Adoption</p>
@@ -94,11 +94,11 @@ const Index = () => {
         {/* ===== EXPERTISE 1 — Full-width image with overlaid text ===== */}
         <section id="expertises-start" className="relative h-[70vh] md:h-[80vh] flex items-end">
           <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80" alt="Analyse de données — environnement de travail" className="absolute inset-0 w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
           <div className="container relative z-10 pb-16 md:pb-24">
-            <p className="text-xs font-sans tracking-[0.2em] uppercase font-medium text-background/40 mb-5">IA & Data</p>
-            <h3 className="text-background text-2xl md:text-4xl leading-[1.15] max-w-xl mb-4">L'IA n'a d'intérêt que<br /><span className="italic font-normal">lorsqu'elle crée de la valeur.</span></h3>
-            <Link to="/ia-data" className="text-sm font-sans text-background/50 border-b border-background/20 pb-0.5 hover:text-background hover:border-background/50 transition-colors" onClick={() => window.scrollTo(0, 0)}>Approfondir</Link>
+            <p className="text-xs font-sans tracking-[0.2em] uppercase font-medium text-background/50 mb-5">IA & Data</p>
+            <h3 className="text-background text-2xl md:text-4xl leading-[1.15] max-w-xl mb-5 drop-shadow-[0_1px_8px_rgba(0,0,0,0.2)]">L'IA n'a d'intérêt que<br /><span className="italic font-normal">lorsqu'elle crée de la valeur.</span></h3>
+            <Link to="/ia-data" className="text-sm font-sans text-background/60 border-b border-background/30 pb-0.5 hover:text-background hover:border-background/60 transition-colors" onClick={() => window.scrollTo(0, 0)}>Approfondir</Link>
           </div>
         </section>
 
@@ -145,7 +145,7 @@ const Index = () => {
         </section>
 
         {/* ===== IMAGE BREAK ===== */}
-        <section className="h-[45vh] md:h-[60vh]">
+        <section className="h-[50vh] md:h-[65vh]">
           <img
             src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
             alt="Espace de travail — analyse et réflexion"
