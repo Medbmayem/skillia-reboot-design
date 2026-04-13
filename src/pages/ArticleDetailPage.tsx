@@ -21,41 +21,55 @@ const ArticleDetailPage = () => {
     <div className="min-h-screen">
       <Navbar />
       <main>
-        <section className="pt-32 pb-16 md:pt-40 md:pb-20">
+        {/* Hero — cinematic */}
+        <section className="relative min-h-[65vh] flex items-end pb-20">
+          <div className="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80" alt="Réflexion stratégique" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
+          </div>
+          <div className="container relative z-10">
+            <p className="text-xs tracking-[0.15em] uppercase font-sans text-background/50 mb-6">
+              <Link to="/" className="hover:text-background/70">Skillia</Link>
+              {' / '}
+              <Link to="/ressources" className="hover:text-background/70">Ressources</Link>
+              {' / '}
+              <span className="text-background/40">{article.category} · {article.type}</span>
+            </p>
+            <h1 className="text-background text-4xl md:text-5xl lg:text-6xl max-w-4xl leading-[1.1]">{article.title}</h1>
+          </div>
+        </section>
+
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="max-w-3xl">
-              <p className="text-xs tracking-[0.15em] uppercase font-sans text-muted-foreground/50 mb-6">
-                {article.category} · {article.type}
-              </p>
-              <h1 className="mb-8">{article.title}</h1>
               <p className="editorial-body">{article.chapeau}</p>
             </div>
           </div>
         </section>
 
         {article.sections.map((section, i) => (
-          <section key={i} className="py-16 md:py-20">
+          <section key={i} className={`py-32 md:py-44 ${i % 2 === 0 ? 'bg-card' : ''}`}>
             <div className="container">
               <div className="max-w-3xl">
-                <h2 className="text-2xl md:text-3xl leading-[1.2] mb-6">{section.title}</h2>
+                <h2 className="text-2xl md:text-3xl leading-[1.2] mb-8">{section.title}</h2>
                 <p className="text-base font-sans text-muted-foreground leading-[1.8]">{section.text}</p>
               </div>
             </div>
           </section>
         ))}
 
-        <section className="py-20 md:py-28 bg-card">
+        <section className="py-32 md:py-44 bg-card">
           <div className="container">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl mx-auto">
               <p className="font-serif text-xl md:text-2xl italic leading-[1.4]">{article.conclusion}</p>
             </div>
           </div>
         </section>
 
-        <section className="py-20 md:py-28">
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="max-w-3xl">
-              <p className="text-sm font-sans text-muted-foreground mb-4">Expertise associée</p>
+              <p className="editorial-label mb-6">Expertise associée</p>
               <Link to={article.relatedExpertiseLink} className="editorial-link mb-12 inline-block" onClick={() => window.scrollTo(0, 0)}>
                 {article.relatedExpertise}
               </Link>
@@ -80,7 +94,7 @@ const ArticleDetailPage = () => {
         </section>
 
         {relatedArticles.length > 0 && (
-          <section className="py-20 md:py-28 bg-card">
+          <section className="py-32 md:py-44 bg-card">
             <div className="container">
               <div className="max-w-3xl">
                 <p className="editorial-label mb-8">Articles liés</p>
@@ -100,11 +114,11 @@ const ArticleDetailPage = () => {
           </section>
         )}
 
-        <section className="py-28 md:py-40 bg-foreground text-background">
+        <section className="py-32 md:py-44 section-navy">
           <div className="container">
             <div className="max-w-2xl">
-              <h2 className="text-background text-3xl md:text-4xl leading-[1.1] mb-8">Besoin d&apos;un éclairage<br /><span className="italic font-normal">personnalisé ?</span></h2>
-              <Link to="/contact" className="inline-block text-[13px] font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-background text-foreground hover:bg-background/90 transition-colors" onClick={() => window.scrollTo(0, 0)}>Prendre RDV</Link>
+              <h2 className="text-3xl md:text-4xl leading-[1.1] mb-8">Besoin d&apos;un éclairage<br /><span className="italic font-normal">personnalisé ?</span></h2>
+              <Link to="/contact" className="text-sm font-sans text-background/50 border-b border-background/20 pb-0.5 hover:text-background hover:border-background/50 transition-colors" onClick={() => window.scrollTo(0, 0)}>Prendre rendez-vous</Link>
             </div>
           </div>
         </section>

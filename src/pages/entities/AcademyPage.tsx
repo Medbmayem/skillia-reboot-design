@@ -12,7 +12,7 @@ const AcademyPage = () => {
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=2000&q=80" alt="Espace de formation premium" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
             <p className="text-xs tracking-[0.2em] uppercase font-sans text-background/50 mb-6">
@@ -25,7 +25,7 @@ const AcademyPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="max-w-2xl">
               <p className="editorial-body">
@@ -35,7 +35,7 @@ const AcademyPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40 bg-card">
+        <section className="py-32 md:py-44 bg-card">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-20 lg:gap-32">
               <div>
@@ -63,11 +63,11 @@ const AcademyPage = () => {
           </div>
         </section>
 
-        <section className="h-[40vh] md:h-[55vh]">
+        <section className="h-[45vh] md:h-[60vh]">
           <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80" alt="Table de travail — environnement calme" className="w-full h-full object-cover" />
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="max-w-2xl">
               <p className="editorial-label mb-6">Formats</p>
@@ -78,18 +78,18 @@ const AcademyPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40 bg-card">
+        <section className="py-32 md:py-44 bg-card">
           <div className="container">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl mx-auto">
               <p className="font-serif text-2xl md:text-3xl italic leading-[1.4] mb-8">
                 « Des formations concrètes et directement applicables. On sort avec des outils qu&apos;on peut utiliser dès le lendemain. »
               </p>
-              <p className="text-xs font-sans tracking-[0.15em] uppercase text-muted-foreground/60">Manager — Secteur services</p>
+              <p className="text-xs font-sans tracking-[0.15em] uppercase text-muted-foreground/50">Manager — Secteur services</p>
             </div>
           </div>
         </section>
 
-        <section className="py-28 md:py-40">
+        <section className="py-32 md:py-44">
           <div className="container">
             <div className="max-w-3xl">
               <p className="editorial-label mb-6">Ce que Skillia Academy accompagne</p>
@@ -115,11 +115,11 @@ const AcademyPage = () => {
           </div>
         </section>
 
-        <section className="py-28 md:py-40 bg-foreground text-background">
+        <section className="py-32 md:py-44 section-navy">
           <div className="container">
             <div className="max-w-2xl">
-              <h2 className="text-background text-3xl md:text-4xl leading-[1.1] mb-8">Formez vos<br /><span className="italic font-normal">équipes.</span></h2>
-              <Link to="/contact" className="inline-block text-[13px] font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-background text-foreground hover:bg-background/90 transition-colors" onClick={() => window.scrollTo(0, 0)}>Demander une session</Link>
+              <h2 className="text-3xl md:text-4xl leading-[1.1] mb-8">Formez vos<br /><span className="italic font-normal">équipes.</span></h2>
+              <Link to="/contact" className="text-sm font-sans text-background/50 border-b border-background/20 pb-0.5 hover:text-background hover:border-background/50 transition-colors" onClick={() => window.scrollTo(0, 0)}>Demander une session</Link>
             </div>
           </div>
         </section>

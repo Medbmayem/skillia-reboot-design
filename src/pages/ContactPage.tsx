@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { Link } from 'react-router-dom';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -20,17 +21,32 @@ const ContactPage = () => {
     <div className="min-h-screen">
       <Navbar />
       <main>
-        <section className="pt-32 pb-24 md:pt-40 md:pb-32">
+        {/* Hero — cinematic like homepage */}
+        <section className="relative min-h-[55vh] flex items-end pb-20">
+          <div className="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80" alt="Espace de réunion — échange" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
+          </div>
+          <div className="container relative z-10">
+            <p className="text-xs tracking-[0.2em] uppercase font-sans text-background/50 mb-6">
+              <Link to="/" className="hover:text-background/70">Skillia</Link> / Contact
+            </p>
+            <h1 className="text-background text-4xl md:text-5xl lg:text-6xl max-w-3xl leading-[1.1]">
+              Parlons de<br />
+              <span className="italic font-normal">votre projet.</span>
+            </h1>
+          </div>
+        </section>
+
+        <section className="py-32 md:py-44">
           <div className="container">
-            <div className="grid lg:grid-cols-2 gap-20 lg:gap-24">
+            <div className="grid lg:grid-cols-2 gap-20 lg:gap-32">
               <div>
-                <p className="editorial-label mb-6">Contact</p>
-                <h1 className="mb-8">Parlons de<br /><span className="italic font-normal">votre projet.</span></h1>
                 <p className="editorial-body mb-12">
                   Que vous souhaitiez cadrer une stratégie IA, renforcer votre posture cyber, former vos équipes ou construire une solution, nous pouvons vous aider à structurer la suite.
                 </p>
 
-                <div className="space-y-6">
+                <div className="space-y-8">
                   <div>
                     <p className="text-xs tracking-[0.15em] uppercase font-sans text-muted-foreground/50 mb-2">Email</p>
                     <a href="mailto:contact@skillia.fr" className="text-sm font-sans text-foreground hover:text-muted-foreground transition-colors">contact@skillia.fr</a>
@@ -43,7 +59,7 @@ const ContactPage = () => {
               </div>
 
               <div>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-8">
                   <div>
                     <label className="block text-xs tracking-[0.1em] uppercase font-sans text-muted-foreground/60 mb-2">Nom complet</label>
                     <input type="text" required
@@ -84,7 +100,7 @@ const ContactPage = () => {
                   </div>
                   <div className="pt-4">
                     <button type="submit"
-                      className="text-sm font-sans font-medium tracking-wide px-7 py-3 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors">
+                      className="text-sm font-sans font-medium tracking-wide text-foreground border-b border-foreground/30 pb-1 hover:border-foreground transition-colors">
                       Envoyer
                     </button>
                   </div>
