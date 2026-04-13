@@ -68,7 +68,7 @@ const TechPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80" alt="Espace de travail — réflexion" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=2000&q=80" alt="Environnement de travail moderne" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">

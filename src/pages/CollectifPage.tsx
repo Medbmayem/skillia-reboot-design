@@ -48,24 +48,25 @@ const CollectifPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80" alt="Salle de réunion — environnement de décision" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80" alt="Collaboration — environnement de travail" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">
           <div className="container">
             <p className="editorial-label mb-12">L&apos;équipe fondatrice</p>
-            <div className="grid md:grid-cols-2 gap-20 max-w-3xl">
-              <div>
-                <div className="w-20 h-20 rounded-full bg-muted mb-6" />
-                <h3 className="text-xl mb-1">À compléter</h3>
-                <p className="text-sm font-sans text-muted-foreground mb-4">Co-fondateur · Stratégie, transformation et développement</p>
-                <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Accompagne les organisations dans le cadrage de leurs transformations, la structuration de leur trajectoire et l&apos;alignement entre vision stratégique, exécution et impact.</p>
-              </div>
-              <div>
-                <div className="w-20 h-20 rounded-full bg-muted mb-6" />
-                <h3 className="text-xl mb-1">À compléter</h3>
-                <p className="text-sm font-sans text-muted-foreground mb-4">Co-fondateur · IA, data et dispositifs d&apos;exécution</p>
-                <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Intervient sur la conception de solutions IA, la structuration de dispositifs data et le pilotage d&apos;initiatives visant une adoption réelle et durable.</p>
+            <div className="max-w-2xl">
+              <p className="editorial-body mb-12">
+                Skillia a été fondé par des praticiens issus du conseil en transformation, de la cybersécurité et de l&apos;IA appliquée. Leur complémentarité nourrit chaque mission : cadrage stratégique, sécurisation, construction de solutions et accompagnement à l&apos;adoption.
+              </p>
+              <div className="space-y-10">
+                <div>
+                  <h3 className="text-xl mb-2">Co-fondateur — Stratégie & transformation</h3>
+                  <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Accompagne les organisations dans le cadrage de leurs transformations, la structuration de leur trajectoire et l&apos;alignement entre vision stratégique, exécution et impact.</p>
+                </div>
+                <div>
+                  <h3 className="text-xl mb-2">Co-fondateur — IA, data & dispositifs d&apos;exécution</h3>
+                  <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Intervient sur la conception de solutions IA, la structuration de dispositifs data et le pilotage d&apos;initiatives visant une adoption réelle et durable.</p>
+                </div>
               </div>
             </div>
           </div>

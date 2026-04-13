@@ -36,7 +36,7 @@ const DeploiementAdoptionPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=80" alt="Espace de travail premium" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80" alt="Équipe en collaboration — travail collectif" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">
@@ -73,7 +73,7 @@ const DeploiementAdoptionPage = () => {
               <p className="editorial-label mb-8">Résultats</p>
               <div className="space-y-10">
                 <p className="font-serif text-xl md:text-2xl leading-[1.4]">
-                  Adoption IA par les métiers — <span className="font-sans text-base text-muted-foreground">Industrie, 85 % d&apos;adoption en 4 mois.</span>
+                  Adoption IA par les métiers — <span className="font-sans text-base text-muted-foreground">Industrie, plus de 80 % d&apos;adoption en 4 mois.</span>
                 </p>
                 <p className="font-serif text-xl md:text-2xl leading-[1.4]">
                   Transfert de compétences IA — <span className="font-sans text-base text-muted-foreground">Services, équipes autonomes en 3 mois.</span>
