@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom';
 
 const ApprochePage = () => {
   const steps = [
-    { num: '01', title: 'Cadrer', desc: 'Comprendre vos enjeux, évaluer votre maturité, prioriser les initiatives à fort impact.', image: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80' },
-    { num: '02', title: 'Sécuriser', desc: 'Intégrer la sécurité et la conformité dès la conception, pas en fin de projet.', image: 'https://images.unsplash.com/photo-1460472178825-e5240623afd5?auto=format&fit=crop&w=1200&q=80' },
-    { num: '03', title: 'Déployer', desc: 'Mettre en œuvre progressivement, piloter par les résultats et les KPIs.', image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80' },
-    { num: '04', title: 'Faire adopter', desc: 'Former, accompagner et ancrer les nouvelles pratiques dans le quotidien des équipes.', image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80' },
+    { num: '01', title: 'Cadrer', desc: 'Comprendre vos enjeux, évaluer votre maturité, prioriser les initiatives à fort impact.', image: 'https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=1200&q=80' },
+    { num: '02', title: 'Sécuriser', desc: 'Intégrer la sécurité et la conformité dès la conception, pas en fin de projet.', image: 'https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?auto=format&fit=crop&w=1200&q=80' },
+    { num: '03', title: 'Déployer', desc: 'Mettre en œuvre progressivement, piloter par les résultats et les KPIs.', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80' },
+    { num: '04', title: 'Faire adopter', desc: 'Former, accompagner et ancrer les nouvelles pratiques dans le quotidien des équipes.', image: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80' },
   ];
 
   return (
@@ -19,7 +19,7 @@ const ApprochePage = () => {
         {/* Hero — cinematic */}
         <section className="relative min-h-[65vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2000&q=80" alt="Réunion stratégique — méthode et rigueur" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1470723710355-95304d8aece4?auto=format&fit=crop&w=2000&q=80" alt="Architecture géométrique — méthode et structure" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">

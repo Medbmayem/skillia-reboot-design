@@ -11,7 +11,7 @@ const CyberResiliencePage = () => {
       <main>
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80" alt="Architecture moderne — structure et protection" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?auto=format&fit=crop&w=2000&q=80" alt="Façade nocturne — rigueur et protection" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">

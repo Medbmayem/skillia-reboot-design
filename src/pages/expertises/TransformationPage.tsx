@@ -36,7 +36,7 @@ const TransformationPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80" alt="Salle de réunion — lumière naturelle" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=2000&q=80" alt="Détail — stylo et papier, travail de réflexion" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">

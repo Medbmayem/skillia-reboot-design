@@ -14,8 +14,8 @@ const Index = () => {
         <section className="relative min-h-screen flex items-end pb-28 md:pb-36">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2000&q=80"
-              alt="Réunion stratégique — cabinet de transformation premium"
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80"
+              alt="Bureau sobre — lumière chaude et concentration"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/95 via-foreground/55 to-foreground/20" />
@@ -93,7 +93,7 @@ const Index = () => {
 
         {/* ===== EXPERTISE 1 — Full-width image with overlaid text ===== */}
         <section id="expertises-start" className="relative h-[70vh] md:h-[80vh] flex items-end">
-          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80" alt="Analyse de données — environnement de travail" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2000&q=80" alt="Écran sombre — visualisation de données" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
           <div className="container relative z-10 pb-16 md:pb-24">
             <p className="text-xs font-sans tracking-[0.2em] uppercase font-medium text-background/50 mb-5">IA & Data</p>
@@ -118,7 +118,7 @@ const Index = () => {
         <section>
           <div className="grid md:grid-cols-5 gap-0">
             <div className="md:col-span-3 aspect-[16/10] md:aspect-auto overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1400&q=80" alt="Architecture sécurisée — perspective" className="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1400&q=80" alt="Structure architecturale — géométrie et solidité" className="w-full h-full object-cover" />
             </div>
             <div className="md:col-span-2 flex flex-col justify-center px-8 py-16 md:px-16 lg:px-20">
               <p className="editorial-label mb-5">Cyber & résilience</p>
@@ -147,8 +147,8 @@ const Index = () => {
         {/* ===== IMAGE BREAK ===== */}
         <section className="h-[50vh] md:h-[65vh]">
           <img
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80"
-            alt="Espace de travail — analyse et réflexion"
+            src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=2000&q=80"
+            alt="Vue aérienne — bureau, carnet et stylo"
             className="w-full h-full object-cover"
           />
         </section>

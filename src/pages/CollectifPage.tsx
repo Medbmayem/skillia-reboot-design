@@ -10,7 +10,7 @@ const CollectifPage = () => {
       <main>
         <section className="relative min-h-[65vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=80" alt="Espace de travail premium" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=2000&q=80" alt="Escalier architectural — structure et collectif" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
@@ -48,7 +48,7 @@ const CollectifPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80" alt="Collaboration — environnement de travail" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=2000&q=80" alt="Lignes abstraites — mouvement et direction" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">
