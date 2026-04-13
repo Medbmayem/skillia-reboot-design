@@ -27,6 +27,11 @@ import RessourcesPage from "./pages/RessourcesPage";
 import NousRejoindrePage from "./pages/NousRejoindrePage";
 import ContactPage from "./pages/ContactPage";
 
+// Use cases & articles
+import UseCasesPage from "./pages/UseCasesPage";
+import UseCaseDetailPage from "./pages/UseCaseDetailPage";
+import ArticleDetailPage from "./pages/ArticleDetailPage";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -54,8 +59,13 @@ const App = () => (
             <Route path="/approche" element={<ApprochePage />} />
             <Route path="/collectif" element={<CollectifPage />} />
             <Route path="/ressources" element={<RessourcesPage />} />
+            <Route path="/ressources/:slug" element={<ArticleDetailPage />} />
             <Route path="/nous-rejoindre" element={<NousRejoindrePage />} />
             <Route path="/contact" element={<ContactPage />} />
+            
+            {/* Use cases */}
+            <Route path="/use-cases" element={<UseCasesPage />} />
+            <Route path="/use-cases/:slug" element={<UseCaseDetailPage />} />
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

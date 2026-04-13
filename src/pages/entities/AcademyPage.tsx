@@ -89,6 +89,32 @@ const AcademyPage = () => {
           </div>
         </section>
 
+        <section className="py-28 md:py-40">
+          <div className="container">
+            <div className="max-w-3xl">
+              <p className="editorial-label mb-6">Ce que Skillia Academy accompagne</p>
+              <p className="editorial-body mb-12">
+                Skillia Academy accompagne la montée en compétence des dirigeants, des managers et des équipes projet pour transformer les dispositifs déployés en pratiques réelles, comprises et maîtrisées.
+              </p>
+              <p className="editorial-label mb-8">Formats possibles</p>
+              <ul className="space-y-5">
+                {[
+                  'Sensibilisation dirigeants',
+                  'Ateliers métiers',
+                  'Parcours équipes projet',
+                  'Accompagnement à l\'adoption',
+                  'Culture cyber et résilience',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4">
+                    <span className="text-xs font-sans text-muted-foreground/40 mt-1">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="text-sm font-sans text-foreground/80 leading-[1.8]">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section className="py-28 md:py-40 bg-foreground text-background">
           <div className="container">
             <div className="max-w-2xl">

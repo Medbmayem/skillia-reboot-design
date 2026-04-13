@@ -93,6 +93,32 @@ const TechPage = () => {
           </div>
         </section>
 
+        <section className="py-28 md:py-40">
+          <div className="container">
+            <div className="max-w-3xl">
+              <p className="editorial-label mb-6">Ce que Skillia Tech conçoit</p>
+              <p className="editorial-body mb-12">
+                Skillia Tech conçoit et déploie les solutions qui prolongent les cadrages menés avec Skillia. L&apos;ambition n&apos;est pas de produire un démonstrateur de plus, mais un outil utile, robuste et exploitable dans les conditions réelles de travail.
+              </p>
+              <p className="editorial-label mb-8">Exemples de solutions</p>
+              <ul className="space-y-5">
+                {[
+                  'Assistants métier',
+                  'Copilotes documentaires',
+                  'Agents de recherche et qualification',
+                  'Automatisation de traitements documentaires',
+                  'Outils d\'assistance à l\'expertise',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4">
+                    <span className="text-xs font-sans text-muted-foreground/40 mt-1">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="text-sm font-sans text-foreground/80 leading-[1.8]">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section className="py-28 md:py-40 bg-foreground text-background">
           <div className="container">
             <div className="max-w-2xl">

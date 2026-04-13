@@ -85,6 +85,28 @@ const DeploiementAdoptionPage = () => {
           </div>
         </section>
 
+        <section className="py-28 md:py-40">
+          <div className="container">
+            <div className="max-w-3xl">
+              <p className="editorial-label mb-8">Freins les plus fréquents</p>
+              <ul className="space-y-5">
+                {[
+                  'Faible appropriation par les équipes',
+                  'Manque de relais managériaux',
+                  'Absence d\'indicateurs d\'usage',
+                  'Documentation insuffisante',
+                  'Transfert de compétences incomplet',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4">
+                    <span className="text-xs font-sans text-muted-foreground/40 mt-1">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="text-sm font-sans text-foreground/80 leading-[1.8]">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 md:py-28">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16 max-w-3xl">

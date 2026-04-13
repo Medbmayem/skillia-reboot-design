@@ -89,6 +89,39 @@ const TransformationPage = () => {
           </div>
         </section>
 
+        <section className="py-28 md:py-40">
+          <div className="container">
+            <div className="max-w-3xl">
+              <p className="editorial-label mb-8">Problèmes traités</p>
+              <ul className="space-y-5">
+                {[
+                  'Outils déployés sans adoption réelle',
+                  'Processus encore trop manuels ou fragmentés',
+                  'Gouvernance floue',
+                  'Résistance au changement',
+                  'Manque de lisibilité sur la trajectoire',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4">
+                    <span className="text-xs font-sans text-muted-foreground/40 mt-1">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="text-sm font-sans text-foreground/80 leading-[1.8]">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 md:py-28 bg-card">
+          <div className="container">
+            <div className="max-w-2xl">
+              <p className="text-sm font-sans text-muted-foreground mb-4">Ressources liées</p>
+              <Link to="/ressources/erreurs-transformation-digitale" className="editorial-link mb-3 inline-block" onClick={() => window.scrollTo(0, 0)}>Les 3 erreurs qui font échouer la transformation digitale</Link>
+              <br />
+              <Link to="/use-cases/programme-transformation-12-mois" className="editorial-link inline-block" onClick={() => window.scrollTo(0, 0)}>Structurer un programme de transformation sur 12 mois</Link>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 md:py-28">
           <div className="container">
             <div className="max-w-2xl">
