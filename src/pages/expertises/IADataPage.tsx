@@ -89,6 +89,39 @@ const IADataPage = () => {
           </div>
         </section>
 
+        <section className="py-28 md:py-40">
+          <div className="container">
+            <div className="max-w-3xl">
+              <p className="editorial-label mb-8">Problèmes traités</p>
+              <ul className="space-y-5">
+                {[
+                  'Difficulté à prioriser les bons cas d\'usage',
+                  'Initiatives dispersées sans gouvernance claire',
+                  'Faible lien entre expérimentation IA et valeur métier',
+                  'Manque d\'alignement entre métiers, IT et direction',
+                  'Déploiements sans mesure d\'impact',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4">
+                    <span className="text-xs font-sans text-muted-foreground/40 mt-1">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="text-sm font-sans text-foreground/80 leading-[1.8]">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 md:py-28 bg-card">
+          <div className="container">
+            <div className="max-w-2xl">
+              <p className="text-sm font-sans text-muted-foreground mb-4">Cas d'usage liés</p>
+              <Link to="/use-cases/cadrer-portefeuille-ia" className="editorial-link mb-3 inline-block" onClick={() => window.scrollTo(0, 0)}>Cadrer un portefeuille de cas d'usage IA</Link>
+              <br />
+              <Link to="/use-cases/copilote-metier-documentaire" className="editorial-link inline-block" onClick={() => window.scrollTo(0, 0)}>Concevoir un copilote métier</Link>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 md:py-28">
           <div className="container">
             <div className="max-w-2xl">

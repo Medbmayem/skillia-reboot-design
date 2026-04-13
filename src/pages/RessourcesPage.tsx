@@ -1,17 +1,8 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
-
-const resources = [
-  { title: 'Comment cadrer sa stratégie IA en 5 étapes', category: 'IA & Data', type: 'Article' },
-  { title: 'Les 3 erreurs qui font échouer la transformation digitale', category: 'Transformation', type: 'Article' },
-  { title: 'Guide : préparer son organisation à DORA', category: 'Cyber & résilience', type: 'Guide' },
-  { title: 'Mesurer l\'adoption IA : quels KPIs suivre ?', category: 'Adoption', type: 'Article' },
-  { title: 'Étude de cas : IA industrielle sur 3 BU', category: 'IA & Data', type: 'Étude de cas' },
-  { title: 'Cybersécurité pour dirigeants : l\'essentiel', category: 'Cyber & résilience', type: 'Guide' },
-];
+import { articles } from '@/data/articles';
 
 const RessourcesPage = () => {
   return (
@@ -33,12 +24,28 @@ const RessourcesPage = () => {
         <section className="pb-28 md:pb-40">
           <div className="container">
             <div className="max-w-4xl">
-              {resources.map((res, i) => (
-                <article key={i} className={`py-10 ${i > 0 ? 'border-t border-border/40' : ''} cursor-pointer group`}>
-                  <p className="text-xs tracking-[0.15em] uppercase font-sans text-muted-foreground/50 mb-3">{res.category} · {res.type}</p>
-                  <h3 className="text-xl md:text-2xl group-hover:text-muted-foreground transition-colors">{res.title}</h3>
-                </article>
+              {articles.map((article, i) => (
+                <Link
+                  key={article.slug}
+                  to={`/ressources/${article.slug}`}
+                  onClick={() => window.scrollTo(0, 0)}
+                  className={`block py-10 ${i > 0 ? 'border-t border-border/40' : ''} group`}
+                >
+                  <p className="text-xs tracking-[0.15em] uppercase font-sans text-muted-foreground/50 mb-3">{article.category} · {article.type}</p>
+                  <h3 className="text-xl md:text-2xl group-hover:text-muted-foreground transition-colors mb-3">{article.title}</h3>
+                  <p className="text-sm font-sans text-muted-foreground leading-[1.8] max-w-2xl">{article.chapeau}</p>
+                </Link>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 md:py-28 bg-card">
+          <div className="container">
+            <div className="max-w-2xl">
+              <p className="editorial-label mb-4">Cas d&apos;usage</p>
+              <p className="text-sm font-sans text-muted-foreground mb-6 leading-[1.8]">Explorez nos typologies d&apos;intervention concrètes.</p>
+              <Link to="/use-cases" className="editorial-link" onClick={() => window.scrollTo(0, 0)}>Voir les cas d&apos;usage</Link>
             </div>
           </div>
         </section>

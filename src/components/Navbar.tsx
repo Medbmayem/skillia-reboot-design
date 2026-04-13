@@ -168,6 +168,15 @@ const Navbar = () => {
           </Link>
 
           <Link
+            to="/use-cases"
+            onClick={handleLinkClick}
+            className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
+            style={isTransparent ? { textShadow: '0 1px 6px rgba(0,0,0,0.25)' } : undefined}
+          >
+            Cas d&apos;usage
+          </Link>
+
+          <Link
             to="/collectif"
             onClick={handleLinkClick}
             className={`text-[13px] leading-none font-sans font-medium tracking-wide transition-colors duration-300 ${textMutedClass} ${textHoverClass}`}
@@ -232,6 +241,7 @@ const Navbar = () => {
           <div className="h-px bg-border/30 my-5" />
 
           <Link to="/ressources" onClick={handleLinkClick} className="py-2 text-sm font-sans text-foreground/60 hover:text-foreground">Ressources</Link>
+          <Link to="/use-cases" onClick={handleLinkClick} className="py-2 text-sm font-sans text-foreground/60 hover:text-foreground">Cas d'usage</Link>
           <Link to="/collectif" onClick={handleLinkClick} className="py-2 text-sm font-sans text-foreground/60 hover:text-foreground">Collectif</Link>
           <Link to="/contact" onClick={handleLinkClick} className="py-2 text-sm font-sans text-foreground/60 hover:text-foreground">Contact</Link>
         </div>

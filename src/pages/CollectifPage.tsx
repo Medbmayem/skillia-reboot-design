@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -26,7 +25,7 @@ const CollectifPage = () => {
           <div className="container">
             <div className="max-w-2xl">
               <p className="editorial-body">
-                Skillia réunit des praticiens expérimentés en IA, transformation digitale, cybersécurité et formation. Chaque mission mobilise les bonnes compétences au bon moment.
+                Skillia réunit des profils complémentaires en stratégie, transformation, IA, cybersécurité, résilience et accompagnement des usages. Chaque mission mobilise les compétences nécessaires au bon moment, avec une logique de continuité entre cadrage, sécurisation, déploiement et adoption.
               </p>
             </div>
           </div>
@@ -55,15 +54,15 @@ const CollectifPage = () => {
             <div className="grid md:grid-cols-2 gap-20 max-w-3xl">
               <div>
                 <div className="w-20 h-20 rounded-full bg-muted mb-6" />
-                <h3 className="text-xl mb-1">[Nom du fondateur]</h3>
-                <p className="text-sm font-sans text-muted-foreground mb-4">[Titre / Rôle]</p>
-                <p className="text-sm font-sans text-muted-foreground leading-[1.8]">[Bio courte — parcours et expertise principale]</p>
+                <h3 className="text-xl mb-1">À compléter</h3>
+                <p className="text-sm font-sans text-muted-foreground mb-4">Co-fondateur · Stratégie, transformation et développement</p>
+                <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Accompagne les organisations dans le cadrage de leurs transformations, la structuration de leur trajectoire et l&apos;alignement entre vision stratégique, exécution et impact.</p>
               </div>
               <div>
                 <div className="w-20 h-20 rounded-full bg-muted mb-6" />
-                <h3 className="text-xl mb-1">[Nom du co-fondateur]</h3>
-                <p className="text-sm font-sans text-muted-foreground mb-4">[Titre / Rôle]</p>
-                <p className="text-sm font-sans text-muted-foreground leading-[1.8]">[Bio courte — parcours et expertise principale]</p>
+                <h3 className="text-xl mb-1">À compléter</h3>
+                <p className="text-sm font-sans text-muted-foreground mb-4">Co-fondateur · IA, data et dispositifs d&apos;exécution</p>
+                <p className="text-sm font-sans text-muted-foreground leading-[1.8]">Intervient sur la conception de solutions IA, la structuration de dispositifs data et le pilotage d&apos;initiatives visant une adoption réelle et durable.</p>
               </div>
             </div>
           </div>

@@ -89,6 +89,32 @@ const ResilliaPage = () => {
           </div>
         </section>
 
+        <section className="py-28 md:py-40">
+          <div className="container">
+            <div className="max-w-3xl">
+              <p className="editorial-label mb-6">Ce que Resillia renforce</p>
+              <p className="editorial-body mb-12">
+                Resillia intervient lorsque les enjeux exigent une capacité dédiée en cybersécurité, continuité et résilience. L&apos;objectif n&apos;est pas d&apos;ajouter une couche de complexité, mais de renforcer la robustesse des transformations et la continuité des activités critiques.
+              </p>
+              <p className="editorial-label mb-8">Interventions typiques</p>
+              <ul className="space-y-5">
+                {[
+                  'Audit de posture cyber',
+                  'Structuration de dispositifs PCA / PRA',
+                  'Cartographie des dépendances critiques',
+                  'Préparation à la gestion de crise',
+                  'Exercices et tests de résilience',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4">
+                    <span className="text-xs font-sans text-muted-foreground/40 mt-1">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="text-sm font-sans text-foreground/80 leading-[1.8]">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section className="py-16 text-center">
           <Link to="/cyber-resilience" className="editorial-link" onClick={() => window.scrollTo(0, 0)}>
             ← Retour à Cyber & résilience

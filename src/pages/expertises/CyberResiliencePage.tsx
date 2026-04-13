@@ -85,6 +85,28 @@ const CyberResiliencePage = () => {
           </div>
         </section>
 
+        <section className="py-28 md:py-40">
+          <div className="container">
+            <div className="max-w-3xl">
+              <p className="editorial-label mb-8">Situations adressées</p>
+              <ul className="space-y-5">
+                {[
+                  'Montée d\'exigence réglementaire',
+                  'Dépendances critiques mal connues',
+                  'Continuité insuffisamment formalisée',
+                  'Gouvernance cyber incomplète',
+                  'Besoin d\'exercices et de préparation à la crise',
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-4">
+                    <span className="text-xs font-sans text-muted-foreground/40 mt-1">{String(i + 1).padStart(2, '0')}</span>
+                    <span className="text-sm font-sans text-foreground/80 leading-[1.8]">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 md:py-28 bg-card">
           <div className="container">
             <div className="max-w-2xl">
