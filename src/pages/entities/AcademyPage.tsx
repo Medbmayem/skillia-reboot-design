@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
-import heroImage from '@/assets/skillia-services-travail.jpg';
+import heroImage from '@/assets/skillia-academy-transmission.jpg';
 
 const AcademyPage = () => {
   return (
