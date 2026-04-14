@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import heroImage from '@/assets/skillia-services-travail.jpg';
 
 const AcademyPage = () => {
   return (
@@ -11,7 +12,7 @@ const AcademyPage = () => {
       <main>
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=2000&q=80" alt="Formation professionnelle — écoute et progression" className="w-full h-full object-cover" />
+            <img src={heroImage} alt="Échange professionnel — formation et accompagnement" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">

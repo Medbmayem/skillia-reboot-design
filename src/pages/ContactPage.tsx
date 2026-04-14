@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
 import { useToast } from '@/hooks/use-toast';
+import heroImage from '@/assets/skillia-finance-governance.jpg';
 
 const ContactPage = () => {
   const { toast } = useToast();
@@ -29,7 +30,7 @@ const ContactPage = () => {
       <main>
         <section className="relative min-h-[55vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=2000&q=80" alt="Table de réunion — échange direct" className="w-full h-full object-cover" />
+            <img src={heroImage} alt="Salle de gouvernance — échange et décision" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
