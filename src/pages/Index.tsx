@@ -14,8 +14,8 @@ const Index = () => {
         <section className="relative min-h-screen flex items-end pb-28 md:pb-36">
           <div className="absolute inset-0 z-0">
             <img
-src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80"
-              alt="Bureau contemporain — lumière et espace de travail"
+src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80"
+              alt="Bureau vitré — espace de décision sobre et lumineux"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/95 via-foreground/55 to-foreground/20" />
