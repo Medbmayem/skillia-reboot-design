@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
-import heroImage from '@/assets/skillia-hero-cabinet.jpg';
+import heroImage from '@/assets/skillia-collectif-equipe.jpg';
 
 const CollectifPage = () => {
   return (
