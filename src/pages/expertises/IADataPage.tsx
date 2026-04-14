@@ -37,10 +37,6 @@ const IADataPage = () => {
           </div>
         </section>
 
-        {/* Image break */}
-        <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1542744173-8e7e91415657?auto=format&fit=crop&w=2000&q=80" alt="Documents de travail — analyse de fond" className="w-full h-full object-cover" />
-        </section>
 
         {/* Offre — asymmetric grid */}
         <section className="py-32 md:py-44">

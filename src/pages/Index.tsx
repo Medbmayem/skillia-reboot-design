@@ -14,8 +14,8 @@ const Index = () => {
         <section className="relative min-h-screen flex items-end pb-28 md:pb-36">
           <div className="absolute inset-0 z-0">
             <img
-src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80"
-              alt="Échange professionnel — réflexion et décision"
+src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80"
+              alt="Bureau contemporain — lumière et espace de travail"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/95 via-foreground/55 to-foreground/20" />
@@ -144,14 +144,6 @@ src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fi
           </div>
         </section>
 
-        {/* ===== IMAGE BREAK ===== */}
-        <section className="h-[50vh] md:h-[65vh]">
-          <img
-src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=2000&q=80"
-            alt="Bureau sobre — espace de travail"
-            className="w-full h-full object-cover"
-          />
-        </section>
 
         {/* ===== APPROCHE — Single statement ===== */}
         <section className="py-32 md:py-44">
@@ -214,14 +206,6 @@ src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fi
           </div>
         </section>
 
-        {/* ===== FULL IMAGE ===== */}
-        <section className="h-[50vh] md:h-[65vh]">
-          <img
-src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=2000&q=80"
-            alt="Salle de réunion — espace de décision"
-            className="w-full h-full object-cover"
-          />
-        </section>
 
         {/* ===== RÉSULTATS — Inline prose, no grid ===== */}
         <section className="py-32 md:py-44">
