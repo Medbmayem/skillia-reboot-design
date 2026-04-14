@@ -3,24 +3,10 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
-
-const Index = () => {
-  return (
-    <div className="min-h-screen">
-      <Navbar />
-
-      <main>
-        {/* ===== HERO — Full bleed, cinematic ===== */}
-        <section className="relative min-h-screen flex items-end pb-28 md:pb-36">
-          <div className="absolute inset-0 z-0">
-            <img
-import React from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import { Link } from 'react-router-dom';
 import heroImage from '@/assets/skillia-hero-cabinet.jpg';
 import iaImage from '@/assets/skillia-ia-transformation.jpg';
 import cyberImage from '@/assets/skillia-cyber-resilience.jpg';
+
 
 const Index = () => {
   return (
