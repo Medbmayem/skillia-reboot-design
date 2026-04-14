@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import heroImage from '@/assets/skillia-ia-transformation.jpg';
 
 const IADataPage = () => {
   return (
@@ -12,7 +13,7 @@ const IADataPage = () => {
         {/* Hero — cinematic, aligned with homepage */}
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=2000&q=80" alt="Réunion de cadrage — arbitrage et réflexion" className="w-full h-full object-cover" />
+            <img src={heroImage} alt="IA appliquée — échange stratégique et transformation" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
