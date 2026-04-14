@@ -24,7 +24,7 @@ const ArticleDetailPage = () => {
         {/* Hero — cinematic */}
         <section className="relative min-h-[65vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1542744173-8e7e91415f16?auto=format&fit=crop&w=2000&q=80" alt="Travail concentré — analyse" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" alt="Analyse et réflexion — contenu éditorial" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">

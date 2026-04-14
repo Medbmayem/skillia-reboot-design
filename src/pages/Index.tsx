@@ -3,6 +3,10 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import heroImage from '@/assets/skillia-hero-cabinet.jpg';
+import iaImage from '@/assets/skillia-ia-transformation.jpg';
+import cyberImage from '@/assets/skillia-cyber-resilience.jpg';
+
 
 const Index = () => {
   return (
@@ -14,8 +18,8 @@ const Index = () => {
         <section className="relative min-h-screen flex items-end pb-28 md:pb-36">
           <div className="absolute inset-0 z-0">
             <img
-src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=80"
-              alt="Bureau vitré — espace de décision sobre et lumineux"
+src={heroImage}
+              alt="Salle de décision premium — cabinet de conseil"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/95 via-foreground/55 to-foreground/20" />
@@ -93,7 +97,7 @@ src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fi
 
         {/* ===== EXPERTISE 1 — Full-width image with overlaid text ===== */}
         <section id="expertises-start" className="relative h-[70vh] md:h-[80vh] flex items-end">
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2000&q=80" alt="Bureau sobre — carnet, stylo et décision" className="absolute inset-0 w-full h-full object-cover" />
+          <img src={iaImage} alt="Échange stratégique — IA appliquée et transformation" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
           <div className="container relative z-10 pb-16 md:pb-24">
             <p className="text-xs font-sans tracking-[0.2em] uppercase font-medium text-background/50 mb-5">IA & Data</p>
@@ -118,7 +122,7 @@ src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fi
         <section>
           <div className="grid md:grid-cols-5 gap-0">
             <div className="md:col-span-3 aspect-[16/10] md:aspect-auto overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=1400&q=80" alt="Couloir de bureaux — architecture et sobriété" className="w-full h-full object-cover" />
+              <img src={cyberImage} alt="Salle de pilotage — cyber-résilience et contrôle" className="w-full h-full object-cover" width={1920} height={1080} loading="lazy" />
             </div>
             <div className="md:col-span-2 flex flex-col justify-center px-8 py-16 md:px-16 lg:px-20">
               <p className="editorial-label mb-5">Cyber & résilience</p>
