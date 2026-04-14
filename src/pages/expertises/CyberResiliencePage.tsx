@@ -11,7 +11,7 @@ const CyberResiliencePage = () => {
       <main>
         <section className="relative min-h-[75vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?auto=format&fit=crop&w=2000&q=80" alt="Façade nocturne — rigueur et protection" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1573167710701-35950a41e251?auto=format&fit=crop&w=2000&q=80" alt="Revue de documents — rigueur et cadrage" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
@@ -64,7 +64,7 @@ const CyberResiliencePage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1431576901776-e539bd916ba2?auto=format&fit=crop&w=2000&q=80" alt="Lignes architecturales — perspective et rigueur" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=2000&q=80" alt="Poste de travail — concentration et exigence" className="w-full h-full object-cover" />
         </section>
 
         <section className="py-32 md:py-44">

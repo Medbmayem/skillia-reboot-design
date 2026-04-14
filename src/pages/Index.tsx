@@ -14,8 +14,8 @@ const Index = () => {
         <section className="relative min-h-screen flex items-end pb-28 md:pb-36">
           <div className="absolute inset-0 z-0">
             <img
-src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
-              alt="Architecture contemporaine — verre et verticalité"
+src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=2000&q=80"
+              alt="Échange professionnel — réflexion et décision"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/95 via-foreground/55 to-foreground/20" />
@@ -118,7 +118,7 @@ src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fi
         <section>
           <div className="grid md:grid-cols-5 gap-0">
             <div className="md:col-span-3 aspect-[16/10] md:aspect-auto overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=1400&q=80" alt="Corridor architectural — perspective et profondeur" className="w-full h-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=1400&q=80" alt="Couloir de bureaux — architecture et sobriété" className="w-full h-full object-cover" />
             </div>
             <div className="md:col-span-2 flex flex-col justify-center px-8 py-16 md:px-16 lg:px-20">
               <p className="editorial-label mb-5">Cyber & résilience</p>
@@ -147,8 +147,8 @@ src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fi
         {/* ===== IMAGE BREAK ===== */}
         <section className="h-[50vh] md:h-[65vh]">
           <img
-src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?auto=format&fit=crop&w=2000&q=80"
-            alt="Surface de marbre — matière et précision"
+src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=2000&q=80"
+            alt="Bureau sobre — espace de travail"
             className="w-full h-full object-cover"
           />
         </section>
@@ -217,8 +217,8 @@ src="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?auto=format&fi
         {/* ===== FULL IMAGE ===== */}
         <section className="h-[50vh] md:h-[65vh]">
           <img
-            src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2000&q=80"
-            alt="Architecture contemporaine — façade"
+src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?auto=format&fit=crop&w=2000&q=80"
+            alt="Salle de réunion — espace de décision"
             className="w-full h-full object-cover"
           />
         </section>
