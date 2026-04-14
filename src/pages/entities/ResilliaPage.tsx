@@ -65,7 +65,7 @@ const ResilliaPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80" alt="Environnement de travail — sobriété et rigueur" className="w-full h-full object-cover" />
+          <img src={heroImage} alt="Contrôle et vigilance — environnement sécurisé" className="w-full h-full object-cover" loading="lazy" />
         </section>
 
         <section className="py-32 md:py-44">

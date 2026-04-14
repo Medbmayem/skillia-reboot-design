@@ -3,13 +3,18 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import heroImage from '@/assets/skillia-finance-governance.jpg';
+import cadrageImage from '@/assets/skillia-services-travail.jpg';
+import securiserImage from '@/assets/skillia-cyber-resilience.jpg';
+import deployerImage from '@/assets/skillia-industrie-supervision.jpg';
+import adopterImage from '@/assets/skillia-ia-transformation.jpg';
 
 const ApprochePage = () => {
   const steps = [
-    { num: '01', title: 'Cadrer', desc: 'Comprendre vos enjeux, évaluer votre maturité, prioriser les initiatives à fort impact.', image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80' },
-    { num: '02', title: 'Sécuriser', desc: 'Intégrer la sécurité et la conformité dès la conception, pas en fin de projet.', image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80' },
-    { num: '03', title: 'Déployer', desc: 'Mettre en œuvre progressivement, piloter par les résultats et les KPIs.', image: 'https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?auto=format&fit=crop&w=1200&q=80' },
-    { num: '04', title: 'Faire adopter', desc: 'Former, accompagner et ancrer les nouvelles pratiques dans le quotidien des équipes.', image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80' },
+    { num: '01', title: 'Cadrer', desc: 'Comprendre vos enjeux, évaluer votre maturité, prioriser les initiatives à fort impact.', image: cadrageImage },
+    { num: '02', title: 'Sécuriser', desc: 'Intégrer la sécurité et la conformité dès la conception, pas en fin de projet.', image: securiserImage },
+    { num: '03', title: 'Déployer', desc: 'Mettre en œuvre progressivement, piloter par les résultats et les KPIs.', image: deployerImage },
+    { num: '04', title: 'Faire adopter', desc: 'Former, accompagner et ancrer les nouvelles pratiques dans le quotidien des équipes.', image: adopterImage },
   ];
 
   return (
@@ -19,7 +24,7 @@ const ApprochePage = () => {
         {/* Hero — cinematic */}
         <section className="relative min-h-[65vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1517245386747-e7db1bfce812?auto=format&fit=crop&w=2000&q=80" alt="Détail de carnet — méthode et structure" className="w-full h-full object-cover" />
+            <img src={heroImage} alt="Gouvernance et méthode — approche structurée" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
