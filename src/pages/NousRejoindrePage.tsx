@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import heroImage from '@/assets/skillia-hero-cabinet.jpg';
 
 const NousRejoindrePage = () => {
   const openings = [
@@ -19,7 +20,7 @@ const NousRejoindrePage = () => {
         {/* Hero — cinematic like homepage */}
         <section className="relative min-h-[65vh] flex items-end pb-20">
           <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1493397212122-2b85dda8106b?auto=format&fit=crop&w=2000&q=80" alt="Fenêtre et lumière — perspective et ouverture" className="w-full h-full object-cover" />
+            <img src={heroImage} alt="Espace de décision — rejoindre le collectif" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/35 to-foreground/10" />
           </div>
           <div className="container relative z-10">
