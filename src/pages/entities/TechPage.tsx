@@ -69,7 +69,7 @@ const TechPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=2000&q=80" alt="Escalier moderne — structure et progression" className="w-full h-full object-cover" />
+          <img src={heroImage} alt="Environnement technique — précision et rigueur" className="w-full h-full object-cover" loading="lazy" />
         </section>
 
         <section className="py-32 md:py-44">

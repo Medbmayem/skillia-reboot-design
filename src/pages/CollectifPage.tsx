@@ -49,7 +49,7 @@ const CollectifPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&w=2000&q=80" alt="Salle de réunion — collectif et structure" className="w-full h-full object-cover" />
+          <img src={heroImage} alt="Salle de réunion — collectif et structure" className="w-full h-full object-cover" loading="lazy" />
         </section>
 
         <section className="py-32 md:py-44">

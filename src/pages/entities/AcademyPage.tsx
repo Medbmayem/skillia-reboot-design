@@ -65,7 +65,7 @@ const AcademyPage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=2000&q=80" alt="Table de conférence vide — espace de décision" className="w-full h-full object-cover" />
+          <img src={heroImage} alt="Espace de formation — accompagnement premium" className="w-full h-full object-cover" loading="lazy" />
         </section>
 
         <section className="py-32 md:py-44">

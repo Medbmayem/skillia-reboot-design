@@ -65,7 +65,7 @@ const CyberResiliencePage = () => {
         </section>
 
         <section className="h-[45vh] md:h-[60vh]">
-          <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=2000&q=80" alt="Poste de travail — concentration et exigence" className="w-full h-full object-cover" />
+          <img src={heroImage} alt="Poste de contrôle — vigilance et rigueur" className="w-full h-full object-cover" loading="lazy" />
         </section>
 
         <section className="py-32 md:py-44">
