@@ -149,9 +149,9 @@ const ContactPage = () => {
                       value={formData.message} onChange={e => setFormData({...formData, message: e.target.value})} />
                   </div>
                   <div className="pt-4">
-                    <button type="submit"
-                      className="text-sm font-sans font-medium tracking-wide text-foreground border-b border-foreground/30 pb-1 hover:border-foreground transition-colors">
-                      Envoyer
+                    <button type="submit" disabled={isSubmitting}
+                      className="text-sm font-sans font-medium tracking-wide text-foreground border-b border-foreground/30 pb-1 hover:border-foreground transition-colors disabled:opacity-50">
+                      {isSubmitting ? 'Envoi en cours…' : 'Envoyer'}
                     </button>
                   </div>
                   <p className="text-xs font-sans text-muted-foreground/50">
