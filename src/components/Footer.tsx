@@ -25,7 +25,7 @@ const Footer = () => {
             <p className="text-xs tracking-[0.15em] uppercase opacity-30 mb-4">Entités spécialisées</p>
             <a href="https://resillia.fr" target="_blank" rel="noopener noreferrer" className="block text-sm opacity-40 hover:opacity-70 transition-opacity">Resillia</a>
             <a href="https://skillia-tech.com" target="_blank" rel="noopener noreferrer" className="block text-sm opacity-40 hover:opacity-70 transition-opacity">Skillia Tech</a>
-            <a href="https://skillia-academy.com" target="_blank" rel="noopener noreferrer" className="block text-sm opacity-40 hover:opacity-70 transition-opacity">Skillia Academy</a>
+            <a href="https://www.skillia-academy.com" target="_blank" rel="noopener noreferrer" className="block text-sm opacity-40 hover:opacity-70 transition-opacity">Skillia Academy</a>
           </div>
           <div className="space-y-3">
             <p className="text-xs tracking-[0.15em] uppercase opacity-30 mb-4">Ressources</p>
