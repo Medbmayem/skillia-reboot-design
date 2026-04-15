@@ -122,6 +122,7 @@ const TechPage = () => {
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-4xl leading-[1.1] mb-8">Construisons votre<br /><span className="italic font-normal">solution IA.</span></h2>
               <Link to="/contact" className="text-sm font-sans text-background/50 border-b border-background/20 pb-0.5 hover:text-background hover:border-background/50 transition-colors" onClick={() => window.scrollTo(0, 0)}>Prendre rendez-vous</Link>
+              <a href="https://skillia-tech.com" target="_blank" rel="noopener noreferrer" className="block mt-6 text-sm font-sans text-background/30 border-b border-background/10 pb-0.5 hover:text-background/60 hover:border-background/30 transition-colors w-fit">skillia-tech.com ↗</a>
             </div>
           </div>
         </section>
