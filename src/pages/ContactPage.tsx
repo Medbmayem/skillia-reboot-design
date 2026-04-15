@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
 import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 import heroImage from '@/assets/skillia-finance-governance.jpg';
 
 const ContactPage = () => {
@@ -15,13 +16,56 @@ const ContactPage = () => {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: 'Message envoyé',
-      description: 'Nous vous répondons sous 24h ouvrées.',
-    });
-    setFormData({ name: '', email: '', company: '', need: 'general', message: '' });
+    setIsSubmitting(true);
+    
+    try {
+      const { error } = await supabase
+        .from('contact_messages')
+        .insert([{
+          firstname: formData.name,
+          lastname: '',
+          email: formData.email,
+          company: formData.company,
+          subject: formData.need,
+          message: formData.message,
+        }]);
+
+      if (error) throw error;
+
+      // Appeler la edge function pour envoyer l'email
+      await supabase.functions.invoke('send-contact-email', {
+        body: {
+          record: {
+            firstname: formData.name,
+            lastname: '',
+            email: formData.email,
+            company: formData.company,
+            subject: formData.need,
+            message: formData.message,
+            created_at: new Date().toISOString(),
+          }
+        }
+      });
+
+      toast({
+        title: 'Message envoyé',
+        description: 'Nous vous répondons sous 24h ouvrées.',
+      });
+      setFormData({ name: '', email: '', company: '', need: 'general', message: '' });
+    } catch (error) {
+      console.error('Error:', error);
+      toast({
+        title: 'Erreur',
+        description: 'Une erreur est survenue. Veuillez réessayer.',
+        variant: 'destructive',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
