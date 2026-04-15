@@ -17,30 +17,45 @@ export type Database = {
       contact_messages: {
         Row: {
           company: string | null
+          country: string | null
           created_at: string
           email: string
+          firstname: string
+          function: string | null
           id: string
+          industry: string | null
+          lastname: string
           message: string | null
-          name: string
-          need: string | null
+          phone: string | null
+          subject: string | null
         }
         Insert: {
           company?: string | null
+          country?: string | null
           created_at?: string
           email: string
+          firstname: string
+          function?: string | null
           id?: string
+          industry?: string | null
+          lastname: string
           message?: string | null
-          name: string
-          need?: string | null
+          phone?: string | null
+          subject?: string | null
         }
         Update: {
           company?: string | null
+          country?: string | null
           created_at?: string
           email?: string
+          firstname?: string
+          function?: string | null
           id?: string
+          industry?: string | null
+          lastname?: string
           message?: string | null
-          name?: string
-          need?: string | null
+          phone?: string | null
+          subject?: string | null
         }
         Relationships: []
       }
