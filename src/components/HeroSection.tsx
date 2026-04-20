@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Calendar } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import heroImage from '@/assets/skillia-hero-cabinet.png';
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -74,8 +73,8 @@ const HeroSection = () => {
           <div className="md:w-1/2 relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="bg-white shadow-xl rounded-lg p-2 transform hover:scale-[1.02] transition-transform duration-300">
               <img 
-                src={heroImage} 
-                alt="Skillia — cabinet de conseil premium" 
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                alt="Digital Transformation Solutions" 
                 className="w-full h-auto rounded object-cover"
               />
               <div className="absolute -bottom-4 -left-4 bg-[#403AF2] text-white py-2 px-4 rounded-lg shadow-lg text-sm font-bold">
