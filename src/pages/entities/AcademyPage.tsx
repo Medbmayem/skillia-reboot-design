@@ -30,7 +30,7 @@ const AcademyPage = () => {
           <div className="container">
             <div className="max-w-2xl">
               <p className="editorial-body">
-                Des formations conçues par des praticiens du groupe, sur des cas issus du terrain. Pas de théorie déconnectée — des outils applicables dès le lendemain.
+                Des formations conçues par des praticiens du groupe, sur des cas issus du terrain. Pas de théorie déconnectée — des outils applicables dès le lendemain. <a href="https://www.skillia-academy.com" target="_blank" rel="noopener noreferrer" className="italic border-b border-foreground/30 hover:border-foreground transition-colors">skillia-academy.com ↗</a>
               </p>
             </div>
           </div>
